@@ -3,12 +3,12 @@
 `tokens/foundation.json`, `light.json` and `dark.json` are portable DTCG 2025.10 token
 files using explicit types. Color values include sRGB components and a hex value;
 dimensions and durations include units. `tokens/web.json` contains CSS-specific
-expressions (fluid sizes, gradients, compound shadows and asymmetric blob corners).
+expressions (fluid sizes, gradients and asymmetric blob corners).
 These expressions are deliberately outside the portable format.
 
 Run `npm run generate` after editing either source. It produces `dist/css/tokens.css`
 and `/tokens` JavaScript exports. The `tokens` export contains foundation/light/dark
-CSS values; `chartBackground` derives directly from the surface colors. Change palette
+CSS values; `chartBackground` derives from the shared chart background tokens. Change palette
 values here rather than in downstream styles or chart scripts.
 
 Preserve semantic pairs: page/surface with ink, primary actions with accent-ink,
