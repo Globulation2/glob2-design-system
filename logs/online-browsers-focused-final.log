@@ -1,0 +1,258 @@
+
+> @glob2/web@0.1.0 e2e
+> playwright test -c e2e/playwright.config.ts --grep every page passes|home: navigation|leaderboard ranks|invite and sign-in|theme toggle|colony moves|pause keeps|keyboard: skip|drawer closes|conversation and canvas|/skins shares responsive
+
+
+Running 24 tests using 1 worker
+
+(node:3302075) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 [desktop] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) (3.0m)
+  ✓   2 [desktop] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) (3.2m)
+  ✓   3 [desktop] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls (44.6s)
+  ✓   4 [desktop] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony (3.4s)
+  ✓   5 [desktop] › e2e/smoke.spec.ts:181:1 › server-rendered invite and sign-in pages share the look (19.7s)
+  ✘   6 [desktop] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version (8.7s)
+(node:3329143) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   7 [desktop] › e2e/smoke.spec.ts:373:1 › the theme toggle cycles system, light and dark and is remembered (6.0s)
+  ✓   8 [desktop] › e2e/smoke.spec.ts:397:1 › keyboard: skip link first, visible focus, focus moves to new pages (4.2s)
+  ✓   9 [desktop] › e2e/smoke.spec.ts:414:1 › the colony moves, can be paused, and keeps still for reduced motion (4.7s)
+  ✓  10 [desktop] › e2e/smoke.spec.ts:441:1 › pause keeps the resume control when a pending play is cancelled (6.3s)
+  ✓  11 [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (43.2s)
+  ✓  12 [desktop] › e2e/workspace.spec.ts:64:1 › drawer closes across breakpoints without trapping focus (6.2s)
+(node:3331954) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  13 [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) (1.9m)
+(node:3336079) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) (2.8m)
+(node:3342752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [phone] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls (36.7s)
+  ✓  16 [phone] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony (7.4s)
+  ✓  17 [phone] › e2e/smoke.spec.ts:181:1 › server-rendered invite and sign-in pages share the look (28.7s)
+  ✘  18 [phone] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version (8.9s)
+(node:3346618) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  19 [phone] › e2e/smoke.spec.ts:373:1 › the theme toggle cycles system, light and dark and is remembered (6.3s)
+  -  20 [phone] › e2e/smoke.spec.ts:397:1 › keyboard: skip link first, visible focus, focus moves to new pages
+  ✓  21 [phone] › e2e/smoke.spec.ts:414:1 › the colony moves, can be paused, and keeps still for reduced motion (6.2s)
+  ✓  22 [phone] › e2e/smoke.spec.ts:441:1 › pause keeps the resume control when a pending play is cancelled (6.2s)
+  ✘  23 [phone] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (35.9s)
+(node:3349505) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  24 [phone] › e2e/workspace.spec.ts:64:1 › drawer closes across breakpoints without trapping focus
+
+
+  1) [desktop] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version ─────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('main')
+    Expected substring: "Nicowar"
+    Received string:    "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('main') with timeout 5000ms
+      - waiting for locator('main')
+        13 × locator resolved to <main id="main" tabindex="-1">…</main>
+           - unexpected value "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+
+
+      205 |   await expect(rows.first()).toContainText('Kestrel');
+      206 |   await expect(page.locator('main')).not.toContainText('Spammer');
+    > 207 |   await expect(page.locator('main')).toContainText('Nicowar');
+          |                                      ^
+      208 |   await expect(page.locator('main')).toContainText('older version');
+      209 |   await page.getByLabel('Hide provisional ratings').check();
+      210 |   await expect(page.locator('main')).not.toContainText('Ana_M');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:207:38
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) ───────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 18
+
+    - Object {}
+    + Object {
+    +   "skins-signed-out": Object {
+    +     "overflow": 0,
+    +     "violations": Array [
+    +       Object {
+    +         "id": "page-has-heading-one",
+    +         "impact": "moderate",
+    +         "nodes": Array [
+    +           "html",
+    +         ],
+    +       },
+    +     ],
+    +   },
+    +   "upload": Object {
+    +     "overflow": 51,
+    +     "violations": Array [],
+    +   },
+    + }
+
+      74 |       if (violations.length > 0 || overflow > 0) found[entry.name] = { violations, overflow };
+      75 |     }
+    > 76 |     expect(found).toEqual({});
+         |                   ^
+      77 |   });
+      78 | }
+      79 |
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:76:19
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) ────────────
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  -  1
+    + Received  + 18
+
+    - Object {}
+    + Object {
+    +   "skins-signed-out": Object {
+    +     "overflow": 0,
+    +     "violations": Array [
+    +       Object {
+    +         "id": "page-has-heading-one",
+    +         "impact": "moderate",
+    +         "nodes": Array [
+    +           "html",
+    +         ],
+    +       },
+    +     ],
+    +   },
+    +   "upload": Object {
+    +     "overflow": 51,
+    +     "violations": Array [],
+    +   },
+    + }
+
+      74 |       if (violations.length > 0 || overflow > 0) found[entry.name] = { violations, overflow };
+      75 |     }
+    > 76 |     expect(found).toEqual({});
+         |                   ^
+      77 |   });
+      78 | }
+      79 |
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:76:19
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [phone] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version ───────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('main')
+    Expected substring: "Nicowar"
+    Received string:    "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('main') with timeout 5000ms
+      - waiting for locator('main')
+        12 × locator resolved to <main id="main" tabindex="-1">…</main>
+           - unexpected value "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+
+
+      205 |   await expect(rows.first()).toContainText('Kestrel');
+      206 |   await expect(page.locator('main')).not.toContainText('Spammer');
+    > 207 |   await expect(page.locator('main')).toContainText('Nicowar');
+          |                                      ^
+      208 |   await expect(page.locator('main')).toContainText('older version');
+      209 |   await page.getByLabel('Hide provisional ratings').check();
+      210 |   await expect(page.locator('main')).not.toContainText('Ana_M');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:207:38
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [phone] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone ──────────────
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('textbox')
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('textbox') with timeout 5000ms
+      - waiting for getByRole('textbox')
+        13 × locator resolved to <textarea rows="2" id="_r_2_" maxlength="8000" aria-describedby="_r_2_-help" placeholder="Describe your landscape, or dream up a change…">Please try building the map again and address thi…</textarea>
+           - unexpected value "inactive"
+
+
+      349 |       if (info.project.name === 'phone') await mapTab.click();
+      350 |       await page.getByRole('button', { name: 'Prepare retry' }).click();
+    > 351 |       await expect(page.getByRole('textbox')).toBeFocused();
+          |                                               ^
+      352 |       await expect(page.getByRole('textbox')).toHaveValue(/Please try building.*starter food/);
+      353 |       expect(writes).toHaveLength(2);
+      354 |     } else {
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/studio.spec.ts:351:47
+
+    Error Context: ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  Slow test file: [desktop] › e2e/a11y.spec.ts (6.3m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  5 failed
+    [desktop] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version ──────
+    [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) ────────────
+    [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) ─────────────
+    [phone] › e2e/smoke.spec.ts:202:1 › leaderboard ranks players and lists AIs per version ────────
+    [phone] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone ───────────────
+  2 skipped
+  17 passed (17.2m)
+npm ERR! Lifecycle script `e2e` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: @glob2/web@0.1.0 
+npm ERR!   at location: /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web 

@@ -1,0 +1,17 @@
+
+> @glob2/web@0.1.0 e2e
+> playwright test -c e2e/playwright.config.ts --grep SPA navigation|theme toggle --output=../../../../artifacts/design-system/navigation-test-results
+
+
+Running 4 tests using 1 worker
+
+(node:3345938) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › e2e/smoke.spec.ts:373:1 › the theme toggle cycles system, light and dark and is remembered (7.9s)
+  ✓  2 [desktop] › e2e/smoke.spec.ts:397:1 › SPA navigation re-reads a preference changed by another page (7.0s)
+(node:3346733) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [phone] › e2e/smoke.spec.ts:373:1 › the theme toggle cycles system, light and dark and is remembered (10.7s)
+  ✓  4 [phone] › e2e/smoke.spec.ts:397:1 › SPA navigation re-reads a preference changed by another page (8.1s)
+
+  4 passed (1.1m)

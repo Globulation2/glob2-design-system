@@ -1,0 +1,4 @@
+{"org.glob2.design-system-revision":"acd277710acfebf528e1fc6f653d55fdf75de4b2"}
+{"org.glob2.design-system-revision":"acd277710acfebf528e1fc6f653d55fdf75de4b2"}
+{"org.glob2.design-system-revision":"acd277710acfebf528e1fc6f653d55fdf75de4b2","org.opencontainers.image.description":"a powerful, enterprise-ready, open source web server with automatic HTTPS written in Go","org.opencontainers.image.documentation":"https://caddyserver.com/docs","org.opencontainers.image.licenses":"Apache-2.0","org.opencontainers.image.source":"https://github.com/caddyserver/caddy-docker","org.opencontainers.image.title":"Caddy","org.opencontainers.image.url":"https://caddyserver.com","org.opencontainers.image.vendor":"Light Code Labs","org.opencontainers.image.version":"v2.11.4"}
+{"repository":"https://github.com/Globulation2/glob2-design-system.git","sha":"acd277710acfebf528e1fc6f653d55fdf75de4b2"}

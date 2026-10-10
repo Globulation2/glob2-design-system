@@ -2,3 +2,4 @@
 > lint
 > eslint . && prettier --check .
 
+Checking formatting...

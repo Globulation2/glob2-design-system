@@ -1,0 +1,32 @@
+{
+  "shared": "acd277710acfebf528e1fc6f653d55fdf75de4b2",
+  "online": "1c2ed2d49870c6514fe78cde86bb38bed5e933c2",
+  "website": "51ff99d4187ffe005df92d04e42bae0420c05fe0",
+  "finalTypecheckExit": 0,
+  "finalNavigationLintExit": 0,
+  "finalNavigationViteBuildExit": 0,
+  "finalCaddyBuildExit": 0,
+  "finalNavigationBrowser": {
+    "passed": 4,
+    "failed": 0
+  },
+  "focusedOnlineBrowser": {
+    "passed": 17,
+    "failed": 5,
+    "skipped": 2
+  },
+  "followUpFormsUnit": {
+    "passed": 10,
+    "failed": 1
+  },
+  "integratedUnit": {
+    "passed": 327,
+    "skipped": 2
+  },
+  "finalWebsiteThemeBrowser": {
+    "passed": 9
+  },
+  "websiteBroadBrowser": {
+    "passed": 267
+  }
+}

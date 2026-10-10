@@ -1,0 +1,26 @@
+[
+  {
+    "product": "onlineBaseline",
+    "fileCount": 275,
+    "bytesExcludingSourceMaps": 146009062,
+    "cssBytes": 307811,
+    "javascriptBytes": 22029206,
+    "mediaBytes": 7564012
+  },
+  {
+    "product": "onlineFinal",
+    "fileCount": 281,
+    "bytesExcludingSourceMaps": 146259212,
+    "cssBytes": 310029,
+    "javascriptBytes": 22032876,
+    "mediaBytes": 7564012
+  },
+  {
+    "product": "marketingFinal",
+    "fileCount": 395,
+    "bytesExcludingSourceMaps": 56449936,
+    "cssBytes": 99399,
+    "javascriptBytes": 450008,
+    "mediaBytes": 54466451
+  }
+]

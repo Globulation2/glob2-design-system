@@ -1,0 +1,84 @@
+
+Running 2 tests using 1 worker
+
+(node:3353804) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version (10.4s)
+(node:3354669) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (46.8s)
+
+
+  1) [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('main')
+    Expected substring: "Nicowar"
+    Received string:    "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('main') with timeout 5000ms
+      - waiting for locator('main')
+        12 × locator resolved to <main id="main" tabindex="-1">…</main>
+           - unexpected value "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+
+
+      204 |   await expect(rows.first()).toContainText('Kestrel');
+      205 |   await expect(page.locator('main')).not.toContainText('Spammer');
+    > 206 |   await expect(page.locator('main')).toContainText('Nicowar');
+          |                                      ^
+      207 |   await expect(page.locator('main')).toContainText('older version');
+      208 |   await page.getByLabel('Hide provisional ratings').check();
+      209 |   await expect(page.locator('main')).not.toContainText('Ana_M');
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/smoke.spec.ts:206:38
+
+    Error Context: artifacts/design-system/baseline-final-test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline-final-test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline-final-test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('textbox')
+    Expected: focused
+    Received: inactive
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeFocused" getByRole('textbox') with timeout 5000ms
+      - waiting for getByRole('textbox')
+        13 × locator resolved to <textarea rows="2" id="_r_2_" maxlength="8000" aria-describedby="_r_2_-help" placeholder="Describe your landscape, or dream up a change…">Please try building the map again and address thi…</textarea>
+           - unexpected value "inactive"
+
+
+      349 |       if (info.project.name === 'phone') await mapTab.click();
+      350 |       await page.getByRole('button', { name: 'Prepare retry' }).click();
+    > 351 |       await expect(page.getByRole('textbox')).toBeFocused();
+          |                                               ^
+      352 |       await expect(page.getByRole('textbox')).toHaveValue(/Please try building.*starter food/);
+      353 |       expect(writes).toHaveLength(2);
+      354 |     } else {
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/studio.spec.ts:351:47
+
+    Error Context: artifacts/design-system/baseline-final-test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline-final-test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline-final-test-results/studio-conversation-and-canvas-fit-desktop-and-phone-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version 
+    [phone] › artifacts/design-system/baseline/platform/apps/web/e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone 
