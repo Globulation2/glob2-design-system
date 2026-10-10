@@ -64,12 +64,15 @@ export const tokens = {
     "rank-1": "#e3c077",
     "rank-2": "#c9d1c4",
     "rank-3": "#dfb08a",
+    "shadow-sm": "0px 1px 0px 0px rgba(29, 69, 48, 0.08), 0px 2px 6px -2px rgba(29, 69, 48, 0.18)",
+    "shadow-md": "0px 1px 0px 0px rgba(29, 69, 48, 0.08), 0px 10px 28px -10px rgba(29, 69, 48, 0.35)",
+    "shadow-lg": "0px 2px 0px 0px rgba(15, 39, 25, 0.12), 0px 22px 50px -18px rgba(15, 39, 25, 0.55)",
+    "chart-bg": "#fbfbf3",
+    "chart-1": "#835607",
+    "chart-4": "#9a5a0c",
     "scrim": "rgba(17, 35, 32, 0.55)",
     "hero-fade": "linear-gradient(\n    100deg,\n    rgba(241, 241, 225, 0.92) 0%,\n    rgba(241, 241, 225, 0.55) 38%,\n    rgba(241, 241, 225, 0) 62%\n  )",
-    "hero-tint": "rgba(0, 0, 0, 0)",
-    "shadow-sm": "0 1px 0 rgba(29, 69, 48, 0.08), 0 2px 6px -2px rgba(29, 69, 48, 0.18)",
-    "shadow-md": "0 1px 0 rgba(29, 69, 48, 0.08), 0 10px 28px -10px rgba(29, 69, 48, 0.35)",
-    "shadow-lg": "0 2px 0 rgba(15, 39, 25, 0.12), 0 22px 50px -18px rgba(15, 39, 25, 0.55)"
+    "hero-tint": "rgba(0, 0, 0, 0)"
   },
   "dark": {
     "bg": "#1b1229",
@@ -104,12 +107,15 @@ export const tokens = {
     "rank-1": "#e3c077",
     "rank-2": "#b9b0c9",
     "rank-3": "#d29a6d",
+    "shadow-sm": "0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 2px 6px -2px rgba(0, 0, 0, 0.5)",
+    "shadow-md": "0px 1px 0px 0px rgba(0, 0, 0, 0.3), 0px 10px 28px -10px rgba(0, 0, 0, 0.7)",
+    "shadow-lg": "0px 2px 0px 0px rgba(0, 0, 0, 0.3), 0px 22px 50px -18px rgba(0, 0, 0, 0.85)",
+    "chart-bg": "#2b1c42",
+    "chart-1": "#f0cf7c",
+    "chart-4": "#ffd678",
     "scrim": "rgba(10, 6, 20, 0.6)",
     "hero-fade": "linear-gradient(\n    100deg,\n    rgba(27, 18, 41, 0.94) 0%,\n    rgba(27, 18, 41, 0.6) 40%,\n    rgba(27, 18, 41, 0.05) 66%\n  )",
-    "hero-tint": "rgba(40, 22, 80, 0.5)",
-    "shadow-sm": "0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 6px -2px rgba(0, 0, 0, 0.5)",
-    "shadow-md": "0 1px 0 rgba(0, 0, 0, 0.3), 0 10px 28px -10px rgba(0, 0, 0, 0.7)",
-    "shadow-lg": "0 2px 0 rgba(0, 0, 0, 0.3), 0 22px 50px -18px rgba(0, 0, 0, 0.85)"
+    "hero-tint": "rgba(40, 22, 80, 0.5)"
   }
 };
-export const chartBackground = {light: tokens.light.surface, dark: tokens.dark.surface};
+export const chartBackground = {light: tokens.light["chart-bg"], dark: tokens.dark["chart-bg"]};

@@ -15,6 +15,10 @@ const cssValue = token => {
   const v = token.$value;
   if (token.$type === 'color') return v.hex;
   if (['dimension', 'duration'].includes(token.$type)) return `${v.value}${v.unit}`;
+  if (token.$type === 'shadow') return v.map(layer => {
+    const c = layer.color;
+    return `${layer.offsetX.value}px ${layer.offsetY.value}px ${layer.blur.value}px ${layer.spread.value}px rgba(${c.components.map(n => Math.round(n * 255)).join(', ')}, ${c.alpha})`;
+  }).join(', ');
   if (token.$type === 'fontFamily') return v.map(x => x.includes(' ') ? `'${x}'` : x).join(', ');
   if (token.$type === 'cubicBezier') return `cubic-bezier(${v.join(', ')})`;
   return String(v);
@@ -23,8 +27,8 @@ const values = {};
 for (const name of ['foundation','light','dark']) values[name] = {...Object.fromEntries(Object.entries(await portable(name)).map(([key,t])=>[key,cssValue(t)])),...web[name]};
 const declarations = name => Object.entries(values[name]).map(([key,v]) => `  --${key}: ${v};`).join('\n');
 await writeFile('dist/css/tokens.css', `/* Generated from tokens/. */\n:root {\n${declarations('foundation')}\n}\n:root, :root[data-theme='light'] {\n  color-scheme: light;\n${declarations('light')}\n}\n@media (prefers-color-scheme: dark) {\n :root:not([data-theme='light']) {\n  color-scheme: dark;\n${declarations('dark')}\n }\n}\n:root[data-theme='dark'] {\n color-scheme: dark;\n${declarations('dark')}\n}\n`);
-await writeFile('dist/tokens.js', `// Generated from tokens/.\nexport const tokens = ${JSON.stringify(values,null,2)};\nexport const chartBackground = {light: tokens.light.surface, dark: tokens.dark.surface};\n`);
-await writeFile('dist/tokens.d.ts', `export declare const tokens: { foundation: Record<string, string>; light: Record<string, string>; dark: Record<string, string> };\nexport declare const chartBackground: Record<'light' | 'dark', string>;\n`);
+await writeFile('dist/tokens.js', `// Generated from tokens/.\nexport const tokens = ${JSON.stringify(values,null,2)};\nexport const chartBackground = {light: tokens.light["chart-bg"], dark: tokens.dark["chart-bg"]};\n`);
+await writeFile('dist/tokens.d.ts', `export declare const tokens: ${JSON.stringify(values,null,2)};\nexport declare const chartBackground: Record<'light' | 'dark', string>;\n`);
 for (const name of ['base','components','brand']) {
  const tree = postcss.parse(await read(`src/css/${name}.css`));
  if (name !== 'base') tree.walkRules(rule => {

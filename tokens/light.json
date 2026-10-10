@@ -382,5 +382,218 @@
       ],
       "hex": "#dfb08a"
     }
+  },
+  "shadow-sm": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 1,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spread": {
+          "value": 0,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11372549019607843,
+            0.27058823529411763,
+            0.18823529411764706
+          ],
+          "alpha": 0.08
+        }
+      },
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 2,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 6,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -2,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11372549019607843,
+            0.27058823529411763,
+            0.18823529411764706
+          ],
+          "alpha": 0.18
+        }
+      }
+    ]
+  },
+  "shadow-md": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 1,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spread": {
+          "value": 0,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11372549019607843,
+            0.27058823529411763,
+            0.18823529411764706
+          ],
+          "alpha": 0.08
+        }
+      },
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 10,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 28,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -10,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.11372549019607843,
+            0.27058823529411763,
+            0.18823529411764706
+          ],
+          "alpha": 0.35
+        }
+      }
+    ]
+  },
+  "shadow-lg": {
+    "$type": "shadow",
+    "$value": [
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 2,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 0,
+          "unit": "px"
+        },
+        "spread": {
+          "value": 0,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.058823529411764705,
+            0.15294117647058825,
+            0.09803921568627451
+          ],
+          "alpha": 0.12
+        }
+      },
+      {
+        "offsetX": {
+          "value": 0,
+          "unit": "px"
+        },
+        "offsetY": {
+          "value": 22,
+          "unit": "px"
+        },
+        "blur": {
+          "value": 50,
+          "unit": "px"
+        },
+        "spread": {
+          "value": -18,
+          "unit": "px"
+        },
+        "color": {
+          "colorSpace": "srgb",
+          "components": [
+            0.058823529411764705,
+            0.15294117647058825,
+            0.09803921568627451
+          ],
+          "alpha": 0.55
+        }
+      }
+    ]
+  },
+  "chart-bg": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.984313725490196,
+        0.984313725490196,
+        0.9529411764705882
+      ],
+      "hex": "#fbfbf3"
+    }
+  },
+  "chart-1": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.5137254901960784,
+        0.33725490196078434,
+        0.027450980392156862
+      ],
+      "hex": "#835607"
+    }
+  },
+  "chart-4": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.6039215686274509,
+        0.35294117647058826,
+        0.047058823529411764
+      ],
+      "hex": "#9a5a0c"
+    }
   }
 }

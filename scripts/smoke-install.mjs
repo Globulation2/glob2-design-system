@@ -11,7 +11,7 @@ const workspace = mkdtempSync(join(tmpdir(), 'glob2-consumers-'));
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 for (const example of ['html','astro','react']) {
  const dir = join(workspace, example); mkdirSync(dir);
- cpSync(join(root,'examples',example),dir,{recursive:true,filter:path=>!/(node_modules|dist|\.astro|public\/theme\.js)(\/|$)/.test(path)});
+ cpSync(join(root,'examples',example),dir,{recursive:true,filter:path=>!/(^|\/)(node_modules|dist|\.astro)(\/|$)|\/public\/theme\.js$/.test(path)});
  const manifest = JSON.parse(readFileSync(join(dir,'package.json'),'utf8'));
  manifest.dependencies['@glob2/design-system'] = `git+${source}#${sha}`;
  writeFileSync(join(dir,'package.json'),JSON.stringify(manifest,null,2));
@@ -20,6 +20,7 @@ for (const example of ['html','astro','react']) {
  // Explicit consumer prebuild stages the already-distributed bootstrap; dependency
  // installation itself runs no lifecycle hooks and requires no theme dev tools.
  execFileSync(npm,['run','build'],{cwd:dir,stdio:'inherit'});
+ if(!existsSync(join(dir,'dist/index.html'))) throw new Error(`${example} lacks a rendered page`);
  if(!existsSync(join(dir,'dist/theme.js'))) throw new Error(`${example} lacks bootstrap`);
  console.log(`Verified ${example}: ${sha}`);
 }

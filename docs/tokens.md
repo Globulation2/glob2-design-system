@@ -21,3 +21,6 @@ then map dimensions to the output's units. CSS pixels, points and image pixels a
 not interchangeable. Choose light or dark deliberately; a print document does not
 follow its reader's device theme. Use sufficiently large text, safe contrast, and
 clear hierarchy. Production templates for those formats are outside the first release.
+
+Shadow layers and chart colors are portable tokens; CSS-only gradients and fluid
+sizing remain in the web extension. Typed exports preserve the concrete token keys.
