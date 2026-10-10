@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { JSDOM } from 'jsdom';
 import { mountColony } from '../dist/colony.js';
 test('colony does not request video under reduced motion and cleans up listeners', async () => {
- const dom = new JSDOM('<div><video data-src="/colony.mp4"></video><button></button></div>',{url:'https://glob2online.com/'});
+ const dom = new JSDOM('<div><video data-src="/colony.mp4"></video><button></button></div>',{url:'https://glob2online.com/',pretendToBeVisual:true});
  const win = dom.window; const query = new win.EventTarget(); query.matches = true;
  win.matchMedia = () => query; let visible; let disconnected=false;
  win.IntersectionObserver = class { constructor(fn){visible=fn;} observe(){} disconnect(){disconnected=true;} };
