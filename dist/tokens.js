@@ -70,6 +70,10 @@ export const tokens = {
     "chart-bg": "#fbfbf3",
     "chart-1": "#835607",
     "chart-4": "#9a5a0c",
+    "chart-2": "#2b7236",
+    "chart-3": "#a3362c",
+    "chart-5": "#87500a",
+    "chart-6": "#4b604c",
     "scrim": "rgba(17, 35, 32, 0.55)",
     "hero-fade": "linear-gradient(\n    100deg,\n    rgba(241, 241, 225, 0.92) 0%,\n    rgba(241, 241, 225, 0.55) 38%,\n    rgba(241, 241, 225, 0) 62%\n  )",
     "hero-tint": "rgba(0, 0, 0, 0)"
@@ -113,6 +117,10 @@ export const tokens = {
     "chart-bg": "#2b1c42",
     "chart-1": "#f0cf7c",
     "chart-4": "#ffd678",
+    "chart-2": "#93dd9b",
+    "chart-3": "#ff9488",
+    "chart-5": "#f6c46e",
+    "chart-6": "#cfc1a0",
     "scrim": "rgba(10, 6, 20, 0.6)",
     "hero-fade": "linear-gradient(\n    100deg,\n    rgba(27, 18, 41, 0.94) 0%,\n    rgba(27, 18, 41, 0.6) 40%,\n    rgba(27, 18, 41, 0.05) 66%\n  )",
     "hero-tint": "rgba(40, 22, 80, 0.5)"

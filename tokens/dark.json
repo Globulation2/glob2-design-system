@@ -595,5 +595,53 @@
       ],
       "hex": "#ffd678"
     }
+  },
+  "chart-2": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.5764705882352941,
+        0.8666666666666667,
+        0.6078431372549019
+      ],
+      "hex": "#93dd9b"
+    }
+  },
+  "chart-3": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        1.0,
+        0.5803921568627451,
+        0.5333333333333333
+      ],
+      "hex": "#ff9488"
+    }
+  },
+  "chart-5": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.9647058823529412,
+        0.7686274509803922,
+        0.43137254901960786
+      ],
+      "hex": "#f6c46e"
+    }
+  },
+  "chart-6": {
+    "$type": "color",
+    "$value": {
+      "colorSpace": "srgb",
+      "components": [
+        0.8117647058823529,
+        0.7568627450980392,
+        0.6274509803921569
+      ],
+      "hex": "#cfc1a0"
+    }
   }
 }
