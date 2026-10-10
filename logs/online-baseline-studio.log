@@ -1,0 +1,166 @@
+[WebServer] (node:3181324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:3181878) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (7.1s)
+(node:3182778) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (11.8s)
+  ✘  3 [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn (6.5s)
+(node:3184012) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light (9.3s)
+(node:3184846) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  5 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark (9.2s)
+
+
+  1) [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        13 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      138 |   await prompt.fill('Make only the hospital cheaper.');
+      139 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 140 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      141 |   await expect(prompt).toHaveValue('Make only the hospital cheaper.');
+      142 |   await page.getByText('Reference images', { exact: true }).first().click();
+      143 |   await page
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:140:41
+
+    Error Context: ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      179 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      180 |   expect(writes).toHaveLength(1);
+    > 181 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      182 |   const prompt = page.getByLabel('Describe your creation or ask a question');
+      183 |   await expect(prompt).toBeEnabled();
+      184 |   await expect(prompt).toHaveValue('Make only the marsh faster.');
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/terrain-studio.spec.ts:181:41
+
+    Error Context: ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light ────────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        14 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark ─────────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        13 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light ─────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark ──────────────────────────────────
+  1 passed (1.0m)

@@ -1,0 +1,15 @@
+{
+  "shared": "acd277710acfebf528e1fc6f653d55fdf75de4b2",
+  "online": "5a657560a2dd7443cb63e2ddd914e1f1d7b1a072",
+  "onlineIntegratedBase": "7d17f40d156fa847cc8e585907aee1d13ac6fdd0",
+  "website": "51ff99d4187ffe005df92d04e42bae0420c05fe0",
+  "websiteBase": "4b745c2cdbfc123c8c4f2ec2f68d5a842ac262b8",
+  "os": "Ubuntu Linux x86_64",
+  "node": "24.19.0",
+  "dockerNode": "22-bookworm-slim",
+  "npm": "9.2.0 locally; 11 in Node Docker images",
+  "database": "PostgreSQL 16, temporary test harness databases",
+  "websiteBroadValidation": "87674de7f3fbc50fb738c424605d8aabbdd17343",
+  "websiteBroadTheme": "260edcc70b9212c8b9e3b2dcf2cb8c94af37e2cf",
+  "dockerAndOnlineUnitSource": "a39678cc7fd2acb6152b57b78bd4d777f240ec3f"
+}

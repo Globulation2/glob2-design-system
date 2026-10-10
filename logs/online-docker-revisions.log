@@ -1,0 +1,16 @@
+[glob2-shared-platform-final:latest] acd277710acfebf528e1fc6f653d55fdf75de4b2
+[glob2-shared-deps-final:latest] acd277710acfebf528e1fc6f653d55fdf75de4b2
+{
+  "repository": "https://github.com/Globulation2/glob2-design-system.git",
+  "sha": "acd277710acfebf528e1fc6f653d55fdf75de4b2",
+  "installHash": "eef281fa957610ae52a093e8ec515c65c5ab34d348c057663ae9eef51421e9b0"
+}
+
+{
+  "repository": "https://github.com/Globulation2/glob2-design-system.git",
+  "sha": "acd277710acfebf528e1fc6f653d55fdf75de4b2",
+  "installHash": "eef281fa957610ae52a093e8ec515c65c5ab34d348c057663ae9eef51421e9b0"
+}
+
+acd277710acfebf528e1fc6f653d55fdf75de4b2
+{"repository":"https://github.com/Globulation2/glob2-design-system.git","sha":"acd277710acfebf528e1fc6f653d55fdf75de4b2"}

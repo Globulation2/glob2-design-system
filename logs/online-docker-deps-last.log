@@ -1,0 +1,121 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 19.86kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1.7
+#2 DONE 0.2s
+
+#3 docker-image://docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e
+#3 resolve docker.io/docker/dockerfile:1.7@sha256:a57df69d0ea827fb7266491f2813635de6f17269be881f696fbfdf2d83dda33e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 447B done
+#5 DONE 0.0s
+
+#6 [node-deps  1/28] FROM docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392
+#6 resolve docker.io/library/node:22-bookworm-slim@sha256:c3de60bf2f9dd0ac6370e6117950ff62d6e339527e7472301c9c78a017978392 0.0s done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 2.57kB 0.1s done
+#7 DONE 0.1s
+
+#8 [node-deps  9/28] COPY platform/packages/play/package.json packages/play/
+#8 CACHED
+
+#9 [node-deps 15/28] COPY platform/packages/music-studio/package.json packages/music-studio/
+#9 CACHED
+
+#10 [node-deps 26/28] COPY platform/apps/engine-agent/package.json apps/engine-agent/
+#10 CACHED
+
+#11 [node-deps 21/28] COPY platform/apps/music-worker/package.json apps/music-worker/
+#11 CACHED
+
+#12 [node-deps 16/28] COPY platform/packages/terrain-studio/package.json packages/terrain-studio/
+#12 CACHED
+
+#13 [node-deps 17/28] COPY platform/packages/building-studio/package.json packages/building-studio/
+#13 CACHED
+
+#14 [node-deps  5/28] COPY platform/scripts/design-system.mjs scripts/design-system.mjs
+#14 CACHED
+
+#15 [node-deps 10/28] COPY platform/packages/engine/package.json packages/engine/
+#15 CACHED
+
+#16 [node-deps  2/28] RUN apt-get update && apt-get install -y --no-install-recommends git ca-certificates && rm -rf /var/lib/apt/lists/*
+#16 CACHED
+
+#17 [node-deps  3/28] WORKDIR /app/platform
+#17 CACHED
+
+#18 [node-deps 24/28] COPY platform/apps/api/package.json apps/api/
+#18 CACHED
+
+#19 [node-deps 12/28] COPY platform/packages/billing/package.json packages/billing/
+#19 CACHED
+
+#20 [node-deps 20/28] COPY platform/apps/ai-music-worker/package.json apps/ai-music-worker/
+#20 CACHED
+
+#21 [node-deps 13/28] COPY platform/packages/map-studio/package.json packages/map-studio/
+#21 CACHED
+
+#22 [node-deps 27/28] COPY platform/apps/web/package.json apps/web/
+#22 CACHED
+
+#23 [node-deps 18/28] COPY platform/apps/ai-building-worker/package.json apps/ai-building-worker/
+#23 CACHED
+
+#24 [node-deps 22/28] COPY platform/apps/skin-render-worker/package.json apps/skin-render-worker/
+#24 CACHED
+
+#25 [node-deps 11/28] COPY platform/packages/hive/package.json packages/hive/
+#25 CACHED
+
+#26 [node-deps 14/28] COPY platform/packages/music/package.json packages/music/
+#26 CACHED
+
+#27 [node-deps  8/28] COPY platform/packages/core/package.json packages/core/
+#27 CACHED
+
+#28 [node-deps  6/28] COPY platform/packages/protocol/package.json packages/protocol/
+#28 CACHED
+
+#29 [node-deps 23/28] COPY platform/apps/ai-map-worker/package.json apps/ai-map-worker/
+#29 CACHED
+
+#30 [node-deps 25/28] COPY platform/apps/worker/package.json apps/worker/
+#30 CACHED
+
+#31 [node-deps  4/28] COPY platform/package.json platform/package-lock.json ./
+#31 CACHED
+
+#32 [node-deps  7/28] COPY platform/packages/db/package.json packages/db/
+#32 CACHED
+
+#33 [node-deps 19/28] COPY platform/apps/ai-terrain-worker/package.json apps/ai-terrain-worker/
+#33 CACHED
+
+#34 [node-deps 28/28] RUN --mount=type=cache,id=glob2-npm,target=/root/.npm test -n "acd277710acfebf528e1fc6f653d55fdf75de4b2" && npm ci --no-audit --no-fund && node scripts/design-system.mjs
+#34 CACHED
+
+#35 exporting to image
+#35 exporting layers
+#35 exporting layers 27.0s done
+#35 exporting manifest sha256:7f9a1335549443991b8d876f149916143f65ba2961c9626554622fb24a969e3c
+#35 exporting manifest sha256:7f9a1335549443991b8d876f149916143f65ba2961c9626554622fb24a969e3c 0.0s done
+#35 exporting config sha256:33d6eb6d2ff34e9e6e82fb906351d261ae428d4297634e2e9668bf6f75443dba done
+#35 exporting attestation manifest sha256:ed83b42338bbd95d86239d666325f353a9f54fefa858e483d3e456e566535cb7 0.0s done
+#35 exporting manifest list sha256:f9b1dbf221bdca418f9986b714681c89ca60e70af10e3d15aea5811c0b036e7f 0.0s done
+#35 naming to docker.io/library/glob2-shared-deps-final:latest done
+#35 unpacking to docker.io/library/glob2-shared-deps-final:latest
+#35 unpacking to docker.io/library/glob2-shared-deps-final:latest 11.5s done
+#35 DONE 38.7s

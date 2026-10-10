@@ -1,0 +1,1730 @@
+[
+  {
+    "route": "/",
+    "device": "desktop",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/home-desktop-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 617.765625,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "desktop",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/game-desktop-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 640,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "desktop",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/guide-desktop-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "desktop",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/downloads-desktop-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "desktop",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/community-desktop-light.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/",
+    "device": "tablet",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/home-tablet-light.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 365.859375,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "tablet",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/game-tablet-light.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 640,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "tablet",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/guide-tablet-light.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "tablet",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/downloads-tablet-light.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "tablet",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/community-tablet-light.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/",
+    "device": "mobile",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/home-mobile-light.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 328,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "mobile",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/game-mobile-light.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 304,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "mobile",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/guide-mobile-light.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 304,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 304,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "mobile",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/downloads-mobile-light.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "mobile",
+    "scheme": "light",
+    "file": "artifacts/review-round-final/community-mobile-light.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/",
+    "device": "desktop",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/home-desktop-dark.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 617.765625,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "desktop",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/game-desktop-dark.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 640,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "desktop",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/guide-desktop-dark.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 740,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "desktop",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/downloads-desktop-dark.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "desktop",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/community-desktop-dark.png",
+    "viewport": 1440,
+    "scrollWidth": 1440,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/",
+    "device": "tablet",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/home-tablet-dark.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 365.859375,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "tablet",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/game-tablet-dark.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 640,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "tablet",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/guide-tablet-dark.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 420,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 420,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 658.5625,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "tablet",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/downloads-tablet-dark.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "tablet",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/community-tablet-dark.png",
+    "viewport": 768,
+    "scrollWidth": 768,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/",
+    "device": "mobile",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/home-mobile-dark.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 328,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/game/",
+    "device": "mobile",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/game-mobile-dark.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/images/glob2-first-colony.webp",
+        "width": 304,
+        "naturalWidth": 1280
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/learn/getting-started/",
+    "device": "mobile",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/guide-mobile-dark.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [
+      {
+        "src": "/guide-media/v1/getting-started/pilot-menu.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-start.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-foundation.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-inn.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-swarm.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-working-detail.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-idle-detail.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital-working.webp",
+        "width": 304,
+        "naturalWidth": 200
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-hospital.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-production-detail.webp",
+        "width": 304,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-two-explorers.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-restored-detail.webp",
+        "width": 304,
+        "naturalWidth": 163
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-save.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      },
+      {
+        "src": "/guide-media/v1/getting-started/pilot-practice.webp",
+        "width": 304,
+        "naturalWidth": 1440
+      }
+    ],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/downloads/",
+    "device": "mobile",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/downloads-mobile-dark.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  },
+  {
+    "route": "/community/",
+    "device": "mobile",
+    "scheme": "dark",
+    "file": "artifacts/review-round-final/community-mobile-dark.png",
+    "viewport": 360,
+    "scrollWidth": 360,
+    "images": [],
+    "targets": [
+      {
+        "text": "The game",
+        "height": 44
+      },
+      {
+        "text": "Learn",
+        "height": 44
+      },
+      {
+        "text": "Community",
+        "height": 44
+      },
+      {
+        "text": "Search",
+        "height": 44
+      },
+      {
+        "text": "Discord ↗",
+        "height": 44
+      },
+      {
+        "text": "Sign in",
+        "height": 44
+      },
+      {
+        "text": "Play ↗",
+        "height": 44
+      }
+    ],
+    "violations": []
+  }
+]

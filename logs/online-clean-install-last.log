@@ -1,0 +1,5 @@
+(node:3241554) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm WARN skipping integrity check for git dependency ssh://git@github.com/Globulation2/glob2-design-system.git 
+
+added 580 packages in 24s

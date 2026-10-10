@@ -1,0 +1,18 @@
+
+> @glob2/design-system@0.1.0 test:browser
+> playwright test
+
+
+Running 3 tests using 3 workers
+
+(node:3222125) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3222118) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3222119) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [chromium] › test/browser.spec.mjs:12:1 › secure parent cookie shares explicit system/light/dark across subdomains before paint (1.2s)
+  ✓  2 [webkit] › test/browser.spec.mjs:12:1 › secure parent cookie shares explicit system/light/dark across subdomains before paint (3.3s)
+  ✓  1 [firefox] › test/browser.spec.mjs:12:1 › secure parent cookie shares explicit system/light/dark across subdomains before paint (7.0s)
+
+  3 passed (11.3s)

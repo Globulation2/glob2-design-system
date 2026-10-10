@@ -1,0 +1,290 @@
+[
+  {
+    "name": "home",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 360,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 360,
+    "theme": "light",
+    "overflow": 60
+  },
+  {
+    "name": "home",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 360,
+    "theme": "dark",
+    "overflow": 60
+  },
+  {
+    "name": "home",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 768,
+    "theme": "light",
+    "overflow": 0
+  },
+  {
+    "name": "home",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 768,
+    "theme": "dark",
+    "overflow": 0
+  },
+  {
+    "name": "home",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 1440,
+    "theme": "light",
+    "overflow": 0
+  },
+  {
+    "name": "home",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "maps",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "match",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "signin",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "invite",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "map-studio",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0,
+    "focus": "A"
+  },
+  {
+    "name": "home-large-text",
+    "width": 1440,
+    "theme": "dark",
+    "overflow": 0
+  }
+]

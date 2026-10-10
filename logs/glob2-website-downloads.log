@@ -1,0 +1,157 @@
+(node:3059913) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm WARN skipping integrity check for git dependency ssh://git@github.com/Globulation2/glob2-design-system.git 
+
+added 1 package in 2s
+Glob2 design system: 820dabb730df463e2867d8ee5285769e4efd7b0c
+14:28:32 [vite] Re-optimizing dependencies because vite config has changed
+14:28:34 [content] Syncing content
+14:28:34 [content] Synced content
+14:28:34 [types] Generated 2.12s
+14:28:34 [build] output: "static"
+14:28:34 [build] mode: "static"
+14:28:34 [build] directory: /home/bradley/glob2-online-website/artifacts/downloads/populated-aONFxG/dist/
+14:28:34 [build] Collecting build info...
+14:28:34 [build] ✓ Completed in 2.21s.
+14:28:34 [build] Building static entrypoints...
+14:28:35 [vite] ✓ built in 927ms
+14:28:35 [vite] ✓ built in 83ms
+14:28:35 [build] Rearranging server assets...
+
+ generating static routes 
+14:28:35   ├─ /404.html (+26ms) 
+14:28:35   ├─ /archive/index.html (+11ms) 
+14:28:35   ├─ /archive/legacy-strategy/index.html (+11ms) 
+14:28:35   ├─ /archive/legacy-translations/index.html (+11ms) 
+14:28:35   ├─ /community/index.html (+10ms) 
+14:28:35   ├─ /competition/index.html (+17ms) 
+14:28:35   ├─ /credits/index.html (+9ms) 
+14:28:35   ├─ /design/colony/index.html (+10ms) 
+14:28:35   ├─ /design/field-guide/index.html (+7ms) 
+14:28:35   ├─ /downloads/index.html (+11ms) 
+14:28:35   ├─ /events/index.html (+5ms) 
+14:28:35   ├─ /game/index.html (+5ms) 
+14:28:35   ├─ /history/index.html (+7ms) 
+14:28:35   ├─ /history/project-history/index.html (+9ms) 
+14:28:35   ├─ /learn/index.html (+61ms) 
+14:28:35   ├─ /learn/ai-cabino/index.html (+10ms) 
+14:28:35   ├─ /learn/ai-castor/index.html (+7ms) 
+14:28:35   ├─ /learn/ai-cortex/index.html (+5ms) 
+14:28:35   ├─ /learn/ai-econo/index.html (+4ms) 
+14:28:35   ├─ /learn/ai-maxima/index.html (+7ms) 
+14:28:35   ├─ /learn/ai-nicowar/index.html (+4ms) 
+14:28:35   ├─ /learn/ai-numbi/index.html (+4ms) 
+14:28:35   ├─ /learn/ai-warrush/index.html (+7ms) 
+14:28:35   ├─ /learn/browser-and-multiplayer/index.html (+8ms) 
+14:28:35   ├─ /learn/buildings-and-services/index.html (+9ms) 
+14:28:35   ├─ /learn/choosing-an-ai/index.html (+6ms) 
+14:28:35   ├─ /learn/controls-and-hud/index.html (+5ms) 
+14:28:35   ├─ /learn/defending-your-colony/index.html (+4ms) 
+14:28:35   ├─ /learn/economy-and-expansion/index.html (+4ms) 
+14:28:35   ├─ /learn/exploration-and-movement/index.html (+4ms) 
+14:28:35   ├─ /learn/fruit-and-conversion/index.html (+6ms) 
+14:28:35   ├─ /learn/getting-started/index.html (+8ms) 
+14:28:35   ├─ /learn/jobs-and-flags/index.html (+3ms) 
+14:28:35   ├─ /learn/organizing-an-attack/index.html (+6ms) 
+14:28:35   ├─ /learn/population-and-production/index.html (+4ms) 
+14:28:35   ├─ /learn/recovering-your-colony/index.html (+8ms) 
+14:28:35   ├─ /learn/reference-buildings/index.html (+3ms) 
+14:28:35   ├─ /learn/reference-controls/index.html (+4ms) 
+14:28:36   ├─ /learn/reference-resources/index.html (+4ms) 
+14:28:36   ├─ /learn/reference-units/index.html (+4ms) 
+14:28:36   ├─ /learn/resources-and-hauling/index.html (+3ms) 
+14:28:36   ├─ /learn/sustainable-food/index.html (+3ms) 
+14:28:36   ├─ /learn/training-and-upgrades/index.html (+3ms) 
+14:28:36   ├─ /learn/victory-and-rules/index.html (+4ms) 
+14:28:36   ├─ /news/index.html (+6ms) 
+14:28:36   ├─ /news/browser-development/index.html (+4ms) 
+14:28:36   ├─ /privacy/index.html (+5ms) 
+14:28:36   ├─ /search/index.html (+4ms) 
+14:28:36   ├─ /index.html (+5ms) 
+14:28:36 ✓ Completed in 499ms.
+
+14:28:36 [build] ✓ Completed in 1.62s.
+14:28:36 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+14:28:36 [build] 49 page(s) built in 3.86s
+14:28:36 [build] Complete!
+Glob2 design system: 820dabb730df463e2867d8ee5285769e4efd7b0c
+14:30:06 [vite] Re-optimizing dependencies because vite config has changed
+14:30:08 [content] Syncing content
+14:30:08 [content] Synced content
+14:30:08 [types] Generated 1.98s
+14:30:08 [build] output: "static"
+14:30:08 [build] mode: "static"
+14:30:08 [build] directory: /home/bradley/glob2-online-website/artifacts/downloads/populated-aONFxG/dist/
+14:30:08 [build] Collecting build info...
+14:30:08 [build] ✓ Completed in 2.04s.
+14:30:08 [build] Building static entrypoints...
+14:30:09 [vite] ✓ built in 1.04s
+14:30:10 [vite] ✓ built in 1.26s
+14:30:10 [build] Rearranging server assets...
+
+ generating static routes 
+14:30:10   ├─ /404.html (+28ms) 
+14:30:10   ├─ /archive/index.html (+9ms) 
+14:30:10   ├─ /archive/legacy-strategy/index.html (+19ms) 
+14:30:10   ├─ /archive/legacy-translations/index.html (+40ms) 
+14:30:10   ├─ /community/index.html (+7ms) 
+14:30:10   ├─ /competition/index.html (+8ms) 
+14:30:10   ├─ /credits/index.html (+7ms) 
+14:30:10   ├─ /design/colony/index.html (+10ms) 
+14:30:10   ├─ /design/field-guide/index.html (+7ms) 
+14:30:10   ├─ /downloads/index.html (+12ms) 
+14:30:10   ├─ /events/index.html (+6ms) 
+14:30:10   ├─ /game/index.html (+6ms) 
+14:30:10   ├─ /history/index.html (+6ms) 
+14:30:10   ├─ /history/project-history/index.html (+4ms) 
+14:30:10   ├─ /learn/index.html (+10ms) 
+14:30:10   ├─ /learn/ai-cabino/index.html (+11ms) 
+14:30:11   ├─ /learn/ai-castor/index.html (+5ms) 
+14:30:11   ├─ /learn/ai-cortex/index.html (+6ms) 
+14:30:11   ├─ /learn/ai-econo/index.html (+5ms) 
+14:30:11   ├─ /learn/ai-maxima/index.html (+4ms) 
+14:30:11   ├─ /learn/ai-nicowar/index.html (+5ms) 
+14:30:11   ├─ /learn/ai-numbi/index.html (+4ms) 
+14:30:11   ├─ /learn/ai-warrush/index.html (+4ms) 
+14:30:11   ├─ /learn/browser-and-multiplayer/index.html (+4ms) 
+14:30:11   ├─ /learn/buildings-and-services/index.html (+5ms) 
+14:30:11   ├─ /learn/choosing-an-ai/index.html (+4ms) 
+14:30:11   ├─ /learn/controls-and-hud/index.html (+6ms) 
+14:30:11   ├─ /learn/defending-your-colony/index.html (+5ms) 
+14:30:11   ├─ /learn/economy-and-expansion/index.html (+4ms) 
+14:30:11   ├─ /learn/exploration-and-movement/index.html (+4ms) 
+14:30:11   ├─ /learn/fruit-and-conversion/index.html (+6ms) 
+14:30:11   ├─ /learn/getting-started/index.html (+5ms) 
+14:30:11   ├─ /learn/jobs-and-flags/index.html (+7ms) 
+14:30:11   ├─ /learn/organizing-an-attack/index.html (+8ms) 
+14:30:11   ├─ /learn/population-and-production/index.html (+6ms) 
+14:30:11   ├─ /learn/recovering-your-colony/index.html (+4ms) 
+14:30:11   ├─ /learn/reference-buildings/index.html (+5ms) 
+14:30:11   ├─ /learn/reference-controls/index.html (+6ms) 
+14:30:11   ├─ /learn/reference-resources/index.html (+5ms) 
+14:30:11   ├─ /learn/reference-units/index.html (+5ms) 
+14:30:11   ├─ /learn/resources-and-hauling/index.html (+4ms) 
+14:30:11   ├─ /learn/sustainable-food/index.html (+4ms) 
+14:30:11   ├─ /learn/training-and-upgrades/index.html (+5ms) 
+14:30:11   ├─ /learn/victory-and-rules/index.html (+4ms) 
+14:30:11   ├─ /news/index.html (+7ms) 
+14:30:11   ├─ /news/browser-development/index.html (+8ms) 
+14:30:11   ├─ /privacy/index.html (+5ms) 
+14:30:11   ├─ /search/index.html (+5ms) 
+14:30:11   ├─ /index.html (+6ms) 
+14:30:11 ✓ Completed in 460ms.
+
+14:30:11 [build] ✓ Completed in 2.87s.
+14:30:11 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+14:30:11 [build] 49 page(s) built in 4.97s
+14:30:11 [build] Complete!
+Populated downloads: 18 browser/theme/viewport checks passed; fixture: /home/bradley/glob2-online-website/artifacts/downloads/populated-aONFxG
+✔ scripts/test_downloads_render.mjs (105913.05003ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105934.294447

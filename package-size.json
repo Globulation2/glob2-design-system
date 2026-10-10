@@ -1,0 +1,556 @@
+[
+  {
+    "id": "@glob2/design-system@0.1.0",
+    "name": "@glob2/design-system",
+    "version": "0.1.0",
+    "size": 7950873,
+    "unpackedSize": 8115419,
+    "shasum": "2c588cf638af3c47e3f7917807850781d84dd4d9",
+    "integrity": "sha512-QSOR+mHg1PyRzRe2b5Wp/xysdLqgy+yCfxP6Xf+q3jgnHd7yt8Pc8/Ib3GjPWFnXBnYsKcfmFYotYY1MwdUpog==",
+    "filename": "glob2-design-system-0.1.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 35147,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 3075,
+        "mode": 420
+      },
+      {
+        "path": "assets/algae.webp",
+        "size": 7532,
+        "mode": 420
+      },
+      {
+        "path": "assets/apple-touch-icon.png",
+        "size": 17858,
+        "mode": 420
+      },
+      {
+        "path": "assets/clearing-flag.webp",
+        "size": 5940,
+        "mode": 420
+      },
+      {
+        "path": "assets/colony-960.webp",
+        "size": 159776,
+        "mode": 420
+      },
+      {
+        "path": "assets/colony-1600.webp",
+        "size": 385408,
+        "mode": 420
+      },
+      {
+        "path": "assets/colony-loop.mp4",
+        "size": 6831278,
+        "mode": 420
+      },
+      {
+        "path": "assets/colony.webp",
+        "size": 63570,
+        "mode": 420
+      },
+      {
+        "path": "assets/exploration-flag.webp",
+        "size": 5548,
+        "mode": 420
+      },
+      {
+        "path": "assets/explorer-west.webp",
+        "size": 20890,
+        "mode": 420
+      },
+      {
+        "path": "assets/favicon-32.png",
+        "size": 1800,
+        "mode": 420
+      },
+      {
+        "path": "assets/fruit.webp",
+        "size": 7368,
+        "mode": 420
+      },
+      {
+        "path": "assets/glob-64.png",
+        "size": 4518,
+        "mode": 420
+      },
+      {
+        "path": "assets/glob2-sans.woff2",
+        "size": 52088,
+        "mode": 420
+      },
+      {
+        "path": "assets/hospital.webp",
+        "size": 4168,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/adjustments-horizontal.svg",
+        "size": 680,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/alert-triangle.svg",
+        "size": 563,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/building.svg",
+        "size": 610,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/check.svg",
+        "size": 395,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/chevron-down.svg",
+        "size": 377,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/chevron-right.svg",
+        "size": 381,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/coins.svg",
+        "size": 765,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/copy.svg",
+        "size": 634,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/download.svg",
+        "size": 450,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/eye.svg",
+        "size": 532,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/flask.svg",
+        "size": 489,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/folder-open.svg",
+        "size": 551,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/info-circle.svg",
+        "size": 456,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/list-details.svg",
+        "size": 633,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/loader-2.svg",
+        "size": 405,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/manifest.json",
+        "size": 8560,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/map.svg",
+        "size": 436,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/message.svg",
+        "size": 525,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/mountain.svg",
+        "size": 497,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/music.svg",
+        "size": 517,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/palette.svg",
+        "size": 689,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/pencil.svg",
+        "size": 452,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/player-play.svg",
+        "size": 396,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/plus.svg",
+        "size": 400,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/refresh.svg",
+        "size": 475,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/restore.svg",
+        "size": 484,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/robot.svg",
+        "size": 646,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/send.svg",
+        "size": 485,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/settings.svg",
+        "size": 944,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/share.svg",
+        "size": 570,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/shield-check.svg",
+        "size": 502,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/swords.svg",
+        "size": 543,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/trophy.svg",
+        "size": 525,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/upload.svg",
+        "size": 467,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/users.svg",
+        "size": 550,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/wifi-off.svg",
+        "size": 651,
+        "mode": 420
+      },
+      {
+        "path": "assets/icons/x.svg",
+        "size": 367,
+        "mode": 420
+      },
+      {
+        "path": "assets/inn.webp",
+        "size": 6514,
+        "mode": 420
+      },
+      {
+        "path": "assets/LICENSE-DejaVu.txt",
+        "size": 4920,
+        "mode": 420
+      },
+      {
+        "path": "assets/LICENSE-Nunito.txt",
+        "size": 4491,
+        "mode": 420
+      },
+      {
+        "path": "assets/LICENSE-Tabler.txt",
+        "size": 1073,
+        "mode": 420
+      },
+      {
+        "path": "assets/nunito.woff2",
+        "size": 39128,
+        "mode": 420
+      },
+      {
+        "path": "assets/og-colony.jpg",
+        "size": 162558,
+        "mode": 420
+      },
+      {
+        "path": "assets/papyrus.webp",
+        "size": 7490,
+        "mode": 420
+      },
+      {
+        "path": "assets/pool.webp",
+        "size": 3582,
+        "mode": 420
+      },
+      {
+        "path": "assets/provenance.json",
+        "size": 3460,
+        "mode": 420
+      },
+      {
+        "path": "assets/racetrack.webp",
+        "size": 6454,
+        "mode": 420
+      },
+      {
+        "path": "assets/school.webp",
+        "size": 4608,
+        "mode": 420
+      },
+      {
+        "path": "assets/stone.webp",
+        "size": 6148,
+        "mode": 420
+      },
+      {
+        "path": "assets/swarm.webp",
+        "size": 9262,
+        "mode": 420
+      },
+      {
+        "path": "assets/war-flag.webp",
+        "size": 4610,
+        "mode": 420
+      },
+      {
+        "path": "assets/warrior-east.webp",
+        "size": 29468,
+        "mode": 420
+      },
+      {
+        "path": "assets/warrior.webp",
+        "size": 3308,
+        "mode": 420
+      },
+      {
+        "path": "assets/wood.webp",
+        "size": 5596,
+        "mode": 420
+      },
+      {
+        "path": "assets/wordmark-letters.webp",
+        "size": 14870,
+        "mode": 420
+      },
+      {
+        "path": "assets/wordmark-two.webp",
+        "size": 3836,
+        "mode": 420
+      },
+      {
+        "path": "assets/worker-east.webp",
+        "size": 22388,
+        "mode": 420
+      },
+      {
+        "path": "assets/worker-west.webp",
+        "size": 23284,
+        "mode": 420
+      },
+      {
+        "path": "assets/worker.webp",
+        "size": 2778,
+        "mode": 420
+      },
+      {
+        "path": "dist/bootstrap.d.ts",
+        "size": 11,
+        "mode": 420
+      },
+      {
+        "path": "dist/bootstrap.js",
+        "size": 2035,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.d.ts",
+        "size": 224,
+        "mode": 420
+      },
+      {
+        "path": "dist/browser.js",
+        "size": 1854,
+        "mode": 420
+      },
+      {
+        "path": "dist/colony.d.ts",
+        "size": 201,
+        "mode": 420
+      },
+      {
+        "path": "dist/colony.js",
+        "size": 1911,
+        "mode": 420
+      },
+      {
+        "path": "dist/css/base.css",
+        "size": 1967,
+        "mode": 420
+      },
+      {
+        "path": "dist/css/brand.css",
+        "size": 970,
+        "mode": 420
+      },
+      {
+        "path": "dist/css/components.css",
+        "size": 15424,
+        "mode": 420
+      },
+      {
+        "path": "dist/css/fonts.css",
+        "size": 297,
+        "mode": 420
+      },
+      {
+        "path": "dist/css/tokens.css",
+        "size": 5179,
+        "mode": 420
+      },
+      {
+        "path": "dist/icons.d.ts",
+        "size": 7522,
+        "mode": 420
+      },
+      {
+        "path": "dist/icons.js",
+        "size": 6914,
+        "mode": 420
+      },
+      {
+        "path": "dist/react.d.ts",
+        "size": 2519,
+        "mode": 420
+      },
+      {
+        "path": "dist/react.js",
+        "size": 5255,
+        "mode": 420
+      },
+      {
+        "path": "dist/theme.d.ts",
+        "size": 996,
+        "mode": 420
+      },
+      {
+        "path": "dist/theme.js",
+        "size": 5314,
+        "mode": 420
+      },
+      {
+        "path": "dist/tokens.d.ts",
+        "size": 4219,
+        "mode": 420
+      },
+      {
+        "path": "dist/tokens.js",
+        "size": 4264,
+        "mode": 420
+      },
+      {
+        "path": "docs/assets.md",
+        "size": 1619,
+        "mode": 420
+      },
+      {
+        "path": "docs/components.md",
+        "size": 2936,
+        "mode": 420
+      },
+      {
+        "path": "docs/design.md",
+        "size": 1289,
+        "mode": 420
+      },
+      {
+        "path": "docs/downstream.md",
+        "size": 2202,
+        "mode": 420
+      },
+      {
+        "path": "docs/tokens.md",
+        "size": 1607,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 2217,
+        "mode": 420
+      },
+      {
+        "path": "scripts/install.d.mts",
+        "size": 141,
+        "mode": 420
+      },
+      {
+        "path": "scripts/install.mjs",
+        "size": 4033,
+        "mode": 420
+      },
+      {
+        "path": "scripts/node.d.mts",
+        "size": 115,
+        "mode": 420
+      },
+      {
+        "path": "scripts/node.mjs",
+        "size": 808,
+        "mode": 420
+      },
+      {
+        "path": "tokens/dark.json",
+        "size": 12104,
+        "mode": 420
+      },
+      {
+        "path": "tokens/foundation.json",
+        "size": 2676,
+        "mode": 420
+      },
+      {
+        "path": "tokens/light.json",
+        "size": 12421,
+        "mode": 420
+      },
+      {
+        "path": "tokens/web.json",
+        "size": 783,
+        "mode": 420
+      }
+    ],
+    "entryCount": 108,
+    "bundled": []
+  }
+]

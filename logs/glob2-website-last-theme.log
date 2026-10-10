@@ -1,0 +1,32 @@
+
+Running 9 tests using 9 workers
+
+(node:3230931) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230903) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230969) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230917) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230902) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230910) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3230919) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  4 [chromium] › tests/theme.spec.ts:21:1 › theme control cycles system, light, dark with keyboard and refreshes local preference on return (1.7s)
+  ✓  3 [chromium] › tests/theme.spec.ts:4:3 › saved light overrides the opposite OS theme before paint and across navigation (2.3s)
+  ✓  9 [chromium] › tests/theme.spec.ts:4:3 › saved dark overrides the opposite OS theme before paint and across navigation (2.2s)
+  ✓  1 [webkit] › tests/theme.spec.ts:4:3 › saved dark overrides the opposite OS theme before paint and across navigation (4.5s)
+  ✓  6 [webkit] › tests/theme.spec.ts:4:3 › saved light overrides the opposite OS theme before paint and across navigation (4.6s)
+  ✓  5 [webkit] › tests/theme.spec.ts:21:1 › theme control cycles system, light, dark with keyboard and refreshes local preference on return (5.5s)
+  ✓  2 [firefox] › tests/theme.spec.ts:4:3 › saved dark overrides the opposite OS theme before paint and across navigation (5.4s)
+  ✓  7 [firefox] › tests/theme.spec.ts:21:1 › theme control cycles system, light, dark with keyboard and refreshes local preference on return (5.1s)
+  ✓  8 [firefox] › tests/theme.spec.ts:4:3 › saved light overrides the opposite OS theme before paint and across navigation (5.0s)
+
+  9 passed (17.7s)

@@ -1,0 +1,148 @@
+[WebServer] (node:3147901) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 4 tests using 1 worker
+
+(node:3149533) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/a11y.spec.ts:146:1 › a file that is not a map is refused on the form, before any map exists (8.3s)
+(node:3150719) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (1.1s)
+(node:3151355) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes (17.0s)
+(node:3152955) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  4 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone (10.1s)
+
+
+  1) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/a11y.spec.ts:146:1 › a file that is not a map is refused on the form, before any map exists 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#map-file-error')
+    Expected substring: "This file isn't a Globulation 2 map"
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('#map-file-error') with timeout 5000ms
+      - waiting for locator('#map-file-error')
+        14 × locator resolved to <p role="alert" id="map-file-error" class="field-error">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      154 |   await expect(page.getByLabel('Title')).toHaveValue('holiday');
+      155 |   await page.getByRole('button', { name: 'Upload' }).click();
+    > 156 |   await expect(page.locator('#map-file-error')).toContainText(
+          |                                                 ^
+      157 |     "This file isn't a Globulation 2 map",
+      158 |   );
+      159 |   await expect(page).toHaveURL(/\/maps\/new$/);
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/a11y.spec.ts:156:49
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: ENOENT: no such file or directory, open '/home/bradley/.codex/data/gfx/inn0b0.png'
+
+      124 |   // Portable runs use stock art. Local visual evidence may use a generated
+      125 |   // sprite without committing provider output as a permanent test fixture.
+    > 126 |   const image = readFileSync(
+          |                 ^
+      127 |     resolve(process.env['BUILDING_PREVIEW_IMAGE'] ?? '../../../data/gfx/inn0b0.png'),
+      128 |   );
+      129 |   await page.route('**/api/v1/**/assets/**', (route) =>
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:126:17
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Submission response lost')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Submission response lost') with timeout 5000ms
+      - waiting for getByText('Submission response lost')
+
+
+      247 |     .fill('Give every building three workers.');
+      248 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 249 |   await expect(page.getByText('Submission response lost')).toBeVisible();
+          |                                                            ^
+      250 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      251 |   await expect.poll(() => submissions.length).toBe(2);
+      252 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/aiStudio.spec.ts:249:60
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/generator-studio\/[0-9a-f-]+$/
+    Received string:  "http://127.0.0.1:4281/generator-studio"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        13 × locator resolved to <html lang="en" dir="ltr">…</html>
+           - unexpected value "http://127.0.0.1:4281/generator-studio"
+
+
+      26 |   await page.getByText('Settings & references', { exact: true }).click();
+      27 |   await page.getByRole('button', { name: 'Use working starter' }).click();
+    > 28 |   await expect(page).toHaveURL(/\/generator-studio\/[0-9a-f-]+$/);
+         |                      ^
+      29 |   const projectId = page.url().split('/').at(-1);
+      30 |   const url = `/api/v1/generator-studio/projects/${projectId}`;
+      31 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/generator-studio.spec.ts:28:22
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4 failed
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/a11y.spec.ts:146:1 › a file that is not a map is refused on the form, before any map exists 
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 

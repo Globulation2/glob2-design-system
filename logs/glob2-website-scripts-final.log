@@ -1,0 +1,48 @@
+✔ complete platform matrix and sources validate (25.800248ms)
+✔ rejects missing package (3.151521ms)
+✔ rejects duplicate identity (1.340711ms)
+✔ rejects mixed source (1.053993ms)
+✔ rejects wrong version (2.067967ms)
+✔ rejects expiring CI URL (1.746699ms)
+✔ rejects wrong extension (0.975274ms)
+✔ rejects beta store (3.26246ms)
+✔ rejects unsafe store (2.771033ms)
+✔ rejects wrong Android app (3.16327ms)
+✔ rejects non-archive source (1.936657ms)
+✔ rejects store URL credentials (0.797295ms)
+✔ rejects duplicate Android app query (1.255422ms)
+✔ rejects unsafe filename (1.542251ms)
+✔ paginates past 200 evidence releases (64.159857ms)
+✔ ignores stable releases without qualified manifest and drafts (0.629106ms)
+✔ rejects immutable tag revision mismatch (4.057185ms)
+✔ verifies older assets by streaming final bytes (7.465963ms)
+✔ rejects mismatched GitHub digest (0.491527ms)
+✔ rejects missing and wrong-sized release assets (3.2938ms)
+✔ atomically updates once and preserves snapshot on every failure (142.558055ms)
+✔ editorial channels require a release binding and production app identities (6.670308ms)
+✔ oversized metadata is bounded before parsing (12.874409ms)
+✔ streamed package corruption is rejected (1.204463ms)
+✔ release CLI recovers a required-page propagation delay and preserves the intentional404 check (2505.878666ms)
+✔ release CLI rejects successful invalid HTML without retrying (546.312779ms)
+✔ release CLI rejects an index that would silently skip all chapter checks (337.499491ms)
+✔ manifest rejects untrusted hosts, traversal, duplicate IDs and missing posters (2.087887ms)
+✔ changed capture bytes are rejected (6.846717ms)
+✔ release smoke tolerates temporary Hosting propagation but verifies recovered bytes (160.286304ms)
+✔ release smoke bounds retries and preserves permanent errors (15.010035ms)
+✔ release smoke does not retry corrupted successful responses (11.548818ms)
+Staged 1 checked guide assets
+Staged 1 checked guide assets
+✔ staging verifies downloaded bytes, reuses checked cache, and fails closed on unavailable or corrupt assets (111.351351ms)
+✔ sync check detects upstream drift and missing sources without writing (1089.41983ms)
+✔ empty current ratings remain healthy, with exact stale boundary (9.742528ms)
+✔ malformed, unsupported and future snapshots fail (1.007253ms)
+✔ canonical app metadata detects a hostname regression (0.695786ms)
+✔ HTTP failures, redirects and bounded requests are enforced (142.384526ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4034.739784

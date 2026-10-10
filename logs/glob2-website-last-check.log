@@ -1,0 +1,14 @@
+
+> glob2-online-website@0.1.0 check
+> astro check
+
+Glob2 design system: acd277710acfebf528e1fc6f653d55fdf75de4b2
+15:01:10 [content] Syncing content
+15:01:10 [content] Synced content
+15:01:10 [types] Generated 1.35s
+15:01:10 [check] Getting diagnostics for Astro files in /home/bradley/glob2-online-website...
+Result (66 files): 
+- 0 errors
+- 0 warnings
+- 0 hints
+

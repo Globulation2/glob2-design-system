@@ -1,0 +1,76 @@
+[WebServer] (node:3159848) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:3161305) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (676ms)
+(node:3161496) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit (7.9s)
+(node:3162384) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version (10.4s)
+
+
+  1) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: ENOENT: no such file or directory, open '/home/bradley/.codex/data/gfx/inn0b0.png'
+
+      124 |   // Portable runs use stock art. Local visual evidence may use a generated
+      125 |   // sprite without committing provider output as a permanent test fixture.
+    > 126 |   const image = readFileSync(
+          |                 ^
+      127 |     resolve(process.env['BUILDING_PREVIEW_IMAGE'] ?? '../../../data/gfx/inn0b0.png'),
+      128 |   );
+      129 |   await page.route('**/api/v1/**/assets/**', (route) =>
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:126:17
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator: getByRole('button', { name: 'Play', exact: true })
+    Expected: in viewport
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('button', { name: 'Play', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Play', exact: true })
+
+
+      185 |       .first()
+      186 |       .click();
+    > 187 |   await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeInViewport();
+          |                                                                         ^
+      188 |   const seek = page.getByRole('slider', { name: 'Playback position' });
+      189 |   await seek.scrollIntoViewIfNeeded();
+      190 |   await expect(seek).toBeInViewport();
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/music-studio.spec.ts:187:73
+
+    Error Context: artifacts/design-system/baseline/artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    artifacts/design-system/baseline/artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace artifacts/design-system/baseline/artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [desktop] › artifacts/design-system/baseline/platform/apps/web/e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+  1 passed (46.8s)

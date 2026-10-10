@@ -1,0 +1,1220 @@
+
+> @glob2/web@0.1.0 e2e
+> playwright test -c e2e/playwright.config.ts smoke.spec.ts a11y.spec.ts workspace.spec.ts libraries.spec.ts studio.spec.ts
+
+[WebServer] (node:3084175) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 118 tests using 1 worker
+
+(node:3085434) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) (1.7m)
+  ✓    2 [desktop] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) (1.7m)
+  ✓    3 [desktop] › e2e/a11y.spec.ts:78:1 › the match page’s connection table fits phones as cards (1.8s)
+  ✓    4 [desktop] › e2e/a11y.spec.ts:112:1 › sign-up problems stay on the form with the username kept (4.1s)
+  ✘    5 [desktop] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists (6.6s)
+(node:3108063) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘    6 [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (7.6s)
+(node:3109479) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘    7 [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes (13.6s)
+(node:3111823) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    8 [desktop] › e2e/buildingStudio.spec.ts:6:1 › authors a private family with revision-safe saving and portable export (11.7s)
+  ✓    9 [desktop] › e2e/buildingStudio.spec.ts:91:1 › protects pending JSON on Back and restores it after Forward (2.9s)
+  ✘   10 [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone (7.0s)
+(node:3113629) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   11 [desktop] › e2e/libraries.spec.ts:102:3 › /maps shares responsive gallery, feedback, and accessible controls (33.1s)
+  ✓   12 [desktop] › e2e/libraries.spec.ts:102:3 › /sets shares responsive gallery, feedback, and accessible controls (35.2s)
+  ✓   13 [desktop] › e2e/libraries.spec.ts:102:3 › /ais shares responsive gallery, feedback, and accessible controls (33.1s)
+  ✓   14 [desktop] › e2e/libraries.spec.ts:102:3 › /buildings shares responsive gallery, feedback, and accessible controls (26.3s)
+  ✓   15 [desktop] › e2e/libraries.spec.ts:102:3 › /music shares responsive gallery, feedback, and accessible controls (27.3s)
+  ✘   16 [desktop] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls (40.0s)
+(node:3138485) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   17 [desktop] › e2e/libraries.spec.ts:230:1 › music filters apply immediately, Enter submits multiple text fields, and reset preserves My music (6.4s)
+  ✓   18 [desktop] › e2e/libraries.spec.ts:272:3 › /maps trims live search, flushes Enter, and clears filtered results (4.9s)
+  ✓   19 [desktop] › e2e/libraries.spec.ts:272:3 › /sets trims live search, flushes Enter, and clears filtered results (7.1s)
+  ✓   20 [desktop] › e2e/libraries.spec.ts:272:3 › /ais trims live search, flushes Enter, and clears filtered results (4.5s)
+  ✓   21 [desktop] › e2e/libraries.spec.ts:272:3 › /buildings trims live search, flushes Enter, and clears filtered results (4.3s)
+  ✓   22 [desktop] › e2e/libraries.spec.ts:272:3 › /music trims live search, flushes Enter, and clears filtered results (4.7s)
+  ✘   23 [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit (8.2s)
+(node:3142374) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   24 [desktop] › e2e/smoke.spec.ts:101:1 › home shows the colony, ways in, live stats, ladders, maps and matches (19.0s)
+  ✘   25 [desktop] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony (4.5s)
+(node:3144255) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   26 [desktop] › e2e/smoke.spec.ts:159:1 › missing pages and items have a heading and a title (4.0s)
+  ✓   27 [desktop] › e2e/smoke.spec.ts:167:1 › join with code opens the invite page; bad codes explain themselves (2.9s)
+  ✓   28 [desktop] › e2e/smoke.spec.ts:180:1 › server-rendered invite and sign-in pages share the look (23.4s)
+  ✘   29 [desktop] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version (7.6s)
+(node:3147549) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   30 [desktop] › e2e/smoke.spec.ts:213:1 › player profile shows ratings, graph, aggregates and matches (31.2s)
+  ✓   31 [desktop] › e2e/smoke.spec.ts:231:1 › match page shows players, charts, verification and the replay (37.5s)
+  ✓   32 [desktop] › e2e/smoke.spec.ts:259:1 › recent matches list filters by queue (15.3s)
+  ✓   33 [desktop] › e2e/smoke.spec.ts:265:1 › map catalog, map page and signed-in like (60.0s)
+  ✓   34 [desktop] › e2e/smoke.spec.ts:305:1 › moderation pages for administrators only (1.4m)
+  ✓   35 [desktop] › e2e/smoke.spec.ts:359:1 › account page signed out and signed in (8.9s)
+  ✓   36 [desktop] › e2e/smoke.spec.ts:372:1 › the theme toggle cycles system, light and dark and is remembered (3.4s)
+  ✓   37 [desktop] › e2e/smoke.spec.ts:396:1 › keyboard: skip link first, visible focus, focus moves to new pages (2.5s)
+  ✓   38 [desktop] › e2e/smoke.spec.ts:413:1 › the colony moves, can be paused, and keeps still for reduced motion (2.9s)
+  ✓   39 [desktop] › e2e/smoke.spec.ts:440:1 › pause keeps the resume control when a pending play is cancelled (2.3s)
+  -   40 [desktop] › e2e/smoke.spec.ts:471:1 › phones: no sideways scrolling at 320 and 430 px, 44 px touch targets
+  -   41 [desktop] › e2e/smoke.spec.ts:520:1 › watch in browser opens the replay in the browser game
+  ✘   42 [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (7.1s)
+(node:3168477) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   43 [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn (7.5s)
+(node:3169262) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   44 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 320px light (5.4s)
+  ✓   45 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 320px dark (5.4s)
+  ✓   46 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 390px light (4.9s)
+  ✓   47 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 390px dark (4.5s)
+  ✓   48 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 900px light (4.8s)
+  ✓   49 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 900px dark (4.3s)
+  ✘   50 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px light (8.7s)
+(node:3174520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   51 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px dark (9.9s)
+(node:3176185) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   52 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light (10.4s)
+(node:3177590) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   53 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark (11.7s)
+(node:3179204) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   54 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px light (10.6s)
+(node:3180436) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   55 [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px dark (9.0s)
+(node:3181211) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   56 [desktop] › e2e/workspace.spec.ts:64:1 › drawer closes across breakpoints without trapping focus (2.3s)
+  ✘   57 [desktop] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible (11.0s)
+(node:3182364) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   58 [desktop] › e2e/workspace.spec.ts:84:3 › /map-studio keeps the shared sidebar visible (1.5s)
+  ✓   59 [desktop] › e2e/workspace.spec.ts:84:3 › /music-studio keeps the shared sidebar visible (1.4s)
+(node:3182623) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   60 [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) (2.2m)
+(node:3190216) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   61 [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) (2.1m)
+(node:3196174) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   62 [phone] › e2e/a11y.spec.ts:78:1 › the match page’s connection table fits phones as cards (5.0s)
+  ✓   63 [phone] › e2e/a11y.spec.ts:112:1 › sign-up problems stay on the form with the username kept (7.7s)
+  ✘   64 [phone] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists (7.0s)
+(node:3197371) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   65 [phone] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (9.8s)
+(node:3198101) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘   66 [phone] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes (10.9s)
+(node:3198856) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   67 [phone] › e2e/buildingStudio.spec.ts:6:1 › authors a private family with revision-safe saving and portable export (18.3s)
+  ✓   68 [phone] › e2e/buildingStudio.spec.ts:91:1 › protects pending JSON on Back and restores it after Forward (4.2s)
+  ✘   69 [phone] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone (7.7s)
+(node:3201272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   70 [phone] › e2e/libraries.spec.ts:102:3 › /maps shares responsive gallery, feedback, and accessible controls (34.4s)
+  ✓   71 [phone] › e2e/libraries.spec.ts:102:3 › /sets shares responsive gallery, feedback, and accessible controls (24.8s)
+  ✓   72 [phone] › e2e/libraries.spec.ts:102:3 › /ais shares responsive gallery, feedback, and accessible controls (26.1s)
+  ✓   73 [phone] › e2e/libraries.spec.ts:102:3 › /buildings shares responsive gallery, feedback, and accessible controls (31.1s)
+  ✓   74 [phone] › e2e/libraries.spec.ts:102:3 › /music shares responsive gallery, feedback, and accessible controls (28.2s)
+  ✓   75 [phone] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls (27.8s)
+  ✓   76 [phone] › e2e/libraries.spec.ts:230:1 › music filters apply immediately, Enter submits multiple text fields, and reset preserves My music (2.7s)
+  ✓   77 [phone] › e2e/libraries.spec.ts:272:3 › /maps trims live search, flushes Enter, and clears filtered results (4.3s)
+  ✓   78 [phone] › e2e/libraries.spec.ts:272:3 › /sets trims live search, flushes Enter, and clears filtered results (4.5s)
+  ✓   79 [phone] › e2e/libraries.spec.ts:272:3 › /ais trims live search, flushes Enter, and clears filtered results (5.6s)
+  ✓   80 [phone] › e2e/libraries.spec.ts:272:3 › /buildings trims live search, flushes Enter, and clears filtered results (5.4s)
+  ✓   81 [phone] › e2e/libraries.spec.ts:272:3 › /music trims live search, flushes Enter, and clears filtered results (4.3s)
+  ✘   82 [phone] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit (8.2s)
+(node:3215529) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   83 [phone] › e2e/smoke.spec.ts:101:1 › home shows the colony, ways in, live stats, ladders, maps and matches (18.2s)
+  ✘   84 [phone] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony (2.8s)
+(node:3216762) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   85 [phone] › e2e/smoke.spec.ts:159:1 › missing pages and items have a heading and a title (2.0s)
+  ✓   86 [phone] › e2e/smoke.spec.ts:167:1 › join with code opens the invite page; bad codes explain themselves (2.3s)
+  ✓   87 [phone] › e2e/smoke.spec.ts:180:1 › server-rendered invite and sign-in pages share the look (16.0s)
+  ✘   88 [phone] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version (6.5s)
+(node:3218209) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   89 [phone] › e2e/smoke.spec.ts:213:1 › player profile shows ratings, graph, aggregates and matches (17.6s)
+  ✓   90 [phone] › e2e/smoke.spec.ts:231:1 › match page shows players, charts, verification and the replay (20.5s)
+  ✓   91 [phone] › e2e/smoke.spec.ts:259:1 › recent matches list filters by queue (7.8s)
+  ✓   92 [phone] › e2e/smoke.spec.ts:265:1 › map catalog, map page and signed-in like (38.9s)
+  ✓   93 [phone] › e2e/smoke.spec.ts:305:1 › moderation pages for administrators only (1.1m)
+  ✓   94 [phone] › e2e/smoke.spec.ts:359:1 › account page signed out and signed in (5.8s)
+  ✓   95 [phone] › e2e/smoke.spec.ts:372:1 › the theme toggle cycles system, light and dark and is remembered (2.0s)
+  -   96 [phone] › e2e/smoke.spec.ts:396:1 › keyboard: skip link first, visible focus, focus moves to new pages
+  ✓   97 [phone] › e2e/smoke.spec.ts:413:1 › the colony moves, can be paused, and keeps still for reduced motion (1.4s)
+  ✓   98 [phone] › e2e/smoke.spec.ts:440:1 › pause keeps the resume control when a pending play is cancelled (1.1s)
+  ✓   99 [phone] › e2e/smoke.spec.ts:471:1 › phones: no sideways scrolling at 320 and 430 px, 44 px touch targets (26.5s)
+  -  100 [phone] › e2e/smoke.spec.ts:520:1 › watch in browser opens the replay in the browser game
+  ✓  101 [phone] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (8.5s)
+  ✘  102 [phone] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn (6.2s)
+(node:3239494) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  -  103 [phone] › e2e/workspace.spec.ts:8:5 › workspace 320px light
+  -  104 [phone] › e2e/workspace.spec.ts:8:5 › workspace 320px dark
+  -  105 [phone] › e2e/workspace.spec.ts:8:5 › workspace 390px light
+  -  106 [phone] › e2e/workspace.spec.ts:8:5 › workspace 390px dark
+  -  107 [phone] › e2e/workspace.spec.ts:8:5 › workspace 900px light
+  -  108 [phone] › e2e/workspace.spec.ts:8:5 › workspace 900px dark
+  -  109 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1100px light
+  -  110 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1100px dark
+  -  111 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1440px light
+  -  112 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark
+  -  113 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1920px light
+  -  114 [phone] › e2e/workspace.spec.ts:8:5 › workspace 1920px dark
+  -  115 [phone] › e2e/workspace.spec.ts:64:1 › drawer closes across breakpoints without trapping focus
+  ✘  116 [phone] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible (7.9s)
+(node:3240078) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  117 [phone] › e2e/workspace.spec.ts:84:3 › /map-studio keeps the shared sidebar visible (5.4s)
+(node:3240405) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  118 [phone] › e2e/workspace.spec.ts:84:3 › /music-studio keeps the shared sidebar visible (5.5s)
+
+
+  1) [desktop] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#map-file-error')
+    Expected substring: "This file isn't a Globulation 2 map"
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('#map-file-error') with timeout 5000ms
+      - waiting for locator('#map-file-error')
+        14 × locator resolved to <p role="alert" id="map-file-error" class="field-error">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      156 |   await expect(page.getByLabel('Title')).toHaveValue('holiday');
+      157 |   await page.getByRole('button', { name: 'Upload' }).click();
+    > 158 |   await expect(page.locator('#map-file-error')).toContainText(
+          |                                                 ^
+      159 |     "This file isn't a Globulation 2 map",
+      160 |   );
+      161 |   await expect(page).toHaveURL(/\/maps\/new$/);
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:158:49
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      138 |   await prompt.fill('Make only the hospital cheaper.');
+      139 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 140 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      141 |   await expect(prompt).toHaveValue('Make only the hospital cheaper.');
+      142 |   await page.getByText('Reference images', { exact: true }).first().click();
+      143 |   await page
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/ai-building-studio.spec.ts:140:41
+
+    Error Context: ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Submission response lost')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Submission response lost') with timeout 5000ms
+      - waiting for getByText('Submission response lost')
+
+
+      247 |     .fill('Give every building three workers.');
+      248 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 249 |   await expect(page.getByText('Submission response lost')).toBeVisible();
+          |                                                            ^
+      250 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      251 |   await expect.poll(() => submissions.length).toBe(2);
+      252 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/aiStudio.spec.ts:249:60
+
+    Error Context: ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/generator-studio\/[0-9a-f-]+$/
+    Received string:  "http://127.0.0.1:4280/generator-studio"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        13 × locator resolved to <html lang="en" dir="ltr">…</html>
+           - unexpected value "http://127.0.0.1:4280/generator-studio"
+
+
+      26 |   await page.getByText('Settings & references', { exact: true }).click();
+      27 |   await page.getByRole('button', { name: 'Use working starter' }).click();
+    > 28 |   await expect(page).toHaveURL(/\/generator-studio\/[0-9a-f-]+$/);
+         |                      ^
+      29 |   const projectId = page.url().split('/').at(-1);
+      30 |   const url = `/api/v1/generator-studio/projects/${projectId}`;
+      31 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/generator-studio.spec.ts:28:22
+
+    Error Context: ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('.library-page .empty')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" locator('.library-page .empty') with timeout 5000ms
+      - waiting for locator('.library-page .empty')
+
+
+      206 |           document.documentElement.dataset.theme = theme;
+      207 |         }, theme);
+    > 208 |         if (state === 'empty') await expect(page.locator('.library-page .empty')).toBeVisible();
+          |                                                                                   ^
+      209 |         if (state === 'loading')
+      210 |           await expect(page.locator('.library-feedback .loading')).toBeVisible();
+      211 |         if (state === 'error')
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/libraries.spec.ts:208:83
+
+    Error Context: ../../../artifacts/web-app/test-results/libraries--skins-shares-re-f7765-ack-and-accessible-controls-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/libraries--skins-shares-re-f7765-ack-and-accessible-controls-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/libraries--skins-shares-re-f7765-ack-and-accessible-controls-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator: getByRole('button', { name: 'Play', exact: true })
+    Expected: in viewport
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('button', { name: 'Play', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Play', exact: true })
+
+
+      185 |       .first()
+      186 |       .click();
+    > 187 |   await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeInViewport();
+          |                                                                         ^
+      188 |   const seek = page.getByRole('slider', { name: 'Playback position' });
+      189 |   await seek.scrollIntoViewIfNeeded();
+      190 |   await expect(seek).toBeInViewport();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/music-studio.spec.ts:187:73
+
+    Error Context: ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [desktop] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      149 |       `(() => { const el = document.querySelector('[data-hit-probe]'); const hit = document.elementFromPoint(${x}, ${y}); el.removeAttribute('data-hit-probe'); return Boolean(hit && el.contains(hit)); })()`,
+      150 |     );
+    > 151 |     expect(topmost).toBe(true);
+          |                     ^
+      152 |   }
+      153 |   if (mobile) await navigation.getByRole('button', { name: 'Close navigation' }).click();
+      154 |   const card = await page.locator('.hero-card').boundingBox();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:151:21
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [desktop] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version ─────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('main')
+    Expected substring: "Nicowar"
+    Received string:    "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('main') with timeout 5000ms
+      - waiting for locator('main')
+        13 × locator resolved to <main id="main" tabindex="-1">…</main>
+           - unexpected value "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+
+
+      204 |   await expect(rows.first()).toContainText('Kestrel');
+      205 |   await expect(page.locator('main')).not.toContainText('Spammer');
+    > 206 |   await expect(page.locator('main')).toContainText('Nicowar');
+          |                                      ^
+      207 |   await expect(page.locator('main')).toContainText('older version');
+      208 |   await page.getByLabel('Hide provisional ratings').check();
+      209 |   await expect(page.locator('main')).not.toContainText('Ana_M');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:206:38
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone ────────────
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 0.6
+    Received:    0.5872303748231966
+
+      212 |         const log = await page.getByRole('log').boundingBox();
+      213 |         if (!log || !pane) throw new Error('Conversation layout missing');
+    > 214 |         expect(log.height / pane.height).toBeGreaterThanOrEqual(0.6);
+          |                                          ^
+      215 |         const viewer = await page.locator('.ms-viewer-wrap').boundingBox();
+      216 |         const image = await page.locator('.ms-map-image').boundingBox();
+      217 |         if (!image || !viewer) throw new Error('Map image missing');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/studio.spec.ts:214:42
+
+    Error Context: ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/studio-conversation-and-canvas-fit-desktop-and-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      179 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      180 |   expect(writes).toHaveLength(1);
+    > 181 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      182 |   const prompt = page.getByLabel('Describe your creation or ask a question');
+      183 |   await expect(prompt).toBeEnabled();
+      184 |   await expect(prompt).toHaveValue('Make only the marsh faster.');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/terrain-studio.spec.ts:181:41
+
+    Error Context: ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px light ───────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        14 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1100px-light-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1100px-light-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1100px-light-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px dark ────────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        13 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1100px-dark-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1100px-dark-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1100px-dark-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light ───────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        13 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1440px-light-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark ────────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        13 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1440px-dark-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px light ───────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        13 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1920px-light-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1920px-light-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1920px-light-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px dark ────────────────────────────────
+
+    Error: expect(locator).toHaveCSS(expected) failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: "72px"
+    Received: "240px"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCSS" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        14 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "240px"
+
+
+      54 |       } else {
+      55 |         await page.getByRole('button', { name: 'Collapse sidebar' }).click();
+    > 56 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '72px');
+         |                                                    ^
+      57 |         await page.getByRole('button', { name: 'Open navigation', exact: true }).click();
+      58 |         await expect(page.locator('.app-sidebar')).toHaveCSS('width', '240px');
+      59 |       }
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:56:52
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace-workspace-1920px-dark-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace-workspace-1920px-dark-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace-workspace-1920px-dark-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [desktop] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible ─────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('status').first()
+    Expected: "Ready"
+    Received: "Sign in to save · Changes not applied"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('status').first() with timeout 5000ms
+      - waiting for getByRole('status').first()
+        14 × locator resolved to <span role="status" class="skin-save-status">Sign in to save · Changes not applied</span>
+           - unexpected value "Sign in to save · Changes not applied"
+
+
+       98 |     );
+       99 |     if (path === '/skins') {
+    > 100 |       await expect(page.getByRole('status').first()).toHaveText('Ready');
+          |                                                      ^
+      101 |       await page.getByLabel('Skin name').fill('Sidebar recovery');
+      102 |     }
+      103 |     await sidebar.getByRole('link', { name: 'Maps', exact: true }).click();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:100:54
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) ──────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: frame.evaluate: Test timeout of 120000ms exceeded.
+
+      19 |
+      20 | async function axe(page: Page) {
+    > 21 |   const results = await new AxeBuilder({ page }).analyze();
+         |                   ^
+      22 |   return results.violations.map((v) => ({
+      23 |     id: v.id,
+      24 |     impact: v.impact,
+        at AxeBuilder.runPartialRecursive (/home/bradley/.codex/worktrees/4e42/glob2/platform/node_modules/@axe-core/playwright/dist/index.mjs:280:39)
+        at AxeBuilder.analyze (/home/bradley/.codex/worktrees/4e42/glob2/platform/node_modules/@axe-core/playwright/dist/index.mjs:210:39)
+        at axe (/home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:21:19)
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:70:26
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-light--phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) ───────────
+
+    Test timeout of 120000ms exceeded.
+
+    Error: page.waitForLoadState: Test timeout of 120000ms exceeded.
+
+      67 |         await expect(page.getByRole('region', { name: 'Skin designer' })).toBeVisible();
+      68 |       else await expect(page.getByRole('heading', { level: 1 }).first()).toBeVisible();
+    > 69 |       await page.waitForLoadState('networkidle');
+         |                  ^
+      70 |       const violations = await axe(page);
+      71 |       const overflow = await sidewaysScroll(page);
+      72 |       if (violations.length > 0 || overflow > 0) found[entry.name] = { violations, overflow };
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:69:18
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-every-page-passes-axe-and-fits-the-screen-dark--phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  20) [phone] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#map-file-error')
+    Expected substring: "This file isn't a Globulation 2 map"
+    Received string:    ""
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('#map-file-error') with timeout 5000ms
+      - waiting for locator('#map-file-error')
+        13 × locator resolved to <p role="alert" id="map-file-error" class="field-error"></p>
+           - unexpected value ""
+
+
+      156 |   await expect(page.getByLabel('Title')).toHaveValue('holiday');
+      157 |   await page.getByRole('button', { name: 'Upload' }).click();
+    > 158 |   await expect(page.locator('#map-file-error')).toContainText(
+          |                                                 ^
+      159 |     "This file isn't a Globulation 2 map",
+      160 |   );
+      161 |   await expect(page).toHaveURL(/\/maps\/new$/);
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/a11y.spec.ts:158:49
+
+    Error Context: ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/a11y-a-file-that-is-not-a--68828--form-before-any-map-exists-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21) [phone] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      138 |   await prompt.fill('Make only the hospital cheaper.');
+      139 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 140 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      141 |   await expect(prompt).toHaveValue('Make only the hospital cheaper.');
+      142 |   await page.getByText('Reference images', { exact: true }).first().click();
+      143 |   await page
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/ai-building-studio.spec.ts:140:41
+
+    Error Context: ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  22) [phone] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Submission response lost')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Submission response lost') with timeout 5000ms
+      - waiting for getByText('Submission response lost')
+
+
+      247 |     .fill('Give every building three workers.');
+      248 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 249 |   await expect(page.getByText('Submission response lost')).toBeVisible();
+          |                                                            ^
+      250 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      251 |   await expect.poll(() => submissions.length).toBe(2);
+      252 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/aiStudio.spec.ts:249:60
+
+    Error Context: ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  23) [phone] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/generator-studio\/[0-9a-f-]+$/
+    Received string:  "http://127.0.0.1:4280/generator-studio"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        13 × locator resolved to <html lang="en" dir="ltr">…</html>
+           - unexpected value "http://127.0.0.1:4280/generator-studio"
+
+
+      26 |   await page.getByText('Settings & references', { exact: true }).click();
+      27 |   await page.getByRole('button', { name: 'Use working starter' }).click();
+    > 28 |   await expect(page).toHaveURL(/\/generator-studio\/[0-9a-f-]+$/);
+         |                      ^
+      29 |   const projectId = page.url().split('/').at(-1);
+      30 |   const url = `/api/v1/generator-studio/projects/${projectId}`;
+      31 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/generator-studio.spec.ts:28:22
+
+    Error Context: ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  24) [phone] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator: getByRole('button', { name: 'Play', exact: true })
+    Expected: in viewport
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('button', { name: 'Play', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Play', exact: true })
+
+
+      185 |       .first()
+      186 |       .click();
+    > 187 |   await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeInViewport();
+          |                                                                         ^
+      188 |   const seek = page.getByRole('slider', { name: 'Playback position' });
+      189 |   await seek.scrollIntoViewIfNeeded();
+      190 |   await expect(seek).toBeInViewport();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/music-studio.spec.ts:187:73
+
+    Error Context: ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25) [phone] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      149 |       page,
+      150 |       `(() => { const el = document.querySelector('[data-hit-probe]'); const hit = document.elementFromPoint(${x}, ${y}); el.removeAttribute('data-hit-probe'); return Boolean(hit && el.contains(hit)); })()`,
+    > 151 |     );
+          |       ^
+      152 |     expect(topmost).toBe(true);
+      153 |   }
+      154 |   if (mobile) await navigation.getByRole('button', { name: 'Close navigation' }).click();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:151:21
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-home-navigation-and--24adb-reachable-beside-the-colony-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  26) [phone] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version ──────
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('main')
+    Expected substring: "Nicowar"
+    Received string:    "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('main') with timeout 5000ms
+      - waiting for locator('main')
+        13 × locator resolved to <main id="main" tabindex="-1">…</main>
+           - unexpected value "LeaderboardPlayers and AI opponents, ranked by their conservative rating: it rises as the game becomes sure of your skill. Guests are not ranked.1 vs 1 ranked2 vs 2 rankedAllHumansAI1 vs 1 rankedHide provisional ratings1 vs 1 ranked playersRankPlayerRatingGamesWin rate1KKestrel17984166%2MMirelle16362352%3BBradley1586875%4AAna_Mprovisional1418475%AI ratings belong to a game version. Explore player and AI profiles to see older versions."
+
+
+      204 |   const rows = page.getByTestId('leaderboard-row');
+      205 |   await expect(rows.first()).toContainText('Kestrel');
+    > 206 |   await expect(page.locator('main')).not.toContainText('Spammer');
+          |                                      ^
+      207 |   await expect(page.locator('main')).toContainText('Nicowar');
+      208 |   await expect(page.locator('main')).toContainText('older version');
+      209 |   await page.getByLabel('Hide provisional ratings').check();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/smoke.spec.ts:206:38
+
+    Error Context: ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/smoke-leaderboard-ranks-players-and-lists-AIs-per-version-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  27) [phone] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      179 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      180 |   expect(writes).toHaveLength(1);
+    > 181 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      182 |   const prompt = page.getByLabel('Describe your creation or ask a question');
+      183 |   await expect(prompt).toBeEnabled();
+      184 |   await expect(prompt).toHaveValue('Make only the marsh faster.');
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/terrain-studio.spec.ts:181:41
+
+    Error Context: ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  28) [phone] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible ───────────────
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator:  getByRole('status').first()
+    Expected: "Ready"
+    Received: "Sign in to save"
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveText" getByRole('status').first() with timeout 5000ms
+      - waiting for getByRole('status').first()
+        14 × locator resolved to <small role="status" class="skin-mobile-status">Sign in to save</small>
+           - unexpected value "Sign in to save"
+
+
+       98 |     );
+       99 |     if (path === '/skins') {
+    > 100 |       await expect(page.getByRole('status').first()).toHaveText('Ready');
+          |                                                      ^
+      101 |       await page.getByLabel('Skin name').fill('Sidebar recovery');
+      102 |     }
+      103 |     await sidebar.getByRole('link', { name: 'Maps', exact: true }).click();
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:100:54
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace--skins-keeps-the-shared-sidebar-visible-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  29) [phone] › e2e/workspace.spec.ts:84:3 › /map-studio keeps the shared sidebar visible ──────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        14 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "hidden"
+
+
+      85 |     await page.goto(path ?? '/');
+      86 |     const sidebar = page.locator('.app-sidebar');
+    > 87 |     await expect(sidebar).toBeVisible();
+         |                           ^
+      88 |     await expect(sidebar.getByRole('link', { name: library, exact: true })).toHaveAttribute(
+      89 |       'aria-current',
+      90 |       'page',
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:87:27
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace--map-studio-keeps-the-shared-sidebar-visible-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace--map-studio-keeps-the-shared-sidebar-visible-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace--map-studio-keeps-the-shared-sidebar-visible-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  30) [phone] › e2e/workspace.spec.ts:84:3 › /music-studio keeps the shared sidebar visible ────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('.app-sidebar')
+    Expected: visible
+    Received: hidden
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" locator('.app-sidebar') with timeout 5000ms
+      - waiting for locator('.app-sidebar')
+        14 × locator resolved to <aside class="app-sidebar">…</aside>
+           - unexpected value "hidden"
+
+
+      85 |     await page.goto(path ?? '/');
+      86 |     const sidebar = page.locator('.app-sidebar');
+    > 87 |     await expect(sidebar).toBeVisible();
+         |                           ^
+      88 |     await expect(sidebar.getByRole('link', { name: library, exact: true })).toHaveAttribute(
+      89 |       'aria-current',
+      90 |       'page',
+        at /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web/e2e/workspace.spec.ts:87:27
+
+    Error Context: ../../../artifacts/web-app/test-results/workspace--music-studio-keeps-the-shared-sidebar-visible-phone/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/workspace--music-studio-keeps-the-shared-sidebar-visible-phone/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/workspace--music-studio-keeps-the-shared-sidebar-visible-phone/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  30 failed
+    [desktop] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists 
+    [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+    [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+    [desktop] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls 
+    [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+    [desktop] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony 
+    [desktop] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version ──────
+    [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone ─────────────
+    [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px light ─────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1100px dark ──────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px light ─────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1440px dark ──────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px light ─────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:8:5 › workspace 1920px dark ──────────────────────────────────
+    [desktop] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible ───────────────
+    [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (light) ────────────
+    [phone] › e2e/a11y.spec.ts:59:3 › every page passes axe and fits the screen (dark) ─────────────
+    [phone] › e2e/a11y.spec.ts:148:1 › a file that is not a map is refused on the form, before any map exists 
+    [phone] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [phone] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+    [phone] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+    [phone] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+    [phone] › e2e/smoke.spec.ts:130:1 › home: navigation and play controls remain reachable beside the colony 
+    [phone] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version ────────
+    [phone] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+    [phone] › e2e/workspace.spec.ts:84:3 › /skins keeps the shared sidebar visible ─────────────────
+    [phone] › e2e/workspace.spec.ts:84:3 › /map-studio keeps the shared sidebar visible ────────────
+    [phone] › e2e/workspace.spec.ts:84:3 › /music-studio keeps the shared sidebar visible ──────────
+  17 skipped
+  71 passed (31.1m)
+npm ERR! Lifecycle script `e2e` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: @glob2/web@0.1.0 
+npm ERR!   at location: /home/bradley/.codex/worktrees/4e42/glob2/platform/apps/web 

@@ -1,0 +1,15 @@
+
+> @glob2/web@0.1.0 e2e
+> playwright test -c e2e/playwright.config.ts --project=desktop --grep leaderboard ranks|/skins shares responsive
+
+[WebServer] (node:3261923) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 2 tests using 1 worker
+
+(node:3264274) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › e2e/libraries.spec.ts:102:3 › /skins shares responsive gallery, feedback, and accessible controls (24.9s)
+  ✓  2 [desktop] › e2e/smoke.spec.ts:201:1 › leaderboard ranks players and lists AIs per version (9.5s)
+
+  2 passed (53.3s)

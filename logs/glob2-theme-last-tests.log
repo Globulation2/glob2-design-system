@@ -1,0 +1,26 @@
+
+> @glob2/design-system@0.1.0 test
+> node --test test/*.test.mjs
+
+✔ HTML tabs select panels and preserve roving keyboard focus without React (569.343219ms)
+✔ colony does not request video under reduced motion and cleans up listeners (296.197697ms)
+✔ field retains external descriptions and validation while adding shared error text (15.034815ms)
+✔ tabs support roving focus, Home/End and explicit panel relationships (680.260498ms)
+✔ icons distinguish decorative and named uses (3.394719ms)
+✔ shared cookie survives navigation between domains and explicit system wins over legacy (521.803589ms)
+✔ legacy migration, first paint and system changes share one controller (56.348624ms)
+✔ preview persistence is local and invalid preferences are rejected (25.31691ms)
+✔ blocked storage does not hide a valid cookie; blocked persistence keeps an in-memory choice (46.001349ms)
+✔ controller destroys listeners and refreshes on focus, pageshow and storage (28.49822ms)
+✔ blocked cookie writes preserve legacy migration across focus (49.497456ms)
+✔ both palettes have the same keys and documented text/control contrast (4.126424ms)
+✔ asset and icon provenance is hash checked (30.859565ms)
+✔ server CSS rebases assets and rejects traversal (1.409171ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3002.881865

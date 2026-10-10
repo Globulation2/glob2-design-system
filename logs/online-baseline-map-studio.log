@@ -1,0 +1,201 @@
+[WebServer] (node:3187072) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 8 tests using 1 worker
+
+(node:3188302) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes (8.1s)
+(node:3188853) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes (13.2s)
+(node:3189525) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [desktop] › e2e/buildingStudio.spec.ts:6:1 › authors a private family with revision-safe saving and portable export (14.1s)
+  ✓  4 [desktop] › e2e/buildingStudio.spec.ts:91:1 › protects pending JSON on Back and restores it after Forward (3.3s)
+  ✘  5 [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone (7.5s)
+(node:3190625) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit (8.3s)
+(node:3190991) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  7 [desktop] › e2e/studio.spec.ts:8:1 › conversation and canvas fit desktop and phone (22.4s)
+  ✘  8 [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn (7.3s)
+
+
+  1) [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        13 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      138 |   await prompt.fill('Make only the hospital cheaper.');
+      139 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 140 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      141 |   await expect(prompt).toHaveValue('Make only the hospital cheaper.');
+      142 |   await page.getByText('Reference images', { exact: true }).first().click();
+      143 |   await page
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/ai-building-studio.spec.ts:140:41
+
+    Error Context: ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/ai-building-studio-buildin-cb82c-estoration-and-mobile-panes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Submission response lost')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Submission response lost') with timeout 5000ms
+      - waiting for getByText('Submission response lost')
+
+
+      247 |     .fill('Give every building three workers.');
+      248 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+    > 249 |   await expect(page.getByText('Submission response lost')).toBeVisible();
+          |                                                            ^
+      250 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      251 |   await expect.poll(() => submissions.length).toBe(2);
+      252 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/aiStudio.spec.ts:249:60
+
+    Error Context: ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/aiStudio-studio-edits-rest-0cf7c-nned-revision-and-publishes-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /\/generator-studio\/[0-9a-f-]+$/
+    Received string:  "http://127.0.0.1:4281/generator-studio"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        13 × locator resolved to <html lang="en" dir="ltr">…</html>
+           - unexpected value "http://127.0.0.1:4281/generator-studio"
+
+
+      26 |   await page.getByText('Settings & references', { exact: true }).click();
+      27 |   await page.getByRole('button', { name: 'Use working starter' }).click();
+    > 28 |   await expect(page).toHaveURL(/\/generator-studio\/[0-9a-f-]+$/);
+         |                      ^
+      29 |   const projectId = page.url().split('/').at(-1);
+      30 |   const url = `/api/v1/generator-studio/projects/${projectId}`;
+      31 |   if (info.project.name === 'phone')
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/generator-studio.spec.ts:28:22
+
+    Error Context: ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/generator-studio-authors-b-f03e8-xports-on-desktop-and-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+
+    Error: expect(locator).toBeInViewport() failed
+
+    Locator: getByRole('button', { name: 'Play', exact: true })
+    Expected: in viewport
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeInViewport" getByRole('button', { name: 'Play', exact: true }) with timeout 5000ms
+      - waiting for getByRole('button', { name: 'Play', exact: true })
+
+
+      185 |       .first()
+      186 |       .click();
+    > 187 |   await expect(page.getByRole('button', { name: 'Play', exact: true })).toBeInViewport();
+          |                                                                         ^
+      188 |   const seek = page.getByRole('slider', { name: 'Playback position' });
+      189 |   await seek.scrollIntoViewIfNeeded();
+      190 |   await expect(seek).toBeInViewport();
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/music-studio.spec.ts:187:73
+
+    Error Context: ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/music-studio-music-workspa-cf3b8--keeps-publication-explicit-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: getByRole('alert')
+    Expected substring: "Draft revision changed."
+    Received string:    "Something went wrong. Please try again."
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" getByRole('alert') with timeout 5000ms
+      - waiting for getByRole('alert')
+        14 × locator resolved to <p role="alert">Something went wrong. Please try again.</p>
+           - unexpected value "Something went wrong. Please try again."
+
+
+      179 |   await page.getByRole('button', { name: 'Send', exact: true }).click();
+      180 |   expect(writes).toHaveLength(1);
+    > 181 |   await expect(page.getByRole('alert')).toContainText('Draft revision changed.');
+          |                                         ^
+      182 |   const prompt = page.getByLabel('Describe your creation or ask a question');
+      183 |   await expect(prompt).toBeEnabled();
+      184 |   await expect(prompt).toHaveValue('Make only the marsh faster.');
+        at /home/bradley/.codex/worktrees/4e42/glob2/artifacts/design-system/baseline/platform/apps/web/e2e/terrain-studio.spec.ts:181:41
+
+    Error Context: ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../../artifacts/web-app/test-results/terrain-studio-terrain-cre-664a8-its-one-revision-bound-turn-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5 failed
+    [desktop] › e2e/ai-building-studio.spec.ts:9:1 › building workspace supports revision-bound chat, previews, restoration and mobile panes 
+    [desktop] › e2e/aiStudio.spec.ts:8:1 › studio edits, restores, explicitly checks, watches a pinned revision and publishes 
+    [desktop] › e2e/generator-studio.spec.ts:6:1 › authors both files, recovers invalid JSON, freezes previews and exports on desktop and phone 
+    [desktop] › e2e/music-studio.spec.ts:7:1 › music workspace exposes revision checks and keeps publication explicit 
+    [desktop] › e2e/terrain-studio.spec.ts:8:1 › terrain creation workspace fits desktop and phone and submits one revision-bound turn 
+  3 passed (2.0m)

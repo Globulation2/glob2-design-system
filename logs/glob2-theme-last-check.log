@@ -1,0 +1,8 @@
+
+> @glob2/design-system@0.1.0 check
+> npm run generate && git diff --exit-code -- dist src/icons.ts
+
+
+> @glob2/design-system@0.1.0 generate
+> node scripts/generate.mjs
+
