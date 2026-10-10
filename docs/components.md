@@ -33,3 +33,8 @@ body-text color. The component gallery supplies both themes and common states.
 reduced motion, pause/resume and playback errors. Put the URL in `data-src` rather
 than `src` so reduced-motion pages do not request video. Keep a poster visible until
 playback succeeds; a cancelled play promise must preserve the resume button.
+
+Plain HTML consumers import `mountTabs` from `/browser` and pass their tablist element.
+Use explicit tab IDs, aria-controls and named panels as shown in the gallery. The helper
+manages selected state, panel visibility and keyboard navigation; optional onChange
+receives the selected tab ID. Its returned cleanup removes all listeners.

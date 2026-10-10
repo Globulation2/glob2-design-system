@@ -44,11 +44,12 @@ const manifest = JSON.parse(await read('assets/icons/manifest.json'));
 const bodies = {};
 for (const icon of manifest.icons) bodies[icon.name] = /<svg[^>]*>([\s\S]*)<\/svg>/.exec(await read(`assets/icons/${icon.name}.svg`))[1].trim();
 await writeFile('src/icons.ts', `// Generated from the pinned asset catalog.\nexport const ICON_BODIES = ${JSON.stringify(bodies,null,2)} as const;\nexport type IconName = keyof typeof ICON_BODIES;\nexport const ICON_NAMES = Object.keys(ICON_BODIES) as IconName[];\n`);
-await build({entryPoints:['src/theme.js','src/react.tsx','src/icons.ts','src/colony.js'],outdir:'dist',format:'esm',platform:'neutral',target:'es2022',bundle:false,jsx:'automatic'});
+await build({entryPoints:['src/theme.js','src/react.tsx','src/icons.ts','src/colony.js','src/browser.js'],outdir:'dist',format:'esm',platform:'neutral',target:'es2022',bundle:false,jsx:'automatic'});
 await build({entryPoints:['src/bootstrap.js'],outfile:'dist/bootstrap.js',format:'iife',target:'es2022',bundle:true,minify:true});
 execFileSync('node',['node_modules/typescript/bin/tsc','-p','tsconfig.json'],{stdio:'inherit'});
 await copyFile('src/theme.d.ts','dist/theme.d.ts');
 await copyFile('src/colony.d.ts','dist/colony.d.ts');
+await copyFile('src/browser.d.ts','dist/browser.d.ts');
 // Never copy generated browser bootstrap to downstream source: consumers copy it at build time.
 
 await mkdir('examples/html/public', {recursive: true});

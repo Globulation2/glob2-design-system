@@ -15,6 +15,7 @@ test('both palettes have the same keys and documented text/control contrast', ()
   for(const bg of ['bg','surface','surface-2']) for(const ink of ['ink','ink-2']) assert.ok(contrast(palette[ink],palette[bg])>=4.5,`${ink}/${bg}`);
   assert.ok(contrast(palette['accent-ink'],palette.accent)>=4.5);
   assert.ok(contrast(palette.focus,palette.bg)>=3);
+  for (let i=1;i<=6;i++) assert.ok(contrast(palette[`chart-${i}`],palette['chart-bg'])>=3,`chart-${i}`);
   assert.ok(contrast(palette['line-strong'],palette.surface)>=3);
  }
  assert.equal(chartBackground.dark,tokens.dark.surface);

@@ -33,7 +33,11 @@
       "types": "./scripts/node.d.mts",
       "default": "./scripts/node.mjs"
     },
-    "./colony": "./dist/colony.js"
+    "./colony": "./dist/colony.js",
+    "./browser": {
+      "types": "./dist/browser.d.ts",
+      "default": "./dist/browser.js"
+    }
   },
   "files": [
     "dist",
