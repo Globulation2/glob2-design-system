@@ -46,3 +46,6 @@ execFileSync('node',['node_modules/typescript/bin/tsc','-p','tsconfig.json'],{st
 await copyFile('src/theme.d.ts','dist/theme.d.ts');
 await copyFile('src/colony.d.ts','dist/colony.d.ts');
 // Never copy generated browser bootstrap to downstream source: consumers copy it at build time.
+
+await mkdir('examples/html/public', {recursive: true});
+await copyFile('dist/bootstrap.js', 'examples/html/public/theme.js');

@@ -29,7 +29,10 @@
     "./assets/*": "./assets/*",
     "./tokens/*": "./tokens/*",
     "./bootstrap": "./dist/bootstrap.js",
-    "./node": "./scripts/node.mjs",
+    "./node": {
+      "types": "./scripts/node.d.mts",
+      "default": "./scripts/node.mjs"
+    },
     "./colony": "./dist/colony.js"
   },
   "files": [
@@ -39,7 +42,8 @@
     "scripts/node.mjs",
     "docs",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "scripts/node.d.mts"
   ],
   "sideEffects": [
     "**/*.css",
@@ -47,7 +51,7 @@
   ],
   "scripts": {
     "generate": "node scripts/generate.mjs",
-    "check": "npm run generate && git diff --exit-code -- dist",
+    "check": "npm run generate && git diff --exit-code -- dist src/icons.ts",
     "test": "node --test test/*.test.mjs",
     "gallery": "vite examples/html --host 127.0.0.1"
   },

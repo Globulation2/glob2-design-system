@@ -1,7 +1,7 @@
-import '../../dist/css/tokens.css';
-import '../../dist/css/fonts.css';
-import '../../dist/css/base.css';
-import '../../dist/css/components.css';
-import '../../dist/css/brand.css';
-import { mountThemeToggle } from '../../dist/theme.js';
+import '@glob2/design-system/css/tokens.css';
+import '@glob2/design-system/css/fonts.css';
+import '@glob2/design-system/css/base.css';
+import '@glob2/design-system/css/components.css';
+import '@glob2/design-system/css/brand.css';
+import { mountThemeToggle } from '@glob2/design-system';
 mountThemeToggle(document.querySelector('#theme'), {system:'Theme: same as this device',light:'Theme: Meadow',dark:'Theme: Night colony',change:'Change theme'});

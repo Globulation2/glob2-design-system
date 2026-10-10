@@ -14,13 +14,13 @@ remain the consumer's responsibility.
 | Feedback | `<div class="notice error" role="alert">…</div>` | `Notice` |
 | Loading | `<p class="loading" role="status"><span class="glob-spin" aria-hidden="true"></span>Loading…</p>` | `Loading` (translated children) |
 | Table | named `.table-wrap[role=region][tabindex=0]`; `.stack` with cell `data-label` for narrow cards | `TableWrap` |
-| Tabs | `.seg` with tablist/tab roles, selected state, roving focus and named panels | `Tabs` (`items` with panelId, controlled value/onChange) |
+| Tabs | `.seg` with tablist/tab roles, selected state, roving focus and named panels | `Tabs` (`items` with tabId/panelId, controlled value/onChange) |
 | Mark | `.wordmark`, named with role=img or decorative with aria-hidden | `Wordmark` |
 | Icons | inline SVG from the pinned catalog, currentColor stroke | `Icon` (name/size/label) |
 | Theme | native button wired by `mountThemeToggle` | `ThemeProvider`, `ThemeToggle`, `useTheme` |
 
-React `Tabs` generates tab IDs. Label each panel using the rendered tab's ID, or give
-panels their own accessible label. Support left/right/Home/End keys, keep source text
+React `Tabs` accepts explicit `tabId` and `panelId` values. Set each panel's `aria-labelledby`
+to its corresponding `tabId`. Support left/right/Home/End keys, keep source text
 LTR in RTL interfaces, and preserve a visible focus ring. Do not use visual-only tabs.
 Controls use native semantics, disabled state and a 44px coarse-pointer target.
 Keep icon-only actions named; decorative icons are hidden from screen readers.

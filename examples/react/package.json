@@ -1,1 +1,19 @@
-{"private":true,"type":"module","scripts":{"dev":"vite","build":"vite build"},"dependencies":{"@glob2/design-system":"file:../..","react":"19.3.0","react-dom":"19.3.0"},"devDependencies":{"vite":"8.3.2","typescript":"6.0.3"}}
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predev": "node stage.mjs",
+    "prebuild": "node stage.mjs"
+  },
+  "dependencies": {
+    "@glob2/design-system": "file:../..",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.2",
+    "typescript": "6.0.3"
+  }
+}

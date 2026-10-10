@@ -4,3 +4,5 @@ artifacts/
 examples/*/node_modules/
 examples/*/dist/
 examples/astro/.astro/
+
+examples/*/public/theme.js

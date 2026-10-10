@@ -1,1 +1,16 @@
-{"private":true,"type":"module","scripts":{"dev":"vite","build":"vite build"},"dependencies":{"@glob2/design-system":"file:../.."},"devDependencies":{"vite":"8.3.2"}}
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "predev": "node stage.mjs",
+    "prebuild": "node stage.mjs"
+  },
+  "dependencies": {
+    "@glob2/design-system": "file:../.."
+  },
+  "devDependencies": {
+    "vite": "8.3.2"
+  }
+}
