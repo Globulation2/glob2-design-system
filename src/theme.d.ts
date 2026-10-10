@@ -15,3 +15,5 @@ export function getThemeController(): ThemeController | undefined;
 export function getServerSnapshot(): ThemeSnapshot;
 export function nextPreference(preference: ThemePreference): ThemePreference;
 export function mountThemeToggle(button: HTMLButtonElement, labels: Record<ThemePreference | 'change', string>): () => void;
+
+export function themeIconBody(preference: ThemePreference): string;

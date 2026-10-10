@@ -107,7 +107,7 @@ export function mountThemeToggle(button, labels) {
   if (!controller) return () => {};
   const update = () => {
     const { preference } = controller.getSnapshot();
-    button.textContent = labels[preference];
+    button.innerHTML = `<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">${themeIconBody(preference)}</svg>`;
     button.setAttribute('aria-label', `${labels[preference]}. ${labels.change}`);
     button.title = labels[preference];
   };
@@ -116,4 +116,12 @@ export function mountThemeToggle(button, labels) {
   const unsubscribe = controller.subscribe(update);
   update();
   return () => { button.removeEventListener('click', click); unsubscribe(); };
+}
+
+export function themeIconBody(preference) {
+ return {
+  light: '<circle cx="12" cy="12" r="4.5" fill="currentColor" stroke="none"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/>',
+  dark: '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor" stroke="none"/>',
+  system: '<circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/>'
+ }[preference];
 }

@@ -1,5 +1,5 @@
 import { createContext, useContext, useId, useSyncExternalStore, type ReactNode, type ButtonHTMLAttributes, type HTMLAttributes, type InputHTMLAttributes, type SVGProps } from 'react';
-import { getThemeController, getServerSnapshot, nextPreference, type ThemePreference, type ThemeSnapshot } from './theme.js';
+import { getThemeController, getServerSnapshot, nextPreference, themeIconBody, type ThemePreference, type ThemeSnapshot } from './theme.js';
 import { ICON_BODIES, type IconName } from './icons.js';
 
 const subscribe = (listener: () => void) => getThemeController()?.subscribe(listener) ?? (() => {});
@@ -14,9 +14,7 @@ export const useTheme = () => useContext(ThemeContext);
 export function ThemeToggle({ labels, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { labels: Record<ThemePreference | 'change', string> }) {
   const { preference, setPreference } = useTheme();
   return <button type="button" {...props} className={`theme-toggle ${props.className ?? ''}`} onClick={() => setPreference(nextPreference(preference))} aria-label={`${labels[preference]}. ${labels.change}`} title={labels[preference]}>
-    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2">
-      {preference === 'light' ? <><circle cx="12" cy="12" r="4.5" fill="currentColor" stroke="none"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></> : preference === 'dark' ? <path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor" stroke="none"/> : <><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor" stroke="none"/></>}
-    </svg>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" dangerouslySetInnerHTML={{__html: themeIconBody(preference)}}/>
   </button>;
 }
 export function Icon({ name, size = 24, label, className = '', ...props }: Omit<SVGProps<SVGSVGElement>, 'name'> & { name: IconName; size?: number; label?: string }) {

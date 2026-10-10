@@ -1,6 +1,6 @@
-import { Fragment, jsx, jsxs } from "react/jsx-runtime";
+import { jsx, jsxs } from "react/jsx-runtime";
 import { createContext, useContext, useId, useSyncExternalStore } from "react";
-import { getThemeController, getServerSnapshot, nextPreference } from "./theme.js";
+import { getThemeController, getServerSnapshot, nextPreference, themeIconBody } from "./theme.js";
 import { ICON_BODIES } from "./icons.js";
 const subscribe = (listener) => getThemeController()?.subscribe(listener) ?? (() => {
 });
@@ -14,13 +14,7 @@ function ThemeProvider({ children }) {
 const useTheme = () => useContext(ThemeContext);
 function ThemeToggle({ labels, ...props }) {
   const { preference, setPreference } = useTheme();
-  return /* @__PURE__ */ jsx("button", { type: "button", ...props, className: `theme-toggle ${props.className ?? ""}`, onClick: () => setPreference(nextPreference(preference)), "aria-label": `${labels[preference]}. ${labels.change}`, title: labels[preference], children: /* @__PURE__ */ jsx("svg", { viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", fill: "none", stroke: "currentColor", strokeWidth: "2", children: preference === "light" ? /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "4.5", fill: "currentColor", stroke: "none" }),
-    /* @__PURE__ */ jsx("path", { d: "M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5" })
-  ] }) : preference === "dark" ? /* @__PURE__ */ jsx("path", { d: "M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z", fill: "currentColor", stroke: "none" }) : /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("circle", { cx: "12", cy: "12", r: "8.5" }),
-    /* @__PURE__ */ jsx("path", { d: "M12 3.5a8.5 8.5 0 0 1 0 17z", fill: "currentColor", stroke: "none" })
-  ] }) }) });
+  return /* @__PURE__ */ jsx("button", { type: "button", ...props, className: `theme-toggle ${props.className ?? ""}`, onClick: () => setPreference(nextPreference(preference)), "aria-label": `${labels[preference]}. ${labels.change}`, title: labels[preference], children: /* @__PURE__ */ jsx("svg", { viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", fill: "none", stroke: "currentColor", strokeWidth: "2", dangerouslySetInnerHTML: { __html: themeIconBody(preference) } }) });
 }
 function Icon({ name, size = 24, label, className = "", ...props }) {
   return /* @__PURE__ */ jsx("svg", { ...props, className: `icon ${className}`, width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", focusable: "false", ...label ? { role: "img", "aria-label": label } : { "aria-hidden": true }, dangerouslySetInnerHTML: { __html: ICON_BODIES[name] } });
