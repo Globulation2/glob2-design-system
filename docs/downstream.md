@@ -12,7 +12,12 @@ has no npm workspaces and no Git-install build hooks.
 4. Wire a theme button with consumer-owned labels. Use existing system/light/dark semantics.
 5. Import brand assets by package path; static consumers may copy selected assets at build time.
 6. Keep business logic and layouts local. Reuse component recipes instead of copying their CSS.
-7. Record the source theme SHA with each build and test both themes before publishing.
+7. Run `syncDesignSystem()` from `@glob2/design-system/install` at the beginning of
+   each build, before importing CSS or components. It uses the project working
+   directory, preserves other locked dependencies, and records `.cache/design-system.json`.
+   Export the returned SHA to later CI/Docker steps. The examples demonstrate this
+   for Git consumers; their `file:` setting is only for editing this repository locally.
+8. Record the source theme SHA with each build and test both themes before publishing.
 
 The online app and marketing site show production bootstrap integration. Their
 `design:sync` commands resolve current main once, install that SHA without altering

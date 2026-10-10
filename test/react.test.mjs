@@ -21,6 +21,13 @@ test('tabs support roving focus, Home/End and explicit panel relationships', asy
  assert.equal(selected,'two'); assert.equal(document.activeElement,two);
  await act(()=>two.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Home',bubbles:true})));
  assert.equal(document.activeElement,one); assert.equal(selected,'one');
+ document.documentElement.dir = 'rtl';
+ document.querySelector('[role=tablist]').style.direction = 'ltr';
+ await act(()=>one.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'ArrowRight',bubbles:true})));
+ assert.equal(selected,'two'); assert.equal(document.activeElement,two);
+ document.querySelector('[role=tablist]').style.direction = 'rtl';
+ await act(()=>one.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'ArrowLeft',bubbles:true})));
+ assert.equal(selected,'two'); assert.equal(document.activeElement,two);
  await act(()=>root.unmount()); Object.assign(global,previous); dom.window.close();
 });
 test('icons distinguish decorative and named uses', () => {

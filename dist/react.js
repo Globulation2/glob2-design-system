@@ -51,7 +51,7 @@ function Wordmark({ label, className = "" }) {
 function Tabs({ label, value, onChange, items }) {
   return /* @__PURE__ */ jsx("div", { className: "seg", role: "tablist", "aria-label": label, children: items.map((item, index) => /* @__PURE__ */ jsx("button", { type: "button", role: "tab", id: item.tabId, "aria-controls": item.panelId, "aria-selected": value === item.id, tabIndex: value === item.id ? 0 : -1, className: value === item.id ? "on" : "", onClick: () => onChange(item.id), onKeyDown: (event) => {
     let next = index;
-    const rtl = event.currentTarget.closest('[dir="rtl"]') !== null || event.currentTarget.ownerDocument.documentElement.dir === "rtl";
+    const rtl = event.currentTarget.ownerDocument.defaultView?.getComputedStyle(event.currentTarget).direction === "rtl";
     if (event.key === "ArrowRight") next = (index + (rtl ? -1 : 1) + items.length) % items.length;
     else if (event.key === "ArrowLeft") next = (index + (rtl ? 1 : -1) + items.length) % items.length;
     else if (event.key === "Home") next = 0;

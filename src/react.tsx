@@ -42,7 +42,7 @@ export function Wordmark({ label, className = '' }: { label?: string | null; cla
 export function Tabs({ label, value, onChange, items }: { label: string; value: string; onChange(value: string): void; items: { id: string; label: string; panelId: string; tabId: string }[] }) {
   return <div className="seg" role="tablist" aria-label={label}>{items.map((item, index) => <button key={item.id} type="button" role="tab" id={item.tabId} aria-controls={item.panelId} aria-selected={value === item.id} tabIndex={value === item.id ? 0 : -1} className={value === item.id ? 'on' : ''} onClick={() => onChange(item.id)} onKeyDown={event => {
     let next = index;
-    const rtl = event.currentTarget.closest('[dir="rtl"]') !== null || event.currentTarget.ownerDocument.documentElement.dir === 'rtl';
+    const rtl = event.currentTarget.ownerDocument.defaultView?.getComputedStyle(event.currentTarget).direction === 'rtl';
     if (event.key === 'ArrowRight') next = (index + (rtl ? -1 : 1) + items.length) % items.length;
     else if (event.key === 'ArrowLeft') next = (index + (rtl ? 1 : -1) + items.length) % items.length;
     else if (event.key === 'Home') next = 0;

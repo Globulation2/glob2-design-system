@@ -37,6 +37,10 @@
     "./browser": {
       "types": "./dist/browser.d.ts",
       "default": "./dist/browser.js"
+    },
+    "./install": {
+      "types": "./scripts/install.d.mts",
+      "default": "./scripts/install.mjs"
     }
   },
   "files": [
@@ -47,7 +51,9 @@
     "docs",
     "README.md",
     "LICENSE",
-    "scripts/node.d.mts"
+    "scripts/node.d.mts",
+    "scripts/install.mjs",
+    "scripts/install.d.mts"
   ],
   "sideEffects": [
     "**/*.css",
