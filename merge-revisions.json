@@ -10,5 +10,6 @@
   "os": "Ubuntu Linux x86_64",
   "node": "24.19.0",
   "npm": "9.2.0 locally",
-  "database": "PostgreSQL 16, temporary harness databases"
+  "database": "PostgreSQL 16, temporary harness databases",
+  "websiteMerged": "2c622663ff6e2fb8348fe8797dc36a872806e54c"
 }
