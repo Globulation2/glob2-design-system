@@ -1,0 +1,74 @@
+{
+  "name": "@glob2/design-system",
+  "version": "0.1.0",
+  "description": "Globulation 2 foundations, accessible web primitives and brand assets",
+  "type": "module",
+  "license": "GPL-3.0-or-later",
+  "repository": "github:Globulation2/glob2-design-system",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/theme.d.ts",
+      "default": "./dist/theme.js"
+    },
+    "./tokens": {
+      "types": "./dist/tokens.d.ts",
+      "default": "./dist/tokens.js"
+    },
+    "./react": {
+      "types": "./dist/react.d.ts",
+      "default": "./dist/react.js"
+    },
+    "./icons": {
+      "types": "./dist/icons.d.ts",
+      "default": "./dist/icons.js"
+    },
+    "./css/*": "./dist/css/*",
+    "./assets/*": "./assets/*",
+    "./tokens/*": "./tokens/*",
+    "./bootstrap": "./dist/bootstrap.js",
+    "./node": "./scripts/node.mjs",
+    "./colony": "./dist/colony.js"
+  },
+  "files": [
+    "dist",
+    "assets",
+    "tokens",
+    "scripts/node.mjs",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "**/*.css",
+    "./dist/bootstrap.js"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "check": "npm run generate && git diff --exit-code -- dist",
+    "test": "node --test test/*.test.mjs",
+    "gallery": "vite examples/html --host 127.0.0.1"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "esbuild": "0.28.2",
+    "typescript": "6.0.3",
+    "postcss": "8.5.8",
+    "vite": "8.3.2",
+    "jsdom": "29.1.1",
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0"
+  }
+}

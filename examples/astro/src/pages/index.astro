@@ -1,0 +1,9 @@
+---
+import '@glob2/design-system/css/tokens.css';
+import '@glob2/design-system/css/fonts.css';
+import '@glob2/design-system/css/base.css';
+import '@glob2/design-system/css/components.css';
+import '@glob2/design-system/css/brand.css';
+import { assetPath } from '@glob2/design-system/node';
+---
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>A Glob2 downstream site</title></head><body class="g2-ui"><main style="max-width:800px;margin:auto;padding:32px"><span class="wordmark" role="img" aria-label="Globulation 2"></span><h1>A new downstream site</h1><button id="theme" type="button">Theme: same as this device</button><div class="card"><p>Astro uses the same foundations without React.</p><a class="btn primary" href="https://glob2online.com">Explore Glob2</a></div></main><script>import { mountThemeToggle } from '@glob2/design-system';mountThemeToggle(document.querySelector<HTMLButtonElement>('#theme')!,{system:'Theme: device',light:'Theme: Meadow',dark:'Theme: Night colony',change:'Change theme'});</script></body></html>

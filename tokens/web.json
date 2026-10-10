@@ -1,0 +1,25 @@
+{
+  "foundation": {
+    "text-xl": "clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem)",
+    "text-2xl": "clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem)",
+    "text-3xl": "clamp(2rem, 1.4rem + 2.6vw, 3.25rem)",
+    "gutter": "clamp(16px, 4vw, 32px)",
+    "r-blob": "58% 42% 52% 48% / 48% 56% 44% 52%"
+  },
+  "light": {
+    "scrim": "rgba(17, 35, 32, 0.55)",
+    "hero-fade": "linear-gradient(\n    100deg,\n    rgba(241, 241, 225, 0.92) 0%,\n    rgba(241, 241, 225, 0.55) 38%,\n    rgba(241, 241, 225, 0) 62%\n  )",
+    "hero-tint": "rgba(0, 0, 0, 0)",
+    "shadow-sm": "0 1px 0 rgba(29, 69, 48, 0.08), 0 2px 6px -2px rgba(29, 69, 48, 0.18)",
+    "shadow-md": "0 1px 0 rgba(29, 69, 48, 0.08), 0 10px 28px -10px rgba(29, 69, 48, 0.35)",
+    "shadow-lg": "0 2px 0 rgba(15, 39, 25, 0.12), 0 22px 50px -18px rgba(15, 39, 25, 0.55)"
+  },
+  "dark": {
+    "scrim": "rgba(10, 6, 20, 0.6)",
+    "hero-fade": "linear-gradient(\n    100deg,\n    rgba(27, 18, 41, 0.94) 0%,\n    rgba(27, 18, 41, 0.6) 40%,\n    rgba(27, 18, 41, 0.05) 66%\n  )",
+    "hero-tint": "rgba(40, 22, 80, 0.5)",
+    "shadow-sm": "0 1px 0 rgba(0, 0, 0, 0.3), 0 2px 6px -2px rgba(0, 0, 0, 0.5)",
+    "shadow-md": "0 1px 0 rgba(0, 0, 0, 0.3), 0 10px 28px -10px rgba(0, 0, 0, 0.7)",
+    "shadow-lg": "0 2px 0 rgba(0, 0, 0, 0.3), 0 22px 50px -18px rgba(0, 0, 0, 0.85)"
+  }
+}

@@ -1,0 +1,33 @@
+/* --------------------------------------------------------------- wordmark */
+
+/* The game's wordmark as two masks (art/build_art.py) so it takes any colours. */
+:where(.g2-ui) .wordmark {
+  --wm-ink: var(--ink);
+  --wm-two: #e2b85f;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  aspect-ratio: 900 / 131;
+  flex: none;
+}
+:where(.g2-ui) .wordmark::before,
+:where(.g2-ui) .wordmark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  -webkit-mask: url('../../assets/wordmark-letters.webp') 0 0 / 100% 100% no-repeat;
+  mask: url('../../assets/wordmark-letters.webp') 0 0 / 100% 100% no-repeat;
+  background: var(--wm-ink);
+}
+:where(.g2-ui) .wordmark::after {
+  -webkit-mask-image: url('../../assets/wordmark-two.webp');
+  mask-image: url('../../assets/wordmark-two.webp');
+  background: var(--wm-two);
+}
+@media (forced-colors: active) {
+  :where(.g2-ui) .wordmark::before,
+  :where(.g2-ui) .wordmark::after {
+    background: CanvasText;
+  }
+}
+

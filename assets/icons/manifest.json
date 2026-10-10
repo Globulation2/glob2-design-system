@@ -1,0 +1,188 @@
+{
+  "release": "v3.48.0",
+  "repository": "https://github.com/tabler/tabler-icons",
+  "renderer": "@resvg/resvg-js@2.6.2",
+  "command": "NODE_PATH=artifacts/tabler/tooling/node_modules node tools/icons/export_tabler.cjs",
+  "icons": [
+    {
+      "name": "settings",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/settings.svg",
+      "sha256": "d71136dfd83ad19efe1777d01768a5d23d7b295de5dde3b1fccc50806809a423"
+    },
+    {
+      "name": "pencil",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/pencil.svg",
+      "sha256": "03a842bd4a16861b0adc0e38ed7b0eb5e7cc613012006833da22e58d56f1f1fe"
+    },
+    {
+      "name": "folder-open",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/folder-open.svg",
+      "sha256": "891d9a1f6309ca6ad1731be7b0cb12e5d6c678ec04c84808ecb98a4706b3a891"
+    },
+    {
+      "name": "adjustments-horizontal",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/adjustments-horizontal.svg",
+      "sha256": "66b3be63d0ae4f75c6707ac802ef2bad9eb5f9c0af9ab77c7a1f9c7f1694a178"
+    },
+    {
+      "name": "building",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/building.svg",
+      "sha256": "de2ff52ba4c84bf598c46ba47b1d7c0cc63d7d71b9939d1ad257e7aab94b181a"
+    },
+    {
+      "name": "player-play",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/player-play.svg",
+      "sha256": "0178cf0262ec89422d632f6122c6be34a8b57db32dd1aea38dd283bdeecbfc2f"
+    },
+    {
+      "name": "info-circle",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/info-circle.svg",
+      "sha256": "8bb2ea8aa6e56cab6137f44a0b1a1eabeab526b7f96ea8be36d583868a737562"
+    },
+    {
+      "name": "send",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/send.svg",
+      "sha256": "ea6c93fdd39e1bd19af67661d4970b477c92456665aa7829a6105e00f377a0b8"
+    },
+    {
+      "name": "x",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/x.svg",
+      "sha256": "6b97b0d51512b84eee04c0644fd07059a9c21d537886cdb40ef48485d874abc3"
+    },
+    {
+      "name": "refresh",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/refresh.svg",
+      "sha256": "12927e445fd886d0e0fd538ba60fbea56ff8a456204481e233f77ad322e65062"
+    },
+    {
+      "name": "flask",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/flask.svg",
+      "sha256": "f126c4fd5c9935e03f808bdfeec2a3ac3a505f0d26c4fa4a821adfaeb6b0d825"
+    },
+    {
+      "name": "copy",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/copy.svg",
+      "sha256": "b38a178d5ee74073f95b57ea33e7dab0624e314c1cc835c85ff35f1d1e5517e1"
+    },
+    {
+      "name": "share",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/share.svg",
+      "sha256": "e156e3233dedc6b4e94e7b4ed6b516e21220f94c6ca2f904cec20a0c3005c738"
+    },
+    {
+      "name": "trophy",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/trophy.svg",
+      "sha256": "2e56bd8f0e6f4d2ca4554485acc11717bb05a040d8a296fe2fb029781f4dad21"
+    },
+    {
+      "name": "robot",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/robot.svg",
+      "sha256": "d1dbd329f869a168699a632f5469a42d4d1dca5b972e2c1fbf9572faefb9a991"
+    },
+    {
+      "name": "wifi-off",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/wifi-off.svg",
+      "sha256": "ddb9366b26d2d94cbece650a09ef8e12357828c422a08aeabdc36fb12e0ef2dd"
+    },
+    {
+      "name": "shield-check",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/shield-check.svg",
+      "sha256": "9c3d5fac4793c7df5b3f2418037f16cd2bb7ba217ca5ee619e17b715b2720364"
+    },
+    {
+      "name": "users",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/users.svg",
+      "sha256": "ee1ec96e17087cbcb5663d84d2e5e1e46d56356c19d88bc42f8100154c1e298f"
+    },
+    {
+      "name": "map",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/map.svg",
+      "sha256": "89c0a64e5986c7a152e3074ecaa1caef9f74986e81c6488b0e1f0848c44241a9"
+    },
+    {
+      "name": "message",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/message.svg",
+      "sha256": "5e6051240cefb2a1ef76952636aada86f7a32b1594be38fea71289a9d4643f7e"
+    },
+    {
+      "name": "check",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/check.svg",
+      "sha256": "fe359b27c74ed0f4f72bfabbe5ca969a8bb13a5f39648bae63f9e798034ebed3"
+    },
+    {
+      "name": "plus",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/plus.svg",
+      "sha256": "ea2630f3d4b4800ed9e1f2818b7064bb62b27943c482e739d76bd2320f82632d"
+    },
+    {
+      "name": "download",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/download.svg",
+      "sha256": "4c3498b4dc4e7f007db234f293b396ae1b23f18646e1d36f8bc4e08a31bf97b1"
+    },
+    {
+      "name": "loader-2",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/loader-2.svg",
+      "sha256": "fe19132ccc93f7b20575769485b13c0404a9809c3c1daf1f746c3a3d70622180"
+    },
+    {
+      "name": "alert-triangle",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/alert-triangle.svg",
+      "sha256": "fc82f02dc9702293cb8609a8aed3242c0fe5f5b3337d79d341aa9343b4526ad4"
+    },
+    {
+      "name": "upload",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/upload.svg",
+      "sha256": "b6d9fe0e24b1c889d1edba29268ba8e3759792a381b43fb9268f603caaea98f1"
+    },
+    {
+      "name": "restore",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/restore.svg",
+      "sha256": "6dbc3eed31812bf6ca30ba3d9b8802db71fddeace397288162cbec00e99b3de7"
+    },
+    {
+      "name": "chevron-right",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/chevron-right.svg",
+      "sha256": "26b321e42c7c7ed5d5161d9af061033df1d49ef33b5d2fc2309e2f6ee3d4c81a"
+    },
+    {
+      "name": "chevron-down",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/chevron-down.svg",
+      "sha256": "06bd20b8cbe565b97046c5d0ec917f11ed6b29c0e4885a82ae057325c972bf9a"
+    },
+    {
+      "name": "mountain",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/mountain.svg",
+      "sha256": "ba55ca4c46b6c3345f27c1c462894c85d344527f86b4908c120553dd7ab2453e"
+    },
+    {
+      "name": "list-details",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/list-details.svg",
+      "sha256": "a0b73d173f0494c96fb9f23690ff366e1e06c952d4fed0a83d6e4f7904a86fd5"
+    },
+    {
+      "name": "swords",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/swords.svg",
+      "sha256": "056a09258110ffaa6e33b4c3e34279be13e51a8aa49cf13d5d5b1e4a7d065396"
+    },
+    {
+      "name": "coins",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/coins.svg",
+      "sha256": "e95bc6abd9d8db7f4132ca936bcc2aae9e33454842d197dfb6f2d9de1354e86f"
+    },
+    {
+      "name": "eye",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/eye.svg",
+      "sha256": "49dc6603fb775c31b004431972b66075b1a239dc98489f638db73c66386702e4"
+    },
+    {
+      "name": "music",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/music.svg",
+      "sha256": "8b69aafb5497fc9773078aab151dda57434e89011e712bb24c10c9b66f80ab68"
+    },
+    {
+      "name": "palette",
+      "upstream": "https://raw.githubusercontent.com/tabler/tabler-icons/v3.48.0/icons/outline/palette.svg",
+      "sha256": "27a5a19ae4b0f73ff4089b7f5a6c8fdf17f19ecc853e19fa04494f083943e778"
+    }
+  ]
+}
