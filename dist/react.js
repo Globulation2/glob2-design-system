@@ -14,7 +14,7 @@ function ThemeProvider({ children }) {
 const useTheme = () => useContext(ThemeContext);
 function ThemeToggle({ labels, ...props }) {
   const { preference, setPreference } = useTheme();
-  return /* @__PURE__ */ jsx("button", { type: "button", ...props, className: `theme-toggle ${props.className ?? ""}`, onClick: () => setPreference(nextPreference(preference)), "aria-label": `${labels[preference]}. ${labels.change}`, title: labels[preference], children: /* @__PURE__ */ jsx("svg", { viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", fill: "none", stroke: "currentColor", strokeWidth: "2", dangerouslySetInnerHTML: { __html: themeIconBody(preference) } }) });
+  return /* @__PURE__ */ jsx("button", { type: "button", ...props, className: `theme-toggle ${props.className ?? ""}`, onClick: () => setPreference(nextPreference(preference)), "aria-label": props["aria-label"] ?? `${labels[preference]}. ${labels.change}`, title: labels[preference], children: /* @__PURE__ */ jsx("svg", { viewBox: "0 0 24 24", width: "20", height: "20", "aria-hidden": "true", fill: "none", stroke: "currentColor", strokeWidth: "2", dangerouslySetInnerHTML: { __html: themeIconBody(preference) } }) });
 }
 function Icon({ name, size = 24, label, className = "", ...props }) {
   return /* @__PURE__ */ jsx("svg", { ...props, className: `icon ${className}`, width: size, height: size, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", focusable: "false", ...label ? { role: "img", "aria-label": label } : { "aria-hidden": true }, dangerouslySetInnerHTML: { __html: ICON_BODIES[name] } });

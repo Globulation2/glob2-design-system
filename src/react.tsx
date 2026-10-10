@@ -13,7 +13,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 export const useTheme = () => useContext(ThemeContext);
 export function ThemeToggle({ labels, ...props }: ButtonHTMLAttributes<HTMLButtonElement> & { labels: Record<ThemePreference | 'change', string> }) {
   const { preference, setPreference } = useTheme();
-  return <button type="button" {...props} className={`theme-toggle ${props.className ?? ''}`} onClick={() => setPreference(nextPreference(preference))} aria-label={`${labels[preference]}. ${labels.change}`} title={labels[preference]}>
+  return <button type="button" {...props} className={`theme-toggle ${props.className ?? ''}`} onClick={() => setPreference(nextPreference(preference))} aria-label={props["aria-label"] ?? `${labels[preference]}. ${labels.change}`} title={labels[preference]}>
     <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="2" dangerouslySetInnerHTML={{__html: themeIconBody(preference)}}/>
   </button>;
 }
