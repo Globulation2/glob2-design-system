@@ -53,7 +53,8 @@
     "generate": "node scripts/generate.mjs",
     "check": "npm run generate && git diff --exit-code -- dist src/icons.ts",
     "test": "node --test test/*.test.mjs",
-    "gallery": "vite examples/html --host 127.0.0.1"
+    "gallery": "vite examples/html --host 127.0.0.1",
+    "test:install": "node scripts/smoke-install.mjs"
   },
   "peerDependencies": {
     "react": "^19.0.0"
