@@ -1,0 +1,14 @@
+verify	Run node scripts/sync-legal.mjs --check	﻿2026-10-10T19:49:30.7962387Z ##[group]Run node scripts/sync-legal.mjs --check
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:30.7962898Z ^[[36;1mnode scripts/sync-legal.mjs --check^[[0m
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:30.8132378Z shell: /usr/bin/bash -e {0}
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:30.8132867Z ##[endgroup]
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0350517Z file:///home/runner/work/glob2-online-website/glob2-online-website/scripts/sync-legal.mjs:20
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0351708Z   if (!response.ok) throw new Error(`Cannot resolve game master: HTTP ${response.status}`);
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0352183Z                           ^
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0352349Z 
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0352557Z Error: Cannot resolve game master: HTTP 403
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0353135Z     at file:///home/runner/work/glob2-online-website/glob2-online-website/scripts/sync-legal.mjs:20:27
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0353794Z     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0354072Z 
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0354240Z Node.js v24.14.0
+verify	Run node scripts/sync-legal.mjs --check	2026-10-10T19:49:31.0730070Z ##[error]Process completed with exit code 1.

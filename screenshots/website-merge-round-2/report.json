@@ -1,0 +1,98 @@
+[
+  {
+    "path": "/learn/getting-started/",
+    "width": 360,
+    "colorScheme": "light",
+    "file": "guide-360-light.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 360,
+    "colorScheme": "light",
+    "file": "news-360-light.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  },
+  {
+    "path": "/learn/getting-started/",
+    "width": 360,
+    "colorScheme": "dark",
+    "file": "guide-360-dark.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 360,
+    "colorScheme": "dark",
+    "file": "news-360-dark.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  },
+  {
+    "path": "/learn/getting-started/",
+    "width": 768,
+    "colorScheme": "light",
+    "file": "guide-768-light.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 768,
+    "colorScheme": "light",
+    "file": "news-768-light.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  },
+  {
+    "path": "/learn/getting-started/",
+    "width": 768,
+    "colorScheme": "dark",
+    "file": "guide-768-dark.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 768,
+    "colorScheme": "dark",
+    "file": "news-768-dark.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  },
+  {
+    "path": "/learn/getting-started/",
+    "width": 1440,
+    "colorScheme": "light",
+    "file": "guide-1440-light.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 1440,
+    "colorScheme": "light",
+    "file": "news-1440-light.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  },
+  {
+    "path": "/learn/getting-started/",
+    "width": 1440,
+    "colorScheme": "dark",
+    "file": "guide-1440-dark.png",
+    "overflow": 0,
+    "h1": "Your first colony"
+  },
+  {
+    "path": "/news/browser-development/",
+    "width": 1440,
+    "colorScheme": "dark",
+    "file": "news-1440-dark.png",
+    "overflow": 0,
+    "h1": "Glob2 is growing into the browser"
+  }
+]

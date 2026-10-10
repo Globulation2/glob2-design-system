@@ -1,0 +1,213 @@
+Error: Failed to parse Markdown file "undefined":
+Unknown article directive: unsupported
+    at visit (file:///home/bradley/glob2-online-website/src/lib/article-directives.mjs:24:90)
+    at Array.forEach (<anonymous>)
+    at visit (file:///home/bradley/glob2-online-website/src/lib/article-directives.mjs:27:22)
+    at file:///home/bradley/glob2-online-website/src/lib/article-directives.mjs:29:5
+    at wrapped (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:160:27)
+    at next (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:86:23)
+    at done (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:194:7)
+    at then (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:204:5)
+    at wrapped (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:181:9)
+    at next (file:///home/bradley/glob2-online-website/node_modules/trough/lib/index.js:86:23)
+✔ legacy media markers remain exact inside explicit groups (582.79992ms)
+✔ inline colons are preserved and supported callouts remain readable (48.719132ms)
+✔ unknown blocks fail instead of dropping article content (20.675828ms)
+✔ complete platform matrix and sources validate (67.456211ms)
+✔ rejects missing package (12.136768ms)
+✔ rejects duplicate identity (8.933557ms)
+✔ rejects mixed source (1.187643ms)
+✔ rejects wrong version (8.784508ms)
+✔ rejects expiring CI URL (5.684616ms)
+✔ rejects wrong extension (9.198175ms)
+✔ rejects beta store (11.631772ms)
+✔ rejects unsafe store (10.424998ms)
+✔ rejects wrong Android app (3.272331ms)
+✔ rejects non-archive source (8.611919ms)
+✔ rejects store URL credentials (1.240443ms)
+✔ rejects duplicate Android app query (9.130787ms)
+✔ rejects unsafe filename (1.322622ms)
+✔ paginates past 200 evidence releases (199.585519ms)
+✔ ignores stable releases without qualified manifest and drafts (0.921525ms)
+✔ rejects immutable tag revision mismatch (10.716756ms)
+✔ verifies older assets by streaming final bytes (17.258678ms)
+✔ rejects mismatched GitHub digest (0.620866ms)
+✔ rejects missing and wrong-sized release assets (8.717528ms)
+✔ atomically updates once and preserves snapshot on every failure (211.981355ms)
+✔ editorial channels require a release binding and production app identities (13.148982ms)
+✔ oversized metadata is bounded before parsing (17.069829ms)
+✔ streamed package corruption is rejected (1.060204ms)
+(node:3411178) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+npm WARN skipping integrity check for git dependency ssh://git@github.com/Globulation2/glob2-design-system.git 
+
+added 1 package in 9s
+Glob2 design system: acd277710acfebf528e1fc6f653d55fdf75de4b2
+15:51:12 [vite] Re-optimizing dependencies because vite config has changed
+15:51:15 [content] Syncing content
+15:51:15 [content] Synced content
+15:51:15 [types] Generated 3.49s
+15:51:15 [build] output: "static"
+15:51:15 [build] mode: "static"
+15:51:15 [build] directory: /home/bradley/glob2-online-website/artifacts/downloads/populated-XRwNgb/dist/
+15:51:15 [build] Collecting build info...
+15:51:15 [build] ✓ Completed in 3.96s.
+15:51:15 [build] Building static entrypoints...
+15:51:19 [vite] ✓ built in 3.05s
+15:51:19 [vite] ✓ built in 530ms
+15:51:19 [build] Rearranging server assets...
+
+ generating static routes 
+15:51:19   ├─ /404.html (+63ms) 
+15:51:20   ├─ /archive/index.html (+38ms) 
+15:51:20   ├─ /archive/legacy-strategy/index.html (+14ms) 
+15:51:20   ├─ /archive/legacy-translations/index.html (+14ms) 
+15:51:20   ├─ /community/index.html (+10ms) 
+15:51:20   ├─ /competition/index.html (+10ms) 
+15:51:20   ├─ /credits/index.html (+23ms) 
+15:51:20   ├─ /design/colony/index.html (+35ms) 
+15:51:20   ├─ /design/field-guide/index.html (+22ms) 
+15:51:20   ├─ /downloads/index.html (+31ms) 
+15:51:20   ├─ /events/index.html (+16ms) 
+15:51:20   ├─ /game/index.html (+20ms) 
+15:51:20   ├─ /history/index.html (+25ms) 
+15:51:20   ├─ /history/project-history/index.html (+23ms) 
+15:51:20   ├─ /learn/index.html (+31ms) 
+15:51:20   ├─ /learn/ai-cabino/index.html (+41ms) 
+15:51:20   ├─ /learn/ai-castor/index.html (+24ms) 
+15:51:20   ├─ /learn/ai-cortex/index.html (+17ms) 
+15:51:20   ├─ /learn/ai-econo/index.html (+17ms) 
+15:51:20   ├─ /learn/ai-maxima/index.html (+15ms) 
+15:51:20   ├─ /learn/ai-nicowar/index.html (+16ms) 
+15:51:20   ├─ /learn/ai-numbi/index.html (+15ms) 
+15:51:20   ├─ /learn/ai-warrush/index.html (+12ms) 
+15:51:20   ├─ /learn/browser-and-multiplayer/index.html (+13ms) 
+15:51:20   ├─ /learn/buildings-and-services/index.html (+11ms) 
+15:51:20   ├─ /learn/choosing-an-ai/index.html (+75ms) 
+15:51:20   ├─ /learn/controls-and-hud/index.html (+13ms) 
+15:51:20   ├─ /learn/defending-your-colony/index.html (+12ms) 
+15:51:20   ├─ /learn/economy-and-expansion/index.html (+12ms) 
+15:51:20   ├─ /learn/exploration-and-movement/index.html (+12ms) 
+15:51:20   ├─ /learn/fruit-and-conversion/index.html (+15ms) 
+15:51:20   ├─ /learn/getting-started/index.html (+11ms) 
+15:51:20   ├─ /learn/jobs-and-flags/index.html (+12ms) 
+15:51:20   ├─ /learn/organizing-an-attack/index.html (+11ms) 
+15:51:20   ├─ /learn/population-and-production/index.html (+11ms) 
+15:51:20   ├─ /learn/recovering-your-colony/index.html (+8ms) 
+15:51:20   ├─ /learn/reference-buildings/index.html (+10ms) 
+15:51:20   ├─ /learn/reference-controls/index.html (+13ms) 
+15:51:20   ├─ /learn/reference-resources/index.html (+5ms) 
+15:51:20   ├─ /learn/reference-units/index.html (+7ms) 
+15:51:20   ├─ /learn/resources-and-hauling/index.html (+14ms) 
+15:51:20   ├─ /learn/sustainable-food/index.html (+10ms) 
+15:51:20   ├─ /learn/training-and-upgrades/index.html (+10ms) 
+15:51:20   ├─ /learn/victory-and-rules/index.html (+7ms) 
+15:51:20   ├─ /news/index.html (+11ms) 
+15:51:20   ├─ /news/browser-development/index.html (+11ms) 
+15:51:20   ├─ /privacy/index.html (+26ms) 
+15:51:20   ├─ /search/index.html (+14ms) 
+15:51:20   ├─ /terms/index.html (+14ms) 
+15:51:20   ├─ /index.html (+16ms) 
+15:51:20 ✓ Completed in 1.14s.
+
+15:51:20 [build] ✓ Completed in 4.95s.
+15:51:20 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+15:51:20 [build] 50 page(s) built in 9.00s
+15:51:20 [build] Complete!
+Glob2 design system: acd277710acfebf528e1fc6f653d55fdf75de4b2
+15:55:55 [content] Syncing content
+15:55:55 [content] Synced content
+15:55:55 [types] Generated 4.88s
+15:55:55 [build] output: "static"
+15:55:55 [build] mode: "static"
+15:55:55 [build] directory: /home/bradley/glob2-online-website/artifacts/downloads/populated-XRwNgb/dist/
+15:55:55 [build] Collecting build info...
+15:55:55 [build] ✓ Completed in 5.04s.
+15:55:55 [build] Building static entrypoints...
+15:55:58 [vite] ✓ built in 2.06s
+15:55:58 [vite] ✓ built in 319ms
+15:55:58 [build] Rearranging server assets...
+
+ generating static routes 
+15:55:58   ├─ /404.html (+162ms) 
+15:55:59   ├─ /archive/index.html (+30ms) 
+15:55:59   ├─ /archive/legacy-strategy/index.html (+24ms) 
+15:55:59   ├─ /archive/legacy-translations/index.html (+15ms) 
+15:55:59   ├─ /community/index.html (+20ms) 
+15:55:59   ├─ /competition/index.html (+14ms) 
+15:55:59   ├─ /credits/index.html (+21ms) 
+15:55:59   ├─ /design/colony/index.html (+22ms) 
+15:55:59   ├─ /design/field-guide/index.html (+21ms) 
+15:55:59   ├─ /downloads/index.html (+36ms) 
+15:55:59   ├─ /events/index.html (+23ms) 
+15:55:59   ├─ /game/index.html (+14ms) 
+15:55:59   ├─ /history/index.html (+14ms) 
+15:55:59   ├─ /history/project-history/index.html (+12ms) 
+15:55:59   ├─ /learn/index.html (+17ms) 
+15:55:59   ├─ /learn/ai-cabino/index.html (+21ms) 
+15:55:59   ├─ /learn/ai-castor/index.html (+16ms) 
+15:55:59   ├─ /learn/ai-cortex/index.html (+13ms) 
+15:55:59   ├─ /learn/ai-econo/index.html (+12ms) 
+15:55:59   ├─ /learn/ai-maxima/index.html (+24ms) 
+15:55:59   ├─ /learn/ai-nicowar/index.html (+13ms) 
+15:55:59   ├─ /learn/ai-numbi/index.html (+11ms) 
+15:55:59   ├─ /learn/ai-warrush/index.html (+12ms) 
+15:55:59   ├─ /learn/browser-and-multiplayer/index.html (+8ms) 
+15:55:59   ├─ /learn/buildings-and-services/index.html (+16ms) 
+15:55:59   ├─ /learn/choosing-an-ai/index.html (+19ms) 
+15:55:59   ├─ /learn/controls-and-hud/index.html (+11ms) 
+15:55:59   ├─ /learn/defending-your-colony/index.html (+17ms) 
+15:55:59   ├─ /learn/economy-and-expansion/index.html (+13ms) 
+15:55:59   ├─ /learn/exploration-and-movement/index.html (+17ms) 
+15:55:59   ├─ /learn/fruit-and-conversion/index.html (+15ms) 
+15:55:59   ├─ /learn/getting-started/index.html (+13ms) 
+15:55:59   ├─ /learn/jobs-and-flags/index.html (+19ms) 
+15:55:59   ├─ /learn/organizing-an-attack/index.html (+7ms) 
+15:55:59   ├─ /learn/population-and-production/index.html (+8ms) 
+15:55:59   ├─ /learn/recovering-your-colony/index.html (+15ms) 
+15:55:59   ├─ /learn/reference-buildings/index.html (+11ms) 
+15:55:59   ├─ /learn/reference-controls/index.html (+17ms) 
+15:55:59   ├─ /learn/reference-resources/index.html (+11ms) 
+15:55:59   ├─ /learn/reference-units/index.html (+12ms) 
+15:55:59   ├─ /learn/resources-and-hauling/index.html (+9ms) 
+15:55:59   ├─ /learn/sustainable-food/index.html (+18ms) 
+15:55:59   ├─ /learn/training-and-upgrades/index.html (+18ms) 
+15:55:59   ├─ /learn/victory-and-rules/index.html (+19ms) 
+15:55:59   ├─ /news/index.html (+12ms) 
+15:55:59   ├─ /news/browser-development/index.html (+10ms) 
+15:55:59   ├─ /privacy/index.html (+29ms) 
+15:55:59   ├─ /search/index.html (+17ms) 
+15:55:59   ├─ /terms/index.html (+17ms) 
+15:55:59   ├─ /index.html (+25ms) 
+15:55:59 ✓ Completed in 1.22s.
+
+15:55:59 [build] ✓ Completed in 3.94s.
+15:55:59 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+15:55:59 [build] 50 page(s) built in 9.14s
+15:55:59 [build] Complete!
+Populated downloads: 18 browser/theme/viewport checks passed; fixture: /home/bradley/glob2-online-website/artifacts/downloads/populated-XRwNgb
+✔ scripts/test_downloads_render.mjs (314043.813533ms)
+✔ release CLI recovers a required-page propagation delay and preserves the intentional404 check (2634.328655ms)
+✔ release CLI rejects successful invalid HTML without retrying (1001.265003ms)
+✔ release CLI rejects an index that would silently skip all chapter checks (952.391272ms)
+✔ manifest rejects untrusted hosts, traversal, duplicate IDs and missing posters (20.064742ms)
+✔ changed capture bytes are rejected (5.221899ms)
+✔ release smoke tolerates temporary Hosting propagation but verifies recovered bytes (395.25593ms)
+✔ release smoke bounds retries and preserves permanent errors (25.079222ms)
+✔ release smoke does not retry corrupted successful responses (23.59284ms)
+Staged 1 checked guide assets
+Staged 1 checked guide assets
+✔ staging verifies downloaded bytes, reuses checked cache, and fails closed on unavailable or corrupt assets (149.948442ms)
+✔ sync check detects upstream drift and missing sources without writing (1050.83562ms)
+✔ empty current ratings remain healthy, with exact stale boundary (10.656897ms)
+✔ malformed, unsupported and future snapshots fail (0.791655ms)
+✔ canonical app metadata detects a hostname regression (0.545757ms)
+✔ HTTP failures, redirects and bounded requests are enforced (361.893048ms)
+ℹ tests 42
+ℹ suites 0
+ℹ pass 42
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 314199.455163

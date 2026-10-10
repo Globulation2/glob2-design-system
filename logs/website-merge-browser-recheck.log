@@ -1,0 +1,19 @@
+
+Running 10 tests using 2 workers
+
+(node:3472007) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:3472008) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 [webkit] › tests/article-experience.spec.ts:343:1 › inspecting images does not fetch untouched gameplay clips (4.6s)
+  ✓   1 [webkit] › tests/article-experience.spec.ts:329:1 › unavailable expanded clips retain instructions and a direct clip link (5.1s)
+  ✓   4 [webkit] › tests/colony.spec.ts:49:1 › pause keeps the resume control when a pending play is cancelled (16.0s)
+  ✓   3 [webkit] › tests/colony.spec.ts:19:1 › real colony video pauses and respects reduced motion (19.5s)
+  ✓   5 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible light 360 (3.7s)
+  ✓   6 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible light 768 (3.9s)
+  ✓   7 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible light 1440 (3.7s)
+  ✓   8 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible dark 360 (3.9s)
+  ✓   9 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible dark 768 (3.8s)
+  ✓  10 [webkit] › tests/downloads.spec.ts:5:3 › download choices reflow and remain accessible dark 1440 (3.9s)
+
+  10 passed (38.0s)

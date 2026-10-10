@@ -1,0 +1,14 @@
+{
+  "shared": "acd277710acfebf528e1fc6f653d55fdf75de4b2",
+  "onlineCandidate": "ec1de340385183f2c0c1d1d526e05a497a8344a7",
+  "onlineBase": "95ae8a0c181046407e94dbd4642423583639452b",
+  "onlineMerged": "5443f425e0ff00065457ce8baa68238557db49f6",
+  "websiteCandidate": "89b33247a53e506757de379b5ce5164c2c282c1a",
+  "websiteBase": "58bdda78b33014fa544c486eaa0b29b8bc3480a1",
+  "websiteBuildAndRenderSource": "e1df3731f47341244103e8f143f8a3e2ea0fc88e",
+  "websiteHostedRun": "https://github.com/Globulation2/glob2-online-website/actions/runs/38082176365",
+  "os": "Ubuntu Linux x86_64",
+  "node": "24.19.0",
+  "npm": "9.2.0 locally",
+  "database": "PostgreSQL 16, temporary harness databases"
+}
