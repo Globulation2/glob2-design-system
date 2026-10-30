@@ -2,8 +2,13 @@
 const KEY = 'glob2-theme';
 const FALLBACK_KEY = 'glob2-theme-v2';
 const valid = value => ['system', 'light', 'dark'].includes(value);
-const production = win => win.location.protocol === 'https:' &&
-  (win.location.hostname === 'glob2online.com' || win.location.hostname.endsWith('.glob2online.com'));
+// Keep the former domain working while canonical hosts migrate. Cookies cannot
+// transfer between the two parent domains; each shares only with its subdomains.
+const cookieDomain = win => win.location.protocol === 'https:'
+  ? ['glob2.online', 'glob2online.com'].find(domain =>
+    win.location.hostname === domain || win.location.hostname.endsWith(`.${domain}`))
+  : undefined;
+const production = win => Boolean(cookieDomain(win));
 
 export function readPreference(win) {
   try {
@@ -32,7 +37,7 @@ export function writePreference(win, preference) {
   if (!valid(preference)) throw new TypeError('Invalid theme preference');
   try {
     if (production(win)) {
-      win.document.cookie = `${KEY}=${preference}; Domain=glob2online.com; Path=/; SameSite=Lax; Secure; Max-Age=31536000`;
+      win.document.cookie = `${KEY}=${preference}; Domain=${cookieDomain(win)}; Path=/; SameSite=Lax; Secure; Max-Age=31536000`;
     } else {
       win.localStorage.setItem(FALLBACK_KEY, preference);
     }

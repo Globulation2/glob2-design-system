@@ -28,5 +28,10 @@ site the next time that site builds.
 
 For local package development, use a Git candidate commit via the same override after
 pushing it. This exercises actual Git packaging rather than a source-only alias.
-A functional cookie shares preferences only on glob2online.com and its HTTPS subdomains.
+A functional cookie shares preferences only on glob2.online and its HTTPS subdomains.
 Localhost and third-party previews use origin-local storage.
+
+During the domain migration, HTTPS pages on the former `glob2online.com` parent
+retain their own shared theme cookie. The cookie domain follows the current host;
+preferences cannot transfer between unrelated parent domains. Other origins keep
+using localStorage.

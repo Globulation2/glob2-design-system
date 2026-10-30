@@ -28,7 +28,7 @@ runtime is required. React is an optional peer and only the `/react` export impo
 Copy `/bootstrap` to a same-origin URL and load it as an ordinary external script
 in the document head before styles/body paint. Import the default entry for
 `getThemeController()` and `mountThemeToggle()`. The controller shares a functional
-preference cookie across glob2online.com subdomains; other origins use localStorage.
+preference cookie across glob2.online subdomains; other origins use localStorage.
 Labels belong to the consumer. `/node` supplies `assetPath()` and `cssText()` for
 static builds and server-rendered pages. `/colony` supplies the decoration lifecycle.
 
@@ -59,3 +59,8 @@ Git installation uses committed outputs and works with scripts disabled.
 
 Code and game artwork: GPL-3.0-or-later. Fonts and Tabler icons retain their separate
 licenses in `assets/`. See [asset attribution](docs/assets.md).
+
+During the domain migration, HTTPS pages on the former `glob2online.com` parent
+retain their own shared theme cookie. The cookie domain follows the current host;
+preferences cannot transfer between unrelated parent domains. Other origins keep
+using localStorage.

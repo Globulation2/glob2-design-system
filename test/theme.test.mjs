@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import { JSDOM, CookieJar } from 'jsdom';
 import { createThemeController, readPreference, writePreference } from '../dist/theme.js';
 import { readFileSync } from 'node:fs';
-const make = (url = 'https://app.glob2online.com/', cookieJar) => {
+const make = (url = 'https://app.glob2.online/', cookieJar) => {
  const dom = new JSDOM('<!doctype html><html><body></body></html>', { url, cookieJar, runScripts: 'outside-only' });
  const query = new dom.window.EventTarget(); query.matches = false;
  dom.window.matchMedia = () => query;
  return { win: dom.window, query };
 };
 test('shared cookie survives navigation between domains and explicit system wins over legacy', () => {
- const jar = new CookieJar(); const app = make(undefined, jar); const site = make('https://glob2online.com/', jar);
+ const jar = new CookieJar(); const app = make(undefined, jar); const site = make('https://glob2.online/', jar);
  const a = createThemeController(app.win); const b = createThemeController(site.win);
  a.setPreference('dark'); b.refresh(); assert.equal(b.getSnapshot().theme, 'dark');
  assert.match(app.win.document.cookie, /glob2-theme=dark/);
@@ -55,4 +55,27 @@ test('blocked cookie writes preserve legacy migration across focus', () => {
  win.localStorage.setItem('glob2-theme','dark'); const controller = createThemeController(win);
  controller.refresh(); assert.equal(controller.getSnapshot().preference,'dark');
  assert.equal(win.localStorage.getItem('glob2-theme'),'dark'); controller.destroy();
+});
+
+test('migration keeps old-domain sharing separate from the new domain', () => {
+ const jar = new CookieJar();
+ const oldApp = make('https://app.glob2online.com/', jar);
+ const oldSite = make('https://glob2online.com/', jar);
+ const newApp = make('https://app.glob2.online/', jar);
+ const newSite = make('https://glob2.online/', jar);
+ writePreference(oldApp.win, 'dark');
+ assert.equal(readPreference(oldSite.win), 'dark');
+ assert.equal(readPreference(newSite.win), 'system');
+ writePreference(newApp.win, 'light');
+ assert.equal(readPreference(newSite.win), 'light');
+ assert.equal(readPreference(oldApp.win), 'dark');
+});
+test('lookalike hosts and insecure production names use local storage', () => {
+ for (const url of ['https://glob2.online.example/', 'https://fakeglob2.online/', 'https://glob2online.com.example/', 'https://fakeglob2online.com/', 'http://glob2.online/']) {
+  const { win } = make(url);
+  writePreference(win, 'dark');
+  assert.equal(win.document.cookie, '');
+  assert.equal(win.localStorage.getItem('glob2-theme-v2'), 'dark');
+  assert.equal(readPreference(win), 'dark');
+ }
 });
