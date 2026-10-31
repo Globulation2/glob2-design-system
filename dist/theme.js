@@ -11,9 +11,15 @@ function readPreference(win) {
       if (valid(value)) {
         try {
           win.localStorage.removeItem(KEY);
+          win.localStorage.removeItem(FALLBACK_KEY);
         } catch {
         }
         return value;
+      }
+      const saved = win.localStorage.getItem(FALLBACK_KEY);
+      if (valid(saved)) {
+        writePreference(win, saved);
+        return saved;
       }
     } else {
       const saved = win.localStorage.getItem(FALLBACK_KEY);
@@ -30,6 +36,12 @@ function readPreference(win) {
 }
 function writePreference(win, preference) {
   if (!valid(preference)) throw new TypeError("Invalid theme preference");
+  if (production(win)) {
+    try {
+      win.localStorage.setItem(FALLBACK_KEY, preference);
+    } catch {
+    }
+  }
   try {
     if (production(win)) {
       win.document.cookie = `${KEY}=${preference}; Domain=${cookieDomain(win)}; Path=/; SameSite=Lax; Secure; Max-Age=31536000`;
@@ -37,7 +49,10 @@ function writePreference(win, preference) {
       win.localStorage.setItem(FALLBACK_KEY, preference);
     }
     const saved = production(win) ? win.document.cookie.split(";").some((x) => x.trim() === `${KEY}=${preference}`) : win.localStorage.getItem(FALLBACK_KEY) === preference;
-    if (saved) win.localStorage.removeItem(KEY);
+    if (saved) {
+      win.localStorage.removeItem(KEY);
+      if (production(win)) win.localStorage.removeItem(FALLBACK_KEY);
+    }
   } catch {
   }
 }

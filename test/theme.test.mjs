@@ -79,3 +79,63 @@ test('lookalike hosts and insecure production names use local storage', () => {
   assert.equal(readPreference(win), 'dark');
  }
 });
+
+
+test('new-domain fallback preference becomes a shared cookie on first paint', () => {
+ const jar = new CookieJar();
+ const app = make('https://app.glob2.online/', jar);
+ const site = make('https://glob2.online/', jar);
+ app.win.localStorage.setItem('glob2-theme-v2', 'dark');
+ app.win.eval(readFileSync(new URL('../dist/bootstrap.js', import.meta.url), 'utf8'));
+ assert.equal(app.win.Glob2Theme.getSnapshot().preference, 'dark');
+ assert.equal(app.win.document.documentElement.dataset.theme, 'dark');
+ assert.match(app.win.document.cookie, /glob2-theme=dark/);
+ assert.equal(app.win.localStorage.getItem('glob2-theme-v2'), null);
+ assert.equal(readPreference(site.win), 'dark');
+ app.win.Glob2Theme.destroy();
+});
+test('valid shared cookie takes priority over the former local fallback', () => {
+ const { win } = make();
+ writePreference(win, 'system');
+ win.localStorage.setItem('glob2-theme-v2', 'dark');
+ assert.equal(readPreference(win), 'system');
+ assert.equal(win.localStorage.getItem('glob2-theme-v2'), null);
+});
+test('blocked shared-cookie writes preserve the former local fallback across refresh', () => {
+ const { win } = make();
+ Object.defineProperty(win.document, 'cookie', { get: () => '', set: () => {} });
+ win.localStorage.setItem('glob2-theme-v2', 'dark');
+ const controller = createThemeController(win);
+ for (const event of ['focus', 'pageshow', 'storage']) {
+  win.dispatchEvent(new win.Event(event));
+  assert.equal(controller.getSnapshot().preference, 'dark');
+  assert.equal(win.localStorage.getItem('glob2-theme-v2'), 'dark');
+ }
+ controller.destroy();
+});
+
+test('blocked shared cookies retain the latest explicit fallback choice across refresh and reload', () => {
+ for (const blockedSetter of [() => {}, () => { throw new Error('blocked'); }]) {
+  const { win } = make();
+  Object.defineProperty(win.document, 'cookie', { get: () => '', set: blockedSetter });
+  win.localStorage.setItem('glob2-theme-v2', 'dark');
+  const controller = createThemeController(win);
+  controller.setPreference('light');
+  for (const event of ['focus', 'pageshow', 'storage']) {
+   win.dispatchEvent(new win.Event(event));
+   assert.equal(controller.getSnapshot().preference, 'light');
+   assert.equal(win.localStorage.getItem('glob2-theme-v2'), 'light');
+  }
+  controller.destroy();
+  const reloaded = createThemeController(win);
+  assert.equal(reloaded.getSnapshot().preference, 'light');
+  reloaded.destroy();
+ }
+});
+test('blocked local storage does not prevent shared-cookie persistence', () => {
+ const { win } = make();
+ Object.defineProperty(win, 'localStorage', { get() { throw new Error('blocked'); } });
+ writePreference(win, 'dark');
+ assert.match(win.document.cookie, /glob2-theme=dark/);
+ assert.equal(readPreference(win), 'dark');
+});

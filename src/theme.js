@@ -16,8 +16,15 @@ export function readPreference(win) {
       const cookie = win.document.cookie.split(';').map(x => x.trim()).find(x => x.startsWith(`${KEY}=`));
       const value = cookie?.slice(KEY.length + 1);
       if (valid(value)) {
-        try { win.localStorage.removeItem(KEY); } catch {}
+        try { win.localStorage.removeItem(KEY); win.localStorage.removeItem(FALLBACK_KEY); } catch {}
         return value;
+      }
+      // Before this hostname had a shared cookie, the deployed app used the
+      // preview fallback. Preserve that explicit choice when enabling sharing.
+      const saved = win.localStorage.getItem(FALLBACK_KEY);
+      if (valid(saved)) {
+        writePreference(win, saved);
+        return saved;
       }
     } else {
       const saved = win.localStorage.getItem(FALLBACK_KEY);
@@ -35,6 +42,11 @@ export function readPreference(win) {
 
 export function writePreference(win, preference) {
   if (!valid(preference)) throw new TypeError('Invalid theme preference');
+  // Keep the latest choice if shared-cookie writes are blocked. A storage
+  // failure must not prevent an otherwise valid cookie write.
+  if (production(win)) {
+    try { win.localStorage.setItem(FALLBACK_KEY, preference); } catch {}
+  }
   try {
     if (production(win)) {
       win.document.cookie = `${KEY}=${preference}; Domain=${cookieDomain(win)}; Path=/; SameSite=Lax; Secure; Max-Age=31536000`;
@@ -44,7 +56,10 @@ export function writePreference(win, preference) {
     const saved = production(win)
       ? win.document.cookie.split(';').some(x => x.trim() === `${KEY}=${preference}`)
       : win.localStorage.getItem(FALLBACK_KEY) === preference;
-    if (saved) win.localStorage.removeItem(KEY);
+    if (saved) {
+      win.localStorage.removeItem(KEY);
+      if (production(win)) win.localStorage.removeItem(FALLBACK_KEY);
+    }
   } catch { /* Keep the in-memory choice for this page. */ }
 }
 

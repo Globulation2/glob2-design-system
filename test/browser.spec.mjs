@@ -29,3 +29,15 @@ test(`secure ${domain} parent cookie shares explicit system/light/dark across su
  cookies=await context.cookies();expect(cookies.find(c=>c.name==='glob2-theme').expires).toBeGreaterThan(Date.now()/1000+31400000);
 });
 }
+test('new-domain local fallback survives upgrade and shares through the parent cookie', async ({page,context}) => {
+ await page.goto('https://app.glob2.online/');
+ await page.evaluate(() => { localStorage.setItem('glob2-theme-v2','dark'); location.reload(); });
+ await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+ expect(await page.evaluate(() => localStorage.getItem('glob2-theme-v2'))).toBeNull();
+ expect((await context.cookies()).find(c => c.name === 'glob2-theme')).toMatchObject({domain:'.glob2.online',value:'dark'});
+ await page.evaluate(() => { localStorage.setItem('glob2-theme-v2','light'); location.reload(); });
+ await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+ expect(await page.evaluate(() => localStorage.getItem('glob2-theme-v2'))).toBeNull();
+ await page.goto('https://www.glob2.online/');
+ await expect(page.locator('html')).toHaveAttribute('data-theme','dark');
+});
