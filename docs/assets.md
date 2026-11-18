@@ -18,8 +18,15 @@ themes and forced colors. Do not flatten it onto a fixed background for web use.
 Use decorative game sprites with empty alt text; write meaningful alt text for
 screenshots or images used as evidence.
 
-The silent colony recording comes from the game's real menu simulation, with no UI.
-Keep the MP4 and its two posters together. Rebuild upstream using
-`tools/record_menu_colony.py` and import all three outputs in a reviewed theme update.
+The silent colony recording was refreshed on 18 November 2026 from the public
+0.11.6.1 macOS arm64 release, source `1b6051421821`. It shows the real live
+menu-colony simulation. A declared crop removes the menus; native unit/building
+status bars remain visible. The 1600 × 900 MP4 lasts 15 seconds with a one-second
+dissolve joining the end to the opening. Both posters use its exact first decoded
+frame. `colonyCapture` in the provenance manifest records the package/binary/video
+hashes, source interval and crop, separately from the older sprite import revision.
+Keep the MP4 and its two posters together. The upstream `tools/record_menu_colony.py`
+also supports capture through a source-built harness; this refresh instead uses the
+released client's embedded recorder and a declared crop to preserve release identity.
 Do not request video for reduced-motion visitors. Self-host the selected assets
 with the consuming application; no runtime GitHub or font-provider fetch is needed.

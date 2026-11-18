@@ -9,9 +9,9 @@
   "files": {
     "algae.webp": "37eaf09c997f6d05b65c1fadcaed92b667c9572b0f354a28de97317eb0329e80",
     "clearing-flag.webp": "5db4e0060df5ce97dcbc3da985325e8281c8946f17f9344e1a04cf1608b0fd4e",
-    "colony-1600.webp": "27888fd22dfaaebe300ae76a6b2f43c2e530f21b647c1be3df2d69a5962db09b",
-    "colony-960.webp": "c93907395db85735e015283f66f09bcf77e1c5f5bcb62f8853b03cc745fe6647",
-    "colony-loop.mp4": "f898edeb338efca294c1e12d1c7291c36c04f138906c5a123c2748751db28745",
+    "colony-1600.webp": "db69c97d3928655de35496d82c51608ab1c1e05b923c5e458bf5c1bae485588c",
+    "colony-960.webp": "6aedacb7e46317c30b81aa60a69b3cf17d0a82c07b3b54db87235ae6de995254",
+    "colony-loop.mp4": "947eb6189be6ac64572866347129aa2101de7232d36d91b4ab577b39de3eca89",
     "exploration-flag.webp": "8d4107423d2786abaf9c65544387660f182f51fe3dd873f1056ddf47d049388a",
     "explorer-west.webp": "329e8f464dddbadd1212cd5644d6b5c199b93bb49a4e43c6feddf433ba11238a",
     "fruit.webp": "42bd53ea3c095ff46108a2f4f5e24c959e50314191df3ee456f9c40560f66a44",
@@ -42,5 +42,45 @@
     "nunito.woff2": "ba344451eab25b217a165363b1982048a5e5830a0daf36577973955a04cac793",
     "og-colony.jpg": "003dc0bf9dc31de8961c44e0b43d69ecc8906a6d05dd4758e18d3465d9498966",
     "LICENSE-Tabler.txt": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
+  },
+  "colonyCapture": {
+    "captured": "2026-11-18",
+    "product": "Globulation 2",
+    "version": "0.11.6.1",
+    "source_revision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+    "release": "https://github.com/Globulation2/glob2/releases/tag/v0.11.6.1",
+    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+    "package_sha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+    "binary_sha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
+    "renderer": "packaged native software renderer, high-tier detected, Automatic artwork, 2940x1656 framebuffer",
+    "hero": {
+      "scene": "actual live menu colony simulation from released package, UI omitted by crop; status bars retained",
+      "recording": "capture-759515517888.mp4",
+      "recording_sha256": "bd33383d7ad335d6f324bf4562002483d80405102a8ffdb3ab99330525c93939",
+      "chapter": "main_menu 1.133333\u201320.766666 seconds",
+      "source_range_seconds": [
+        3,
+        19
+      ],
+      "crop": [
+        892,
+        252,
+        2048,
+        1152
+      ],
+      "delivery_dimensions": [
+        1600,
+        900
+      ],
+      "loop": "15 seconds; middle original seconds4\u201318, one-second dissolve source18\u201319 into3\u20134; opening and closing meet at source4",
+      "audio": "removed",
+      "poster": "exact decoded first delivered frame, WebP90,1600/960 wide",
+      "limits": "menu-colony background, not a human match or store launcher qualification; no stock/generated imagery, repaint, recolor or game-state manipulation"
+    },
+    "files": {
+      "colony-loop.mp4": "947eb6189be6ac64572866347129aa2101de7232d36d91b4ab577b39de3eca89",
+      "colony-1600.webp": "db69c97d3928655de35496d82c51608ab1c1e05b923c5e458bf5c1bae485588c",
+      "colony-960.webp": "6aedacb7e46317c30b81aa60a69b3cf17d0a82c07b3b54db87235ae6de995254"
+    }
   }
 }
