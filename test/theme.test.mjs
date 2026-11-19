@@ -65,7 +65,7 @@ test('migration keeps old-domain sharing separate from the new domain', () => {
  const newSite = make('https://glob2.online/', jar);
  writePreference(oldApp.win, 'dark');
  assert.equal(readPreference(oldSite.win), 'dark');
- assert.equal(readPreference(newSite.win), 'system');
+ assert.equal(readPreference(newSite.win), 'light');
  writePreference(newApp.win, 'light');
  assert.equal(readPreference(newSite.win), 'light');
  assert.equal(readPreference(oldApp.win), 'dark');
@@ -138,4 +138,14 @@ test('blocked local storage does not prevent shared-cookie persistence', () => {
  writePreference(win, 'dark');
  assert.match(win.document.cookie, /glob2-theme=dark/);
  assert.equal(readPreference(win), 'dark');
+});
+test('without a saved choice the theme starts light even on a dark device', () => {
+ const { win, query } = make(); query.matches = true;
+ win.eval(readFileSync(new URL('../dist/bootstrap.js',import.meta.url),'utf8'));
+ assert.deepEqual({ ...win.Glob2Theme.getSnapshot() }, { preference: 'light', theme: 'light' });
+ assert.equal(win.document.documentElement.dataset.theme, 'light');
+ assert.equal(win.document.cookie, '');
+ win.Glob2Theme.setPreference('system');
+ assert.equal(win.Glob2Theme.getSnapshot().theme, 'dark');
+ win.Glob2Theme.destroy();
 });
