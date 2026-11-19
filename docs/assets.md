@@ -28,8 +28,10 @@ needed. It ran on the active SDL GPU renderer with unit/building status bars and
 reads back each presented 2940 × 1656 frame. High-resolution artwork came from the
 default Auto setting on Apple silicon; a side-by-side crop against the superseded
 release capture shows the same camera position and artwork detail. This is a source
-build of Globulation2/glob2, not a released package, and used a local harness change
-(`GLOB2_PRESENTED_CAPTURE`, `GLOB2_COLONY_STATUS`) recorded by hash in the manifest.
+build of Globulation2/glob2 at `9598555f` (Globulation2/glob2#1868), not a released package.
+That harness advances water, shorelines and clouds by the same 40 ms per recorded
+frame as the simulation; an earlier capture that used capture wall time played them
+about three times too fast and is kept as superseded.
 The 1600 × 900 MP4 lasts 15 seconds at the simulation's 25 fps with a one-second
 dissolve joining the end to the opening. Both posters use its exact first decoded
 frame. `colonyCapture` in the provenance manifest records the source, renderer,
