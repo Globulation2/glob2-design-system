@@ -9,9 +9,9 @@
   "files": {
     "algae.webp": "37eaf09c997f6d05b65c1fadcaed92b667c9572b0f354a28de97317eb0329e80",
     "clearing-flag.webp": "5db4e0060df5ce97dcbc3da985325e8281c8946f17f9344e1a04cf1608b0fd4e",
-    "colony-1600.webp": "7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb",
-    "colony-960.webp": "eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0",
-    "colony-loop.mp4": "36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d",
+    "colony-1600.webp": "6624ad10fec83ce7188fc923ec5a26631c8abe296fa9bbcfa344a18b9a010839",
+    "colony-960.webp": "cc9061014ab0bbbfa38ac20b87ece312ff86f3c162f8c16c175d615a2c5f3ef6",
+    "colony-loop.mp4": "a68cabfc0a58eb21a2ab39c6cc3a5da0f705179100afbfd89aac6bc4254fc831",
     "exploration-flag.webp": "8d4107423d2786abaf9c65544387660f182f51fe3dd873f1056ddf47d049388a",
     "explorer-west.webp": "329e8f464dddbadd1212cd5644d6b5c199b93bb49a4e43c6feddf433ba11238a",
     "fruit.webp": "42bd53ea3c095ff46108a2f4f5e24c959e50314191df3ee456f9c40560f66a44",
@@ -46,8 +46,8 @@
   "colonyCapture": {
     "captured": "2026-11-19",
     "product": "Globulation 2",
-    "source_revision": "38b87ea2c1e71d8fbec78ac4e02cbd3095234bb8",
-    "source": "Globulation2/glob2 master checkout plus an uncommitted harness change (sha256 of diff c399cf36a62bad1583324bbe430450ba5633da3c4c7341d4600c29c5031d9926) adding GLOB2_PRESENTED_CAPTURE and GLOB2_COLONY_STATUS to tools/MenuColonyHarness.cpp record-colony; not a released package.",
+    "source_revision": "9598555f43b6c5c98422842ac9f030ec8f111319",
+    "source": "Globulation2/glob2 master at 9598555f (Globulation2/glob2#1868, which adds GLOB2_PRESENTED_CAPTURE, GLOB2_COLONY_STATUS and a fixed 40 ms presentation step to tools/MenuColonyHarness.cpp record-colony), dev build; not a released package.",
     "renderer": "Active SDL GPU backend (GLOB2_RENDERER=sdl-gpu), 1470x828 logical window at 2x pixel density, 2940x1656 presented-frame readback; high-resolution artwork resolved by the default Auto setting on Apple silicon (terrain tile=64).",
     "graphicsQualification": {
       "method": "Side-by-side crop of the same map region at native 2940x1656 against the superseded release capture: identical camera position and matching high-resolution sprite and terrain detail.",
@@ -55,7 +55,7 @@
     },
     "hero": {
       "scene": "Live menu-colony simulation drawn by MenuColony::draw with status bars, no menu UI and no crop. Camera is the menu's own: colony centre at two-thirds of the width.",
-      "recording": "550 lossless BMP frames, 40 ms simulation step per frame (25 fps real time)",
+      "recording": "550 lossless BMP frames; simulation and presentation clock both advance 40 ms per frame (25 fps real time)",
       "source_range_seconds": [
         3,
         19
@@ -75,15 +75,59 @@
       "encode": "libx264 High, preset slow, CRF 23, yuv420p, faststart, Lanczos scale",
       "audio": "none",
       "poster": "Exact decoded first delivered frame, cwebp -q 90, 1600/960 wide",
-      "limits": "Genuine menu background, not human play. Early frames (under about 1.6 s) show coarse terrain while it builds; they are outside the selected range. No outside/generated imagery, repaint, recolor or reconstructed game state."
+      "limits": "Genuine menu background, not human play. Early frames (under about 1.6 s) show coarse terrain while it builds; they are outside the selected range. No outside/generated imagery, repaint, recolor or reconstructed game state.",
+      "speedCheck": "Cloud-shadow brightness drift over 10 s of the same sea region: 1.08 luminance/s, against 0.79 for the real-time 0.11.6.1 release capture and 2.79 for the superseded capture."
     },
     "files": {
-      "colony-loop.mp4": "36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d",
-      "colony-1600.webp": "7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb",
-      "colony-960.webp": "eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0"
+      "colony-loop.mp4": "a68cabfc0a58eb21a2ab39c6cc3a5da0f705179100afbfd89aac6bc4254fc831",
+      "colony-1600.webp": "6624ad10fec83ce7188fc923ec5a26631c8abe296fa9bbcfa344a18b9a010839",
+      "colony-960.webp": "cc9061014ab0bbbfa38ac20b87ece312ff86f3c162f8c16c175d615a2c5f3ef6"
     }
   },
   "supersededColonyCaptures": [
+    {
+      "reason": "Water, shorelines and clouds advanced by each frame's wall-clock capture time, so they played about 3.5 times too fast (cloud-shadow drift 2.79 against 0.79 luminance/s for the real-time release capture). Superseded by a capture whose presentation clock advances 40 ms per recorded frame.",
+      "capture": {
+        "captured": "2026-11-19",
+        "product": "Globulation 2",
+        "source_revision": "38b87ea2c1e71d8fbec78ac4e02cbd3095234bb8",
+        "source": "Globulation2/glob2 master checkout plus an uncommitted harness change (sha256 of diff c399cf36a62bad1583324bbe430450ba5633da3c4c7341d4600c29c5031d9926) adding GLOB2_PRESENTED_CAPTURE and GLOB2_COLONY_STATUS to tools/MenuColonyHarness.cpp record-colony; not a released package.",
+        "renderer": "Active SDL GPU backend (GLOB2_RENDERER=sdl-gpu), 1470x828 logical window at 2x pixel density, 2940x1656 presented-frame readback; high-resolution artwork resolved by the default Auto setting on Apple silicon (terrain tile=64).",
+        "graphicsQualification": {
+          "method": "Side-by-side crop of the same map region at native 2940x1656 against the superseded release capture: identical camera position and matching high-resolution sprite and terrain detail.",
+          "limits": "No settings-screen proof; Auto, not an explicit High resolution choice. Source build, not a release binary."
+        },
+        "hero": {
+          "scene": "Live menu-colony simulation drawn by MenuColony::draw with status bars, no menu UI and no crop. Camera is the menu's own: colony centre at two-thirds of the width.",
+          "recording": "550 lossless BMP frames, 40 ms simulation step per frame (25 fps real time)",
+          "source_range_seconds": [
+            3,
+            19
+          ],
+          "crop": [
+            0,
+            1,
+            2940,
+            1654
+          ],
+          "delivery_dimensions": [
+            1600,
+            900
+          ],
+          "frame_rate": 25,
+          "loop": "15 seconds: source 4-18 seconds followed by a one-second dissolve from 18-19 into 3-4. Opening and closing meet at source 4. No speed change.",
+          "encode": "libx264 High, preset slow, CRF 23, yuv420p, faststart, Lanczos scale",
+          "audio": "none",
+          "poster": "Exact decoded first delivered frame, cwebp -q 90, 1600/960 wide",
+          "limits": "Genuine menu background, not human play. Early frames (under about 1.6 s) show coarse terrain while it builds; they are outside the selected range. No outside/generated imagery, repaint, recolor or reconstructed game state."
+        },
+        "files": {
+          "colony-loop.mp4": "36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d",
+          "colony-1600.webp": "7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb",
+          "colony-960.webp": "eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0"
+        }
+      }
+    },
     {
       "reason": "The release-client capture had to crop out the main-menu panel, which left the colony's sea and beach at the frame edge. Superseded by a menu-free render of the same live menu colony from the same camera position.",
       "capture": {
