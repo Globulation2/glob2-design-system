@@ -37,7 +37,8 @@ export function readPreference(win) {
       return legacy;
     }
   } catch { /* Persistence can be blocked. */ }
-  return 'system';
+  // Without a saved choice, start light; System remains an explicit option.
+  return 'light';
 }
 
 export function writePreference(win, preference) {
@@ -115,7 +116,7 @@ export function createThemeController(win) {
   };
 }
 
-const serverSnapshot = Object.freeze({ preference: 'system', theme: 'light' });
+const serverSnapshot = Object.freeze({ preference: 'light', theme: 'light' });
 export const getServerSnapshot = () => serverSnapshot;
 export function getThemeController() {
   if (typeof window === 'undefined') return undefined;

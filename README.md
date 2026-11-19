@@ -29,6 +29,7 @@ Copy `/bootstrap` to a same-origin URL and load it as an ordinary external scrip
 in the document head before styles/body paint. Import the default entry for
 `getThemeController()` and `mountThemeToggle()`. The controller shares a functional
 preference cookie across glob2.online subdomains; other origins use localStorage.
+Without a saved choice the preference is light; System follows the device only once chosen.
 Labels belong to the consumer. `/node` supplies `assetPath()` and `cssText()` for
 static builds and server-rendered pages. `/colony` supplies the decoration lifecycle.
 

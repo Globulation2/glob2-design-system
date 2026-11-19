@@ -32,7 +32,7 @@ function readPreference(win) {
     }
   } catch {
   }
-  return "system";
+  return "light";
 }
 function writePreference(win, preference) {
   if (!valid(preference)) throw new TypeError("Invalid theme preference");
@@ -111,7 +111,7 @@ function createThemeController(win) {
     }
   };
 }
-const serverSnapshot = Object.freeze({ preference: "system", theme: "light" });
+const serverSnapshot = Object.freeze({ preference: "light", theme: "light" });
 const getServerSnapshot = () => serverSnapshot;
 function getThemeController() {
   if (typeof window === "undefined") return void 0;
