@@ -18,23 +18,22 @@ themes and forced colors. Do not flatten it onto a fixed background for web use.
 Use decorative game sprites with empty alt text; write meaningful alt text for
 screenshots or images used as evidence.
 
-The silent colony recording was refreshed on 18 November 2026 from the public
-0.11.6.1 macOS arm64 release, source `1b6051421821`. It shows the real live
-menu-colony simulation with the active SDL GPU renderer and **High resolution**
-artwork explicitly selected through the game settings. The released app was
-restarted with that saved choice, then the enabled setting and actual renderer
-were checked after load. Its working directory was the packaged Resources tree;
-no isolated-profile data override was present. A declared crop removes the menus; native unit/building
-status bars remain visible. The 1600 × 900 MP4 lasts 15 seconds with a one-second
+The silent colony recording was refreshed on 19 November 2026 so the colony's sea
+and beach are visible. The earlier release-client capture had to crop the main-menu
+panel away, which pushed the shoreline to the frame edge. This capture instead uses
+the upstream `tools/MenuColonyHarness` `record-colony` mode, which draws the same live
+menu colony with no menu and from the menu's own camera (colony centre at two-thirds
+of the width), at the same 1470 × 828 window and 2× pixel density, so no crop is
+needed. It ran on the active SDL GPU renderer with unit/building status bars and
+reads back each presented 2940 × 1656 frame. High-resolution artwork came from the
+default Auto setting on Apple silicon; a side-by-side crop against the superseded
+release capture shows the same camera position and artwork detail. This is a source
+build of Globulation2/glob2, not a released package, and used a local harness change
+(`GLOB2_PRESENTED_CAPTURE`, `GLOB2_COLONY_STATUS`) recorded by hash in the manifest.
+The 1600 × 900 MP4 lasts 15 seconds at the simulation's 25 fps with a one-second
 dissolve joining the end to the opening. Both posters use its exact first decoded
-frame. `colonyCapture` in the provenance manifest records the package/binary/video
-hashes, applied graphics proof, resource-root qualification, source interval and
-crop, separately from the older sprite import revision. The superseded software
-capture remains recorded as earlier provenance; it did not qualify high-resolution
-artwork. A current binary or a downloaded HD pack alone does not establish the
-applied quality setting.
-Keep the MP4 and its two posters together. The upstream `tools/record_menu_colony.py`
-also supports capture through a source-built harness; this refresh instead uses the
-released client's embedded recorder and a declared crop to preserve release identity.
+frame. `colonyCapture` in the provenance manifest records the source, renderer,
+interval, encode and hashes; earlier captures remain in `supersededColonyCaptures`.
+Keep the MP4 and its two posters together.
 Do not request video for reduced-motion visitors. Self-host the selected assets
 with the consuming application; no runtime GitHub or font-provider fetch is needed.

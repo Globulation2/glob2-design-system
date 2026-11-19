@@ -9,9 +9,9 @@
   "files": {
     "algae.webp": "37eaf09c997f6d05b65c1fadcaed92b667c9572b0f354a28de97317eb0329e80",
     "clearing-flag.webp": "5db4e0060df5ce97dcbc3da985325e8281c8946f17f9344e1a04cf1608b0fd4e",
-    "colony-1600.webp": "3c9a8de8a13d961ab3c93f5ab97647ef3afb53491fd4089980e0eddebd29187f",
-    "colony-960.webp": "ed731e001a9c5c4fb5118699a57b649250434fa68cc5bcca55667e7bcb80a92a",
-    "colony-loop.mp4": "1e0ab7025d8cc6cfd88f643c461c84e6253c6abe1ada0f7647e89303def33650",
+    "colony-1600.webp": "7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb",
+    "colony-960.webp": "eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0",
+    "colony-loop.mp4": "36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d",
     "exploration-flag.webp": "8d4107423d2786abaf9c65544387660f182f51fe3dd873f1056ddf47d049388a",
     "explorer-west.webp": "329e8f464dddbadd1212cd5644d6b5c199b93bb49a4e43c6feddf433ba11238a",
     "fruit.webp": "42bd53ea3c095ff46108a2f4f5e24c959e50314191df3ee456f9c40560f66a44",
@@ -44,74 +44,117 @@
     "LICENSE-Tabler.txt": "b740a1d46122672da62833e97f7e7c8a13fa85cbc7445b584b297cc00dde93db"
   },
   "colonyCapture": {
-    "captured": "2026-11-18",
+    "captured": "2026-11-19",
     "product": "Globulation 2",
-    "version": "0.11.6.1",
-    "source_revision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
-    "release": "https://github.com/Globulation2/glob2/releases/tag/v0.11.6.1",
-    "package": "Glob2-0.11.6.1-macos-arm64.dmg",
-    "package_sha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
-    "binary_sha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
-    "renderer": "Active SDL GPU backend, explicit High resolution artwork, 2940x1656 framebuffer",
+    "source_revision": "38b87ea2c1e71d8fbec78ac4e02cbd3095234bb8",
+    "source": "Globulation2/glob2 master checkout plus an uncommitted harness change (sha256 of diff c399cf36a62bad1583324bbe430450ba5633da3c4c7341d4600c29c5031d9926) adding GLOB2_PRESENTED_CAPTURE and GLOB2_COLONY_STATUS to tools/MenuColonyHarness.cpp record-colony; not a released package.",
+    "renderer": "Active SDL GPU backend (GLOB2_RENDERER=sdl-gpu), 1470x828 logical window at 2x pixel density, 2940x1656 presented-frame readback; high-resolution artwork resolved by the default Auto setting on Apple silicon (terrain tile=64).",
     "graphicsQualification": {
-      "choice": "High resolution",
-      "backendRequested": "sdl-gpu",
-      "backendActive": "sdl-gpu",
-      "backendFallbackReason": "",
-      "freshApplicationLoad": true,
-      "proof": "menu-fresh-load-high-resolution-proof.png",
-      "proofSha256": "cfabd7860074b2b728a4164f2c61af88c94a2bf97f5e5eacd8321b1b099df3d2",
-      "method": "Actual supported Settings choice persisted across an isolated released-client restart; enabled High resolution and actual SDL GPU display rechecked after load.",
-      "resourceResolution": {
-        "launchWorkingDirectory": "Glob2.app/Contents/Resources",
-        "workingDirectoryObservedInRunningProcess": true,
-        "openBundleFilesObserved": [
-          "data/zik/original/a1.opus",
-          "data/zik/original/a2.opus",
-          "data/zik/original/a3.opus",
-          "data/zik/intro.opus",
-          "data/zik/menu.opus"
-        ],
-        "profileDataOverridePresent": false,
-        "limits": "No per-sprite open-path trace was recorded. Actual packaged Resources launch CWD, open bundle music files and no isolated-profile data override support packaged source qualification without claiming a per-asset trace."
-      }
+      "method": "Side-by-side crop of the same map region at native 2940x1656 against the superseded release capture: identical camera position and matching high-resolution sprite and terrain detail.",
+      "limits": "No settings-screen proof; Auto, not an explicit High resolution choice. Source build, not a release binary."
     },
     "hero": {
-      "scene": "Actual fresh live menu-colony simulation from released package; menus excluded by declared crop, native status bars retained.",
-      "recording": "capture-775219931423.mp4",
-      "recording_sha256": "e98bc0142e771e0c65b3daf3c6b726d0c36f5109af3688cb27514e816895972d",
-      "rawDurationSeconds": 55.133333,
-      "rawEncoder": "h264_videotoolbox",
-      "rawComplete": true,
-      "rawDroppedFrames": 1,
-      "droppedFrameLocation": "Final stop at 55.1 seconds, outside selected source 3\u201319 seconds",
-      "chapter": "main_menu 0.533333\u201354.266666 seconds",
+      "scene": "Live menu-colony simulation drawn by MenuColony::draw with status bars, no menu UI and no crop. Camera is the menu's own: colony centre at two-thirds of the width.",
+      "recording": "550 lossless BMP frames, 40 ms simulation step per frame (25 fps real time)",
       "source_range_seconds": [
         3,
         19
       ],
       "crop": [
-        892,
-        252,
-        2048,
-        1152
+        0,
+        1,
+        2940,
+        1654
       ],
       "delivery_dimensions": [
         1600,
         900
       ],
-      "loop": "15 seconds: original 4\u201318 seconds followed by a one-second dissolve from 18\u201319 into 3\u20134; opening and closing meet at source 4. No gameplay speed change.",
-      "audio": "removed",
-      "poster": "Exact decoded first delivered frame, WebP90, 1600/960 wide",
-      "limits": "Genuine menu background, not human play or store-launcher qualification. No outside/generated imagery, repaint, recolor, reconstructed game state or fake orders."
+      "frame_rate": 25,
+      "loop": "15 seconds: source 4-18 seconds followed by a one-second dissolve from 18-19 into 3-4. Opening and closing meet at source 4. No speed change.",
+      "encode": "libx264 High, preset slow, CRF 23, yuv420p, faststart, Lanczos scale",
+      "audio": "none",
+      "poster": "Exact decoded first delivered frame, cwebp -q 90, 1600/960 wide",
+      "limits": "Genuine menu background, not human play. Early frames (under about 1.6 s) show coarse terrain while it builds; they are outside the selected range. No outside/generated imagery, repaint, recolor or reconstructed game state."
     },
     "files": {
-      "colony-loop.mp4": "1e0ab7025d8cc6cfd88f643c461c84e6253c6abe1ada0f7647e89303def33650",
-      "colony-1600.webp": "3c9a8de8a13d961ab3c93f5ab97647ef3afb53491fd4089980e0eddebd29187f",
-      "colony-960.webp": "ed731e001a9c5c4fb5118699a57b649250434fa68cc5bcca55667e7bcb80a92a"
+      "colony-loop.mp4": "36cc944326989c6432cc8d8ef2fcdcdbea0ede8382889ce5e2714cf4c29c479d",
+      "colony-1600.webp": "7760b2ca88de344dbe855507e9560e0fae41516c569c2b8f8c8afe6991ed7deb",
+      "colony-960.webp": "eefa8ba34cc6f221964bba20464fbb0f32d887e56e4e1b64218100ffd594cbc0"
     }
   },
   "supersededColonyCaptures": [
+    {
+      "reason": "The release-client capture had to crop out the main-menu panel, which left the colony's sea and beach at the frame edge. Superseded by a menu-free render of the same live menu colony from the same camera position.",
+      "capture": {
+        "captured": "2026-11-18",
+        "product": "Globulation 2",
+        "version": "0.11.6.1",
+        "source_revision": "1b60514218218c89516b6c6f26f2fcefc9c8f974",
+        "release": "https://github.com/Globulation2/glob2/releases/tag/v0.11.6.1",
+        "package": "Glob2-0.11.6.1-macos-arm64.dmg",
+        "package_sha256": "b1f5dd7990547051b6965c06a30d2b137b052deb55d2a4a72abf5657dec2ef8d",
+        "binary_sha256": "faafbed6a8a4039190505c50a2d48f92bd3efa0638c1b0004b5d9d3af6a0b35c",
+        "renderer": "Active SDL GPU backend, explicit High resolution artwork, 2940x1656 framebuffer",
+        "graphicsQualification": {
+          "choice": "High resolution",
+          "backendRequested": "sdl-gpu",
+          "backendActive": "sdl-gpu",
+          "backendFallbackReason": "",
+          "freshApplicationLoad": true,
+          "proof": "menu-fresh-load-high-resolution-proof.png",
+          "proofSha256": "cfabd7860074b2b728a4164f2c61af88c94a2bf97f5e5eacd8321b1b099df3d2",
+          "method": "Actual supported Settings choice persisted across an isolated released-client restart; enabled High resolution and actual SDL GPU display rechecked after load.",
+          "resourceResolution": {
+            "launchWorkingDirectory": "Glob2.app/Contents/Resources",
+            "workingDirectoryObservedInRunningProcess": true,
+            "openBundleFilesObserved": [
+              "data/zik/original/a1.opus",
+              "data/zik/original/a2.opus",
+              "data/zik/original/a3.opus",
+              "data/zik/intro.opus",
+              "data/zik/menu.opus"
+            ],
+            "profileDataOverridePresent": false,
+            "limits": "No per-sprite open-path trace was recorded. Actual packaged Resources launch CWD, open bundle music files and no isolated-profile data override support packaged source qualification without claiming a per-asset trace."
+          }
+        },
+        "hero": {
+          "scene": "Actual fresh live menu-colony simulation from released package; menus excluded by declared crop, native status bars retained.",
+          "recording": "capture-775219931423.mp4",
+          "recording_sha256": "e98bc0142e771e0c65b3daf3c6b726d0c36f5109af3688cb27514e816895972d",
+          "rawDurationSeconds": 55.133333,
+          "rawEncoder": "h264_videotoolbox",
+          "rawComplete": true,
+          "rawDroppedFrames": 1,
+          "droppedFrameLocation": "Final stop at 55.1 seconds, outside selected source 3–19 seconds",
+          "chapter": "main_menu 0.533333–54.266666 seconds",
+          "source_range_seconds": [
+            3,
+            19
+          ],
+          "crop": [
+            892,
+            252,
+            2048,
+            1152
+          ],
+          "delivery_dimensions": [
+            1600,
+            900
+          ],
+          "loop": "15 seconds: original 4–18 seconds followed by a one-second dissolve from 18–19 into 3–4; opening and closing meet at source 4. No gameplay speed change.",
+          "audio": "removed",
+          "poster": "Exact decoded first delivered frame, WebP90, 1600/960 wide",
+          "limits": "Genuine menu background, not human play or store-launcher qualification. No outside/generated imagery, repaint, recolor, reconstructed game state or fake orders."
+        },
+        "files": {
+          "colony-loop.mp4": "1e0ab7025d8cc6cfd88f643c461c84e6253c6abe1ada0f7647e89303def33650",
+          "colony-1600.webp": "3c9a8de8a13d961ab3c93f5ab97647ef3afb53491fd4089980e0eddebd29187f",
+          "colony-960.webp": "ed731e001a9c5c4fb5118699a57b649250434fa68cc5bcca55667e7bcb80a92a"
+        }
+      }
+    },
     {
       "reason": "The previous software-renderer recording did not qualify high-resolution artwork. Superseded by an actual SDL GPU and explicit High resolution capture with fresh-load proof.",
       "capture": {
@@ -128,7 +171,7 @@
           "scene": "actual live menu colony simulation from released package, UI omitted by crop; status bars retained",
           "recording": "capture-759515517888.mp4",
           "recording_sha256": "bd33383d7ad335d6f324bf4562002483d80405102a8ffdb3ab99330525c93939",
-          "chapter": "main_menu 1.133333\u201320.766666 seconds",
+          "chapter": "main_menu 1.133333–20.766666 seconds",
           "source_range_seconds": [
             3,
             19
@@ -143,7 +186,7 @@
             1600,
             900
           ],
-          "loop": "15 seconds; middle original seconds4\u201318, one-second dissolve source18\u201319 into3\u20134; opening and closing meet at source4",
+          "loop": "15 seconds; middle original seconds4–18, one-second dissolve source18–19 into3–4; opening and closing meet at source4",
           "audio": "removed",
           "poster": "exact decoded first delivered frame, WebP90,1600/960 wide",
           "limits": "menu-colony background, not a human match or store launcher qualification; no stock/generated imagery, repaint, recolor or game-state manipulation"
