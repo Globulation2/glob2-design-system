@@ -20,6 +20,7 @@ function mountColony(video, button, { pause, resume, container = video.parentEle
           }
           fallbackSource.addEventListener("error", error);
           video.append(...sources);
+          video.load();
         }
       } else if (!video.getAttribute("src")) video.src = video.dataset.src;
       void video.play().catch((error2) => {

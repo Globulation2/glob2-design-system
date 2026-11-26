@@ -17,6 +17,8 @@ export function mountColony(video, button, { pause, resume, container = video.pa
           if (!fallbackSource) { error(); return; }
           fallbackSource.addEventListener('error', error);
           video.append(...sources);
+          // Restart source selection in WebKit after the initial deferred pause.
+          video.load();
         }
       } else if (!video.getAttribute('src')) video.src = video.dataset.src;
       void video.play().catch(error => {
