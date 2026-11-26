@@ -1,15 +1,24 @@
 /** Shared decoration lifecycle. The consumer owns markup, assets and translated labels. */
-export function mountColony(video, button, { pause, resume, container = video.parentElement, onPlaying = () => {} }) {
+export function mountColony(video, button, { pause, resume, container = video.parentElement, onPlaying = () => {}, chooseSources }) {
   const win = video.ownerDocument.defaultView;
   const reduced = win.matchMedia('(prefers-reduced-motion: reduce)');
   let paused = false, visible = false, failed = false, playing = false;
+  let fallbackSource;
   const update = () => {
     button.hidden = reduced.matches || !playing || failed;
     button.textContent = paused ? resume : pause;
     video.classList.toggle('still', reduced.matches);
     if (paused || !visible || reduced.matches || video.ownerDocument.hidden || failed) video.pause();
     else {
-      if (!video.getAttribute('src')) video.src = video.dataset.src;
+      if (chooseSources) {
+        if (!fallbackSource) {
+          const sources = chooseSources();
+          fallbackSource = sources.at(-1);
+          if (!fallbackSource) { error(); return; }
+          fallbackSource.addEventListener('error', error);
+          video.append(...sources);
+        }
+      } else if (!video.getAttribute('src')) video.src = video.dataset.src;
       void video.play().catch(error => {
         if (error.name === 'AbortError') return;
         failed = true; playing = false; update(); onPlaying(false);
@@ -30,6 +39,7 @@ export function mountColony(video, button, { pause, resume, container = video.pa
   return () => {
     observer.disconnect(); video.pause();
     video.removeEventListener('playing', started); video.removeEventListener('error', error);
+    fallbackSource?.removeEventListener('error', error);
     button.removeEventListener('click', click); reduced.removeEventListener('change', update);
     video.ownerDocument.removeEventListener('visibilitychange', update);
   };
