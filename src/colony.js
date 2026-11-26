@@ -3,30 +3,40 @@ export function mountColony(video, button, { pause, resume, container = video.pa
   const win = video.ownerDocument.defaultView;
   const reduced = win.matchMedia('(prefers-reduced-motion: reduce)');
   let paused = false, visible = false, failed = false, playing = false;
-  let fallbackSource;
+  let sources;
+  const nextSource = () => {
+    const next = sources?.shift();
+    if (!next) return false;
+    video.src = next.src;
+    return true;
+  };
   const update = () => {
     button.hidden = reduced.matches || !playing || failed;
     button.textContent = paused ? resume : pause;
     video.classList.toggle('still', reduced.matches);
     if (paused || !visible || reduced.matches || video.ownerDocument.hidden || failed) video.pause();
     else {
-      if (chooseSources) {
-        if (!fallbackSource) {
-          const sources = chooseSources();
-          fallbackSource = sources.at(-1);
-          if (!fallbackSource) { error(); return; }
-          fallbackSource.addEventListener('error', error);
-          video.append(...sources);
-        }
-      } else if (!video.getAttribute('src')) video.src = video.dataset.src;
-      void video.play().catch(error => {
-        if (error.name === 'AbortError') return;
-        failed = true; playing = false; update(); onPlaying(false);
+      if (!video.getAttribute('src')) {
+        if (chooseSources) {
+          sources = chooseSources().filter(source => video.canPlayType(source.type) !== '');
+          if (!nextSource()) { fail(); return; }
+        } else video.src = video.dataset.src;
+      }
+      const source = video.src;
+      void video.play().catch(reason => {
+        if (reason.name === 'AbortError' || video.src !== source || failed) return;
+        if (reason.name === 'NotSupportedError') recover();
+        else fail();
       });
     }
   };
   const started = () => { playing = true; onPlaying(true); update(); };
-  const error = () => { failed = true; playing = false; onPlaying(false); update(); };
+  const fail = () => { failed = true; playing = false; onPlaying(false); update(); };
+  const recover = () => {
+    if (!nextSource()) { fail(); return; }
+    playing = false; onPlaying(false); update();
+  };
+  const error = () => { if (!failed && video.error) recover(); };
   const click = () => { paused = !paused; update(); };
   const observer = new win.IntersectionObserver(([entry]) => { visible = !!entry?.isIntersecting; update(); });
   observer.observe(container);
@@ -39,7 +49,6 @@ export function mountColony(video, button, { pause, resume, container = video.pa
   return () => {
     observer.disconnect(); video.pause();
     video.removeEventListener('playing', started); video.removeEventListener('error', error);
-    fallbackSource?.removeEventListener('error', error);
     button.removeEventListener('click', click); reduced.removeEventListener('change', update);
     video.ownerDocument.removeEventListener('visibilitychange', update);
   };
