@@ -35,12 +35,16 @@ test('colony retries its fallback when the preferred source fails', async () => 
  assert.equal(video.getAttribute('src'), null);
  observe([{isIntersecting:true}]);
  assert.equal(video.getAttribute('src'), '/hero.webm');
+ video.dispatchEvent(new win.Event('playing'));
+ button.click();
  Object.defineProperty(video, 'error', {value:{code:3}, configurable:true});
  video.dispatchEvent(new win.Event('error'));
  assert.equal(video.getAttribute('src'), '/hero.mp4');
  plays[0].reject(new win.DOMException('First source failed', 'NotSupportedError'));
  await Promise.resolve();
- video.dispatchEvent(new win.Event('playing'));
  assert.equal(button.hidden, false);
+ assert.equal(button.textContent, 'Resume');
+ button.click();
+ assert.equal(button.textContent, 'Pause');
  cleanup(); dom.window.close();
 });

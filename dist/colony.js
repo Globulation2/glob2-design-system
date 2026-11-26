@@ -49,7 +49,6 @@ function mountColony(video, button, { pause, resume, container = video.parentEle
       fail();
       return;
     }
-    playing = false;
     onPlaying(false);
     update();
   };

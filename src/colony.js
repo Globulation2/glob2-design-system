@@ -34,7 +34,7 @@ export function mountColony(video, button, { pause, resume, container = video.pa
   const fail = () => { failed = true; playing = false; onPlaying(false); update(); };
   const recover = () => {
     if (!nextSource()) { fail(); return; }
-    playing = false; onPlaying(false); update();
+    onPlaying(false); update();
   };
   const error = () => { if (!failed && video.error) recover(); };
   const click = () => { paused = !paused; update(); };
